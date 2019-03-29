@@ -1,5 +1,7 @@
 ## MVVM轻量快速开发框架
 
+<img src="https://github.com/azhon/AppUpdate/blob/master/img/img_1.png" width="300">
+
 ### 介绍：
 
 MVVM轻量快速开发框架：使用JetPack中的ViewModel + LiveData +
