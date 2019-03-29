@@ -1,0 +1,2 @@
+include ':sample', ':basicLib'
+rootProject.name='TODO-MVVM'
