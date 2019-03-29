@@ -1,6 +1,6 @@
 ## MVVM轻量快速开发框架
 
-<img src="https://github.com/azhon/AppUpdate/blob/master/img/img_1.png" width="300">
+<img src="https://github.com/azhon/TODO-MVVM/blob/master/img/img_1.png" width="300">
 
 ### 介绍：
 
