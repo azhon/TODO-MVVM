@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">TODO-MVVM</string>
     <string name="introduce">　MVVM轻量快速开发框架：使用JetPack中的AndroidX + ViewModel + LiveData + DataBinding的组件，同时使用RxJava2 + Retrofit2 + Glide等主流框架进行搭建</string>
-    <string name="vm_hint">　在当前页面开启屏幕自动旋转，旋转为横屏页面会重新创建；但是之前请求的数据依旧还在，这也许就是ViewModel之美。（manifest中没有配置android:configChanges）</string>
+    <string name="vm_hint">　在当前页面开启屏幕自动旋转，旋转为横屏页面会重新创建；但是之前请求的数据依旧还在，这也许就是ViewModel的魅力所在。（manifest中没有配置android:configChanges）</string>
 </resources>
