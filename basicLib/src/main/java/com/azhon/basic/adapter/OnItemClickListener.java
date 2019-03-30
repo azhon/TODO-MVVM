@@ -21,7 +21,7 @@ public interface OnItemClickListener<Data> {
     void onItemClick(Data data, int position);
 
     /**
-     * Item 点击事件
+     * Item 长按事件
      *
      * @param data     item的数据
      * @param position item的下标

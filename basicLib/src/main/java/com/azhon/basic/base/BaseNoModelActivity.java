@@ -66,7 +66,7 @@ public abstract class BaseNoModelActivity<DB extends ViewDataBinding> extends Ap
     protected abstract void initData();
 
     /**
-     * 显示用户等待库
+     * 显示用户等待框
      *
      * @param msg 提示信息
      */

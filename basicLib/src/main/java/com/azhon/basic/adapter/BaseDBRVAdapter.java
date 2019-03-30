@@ -48,7 +48,7 @@ public abstract class BaseDBRVAdapter<Data, DB extends ViewDataBinding> extends 
 
     @NonNull
     @Override
-    public BaseDBRVHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
+    public BaseDBRVHolder onCreateViewHolder(@NonNull ViewGroup parent, int position) {
         this.context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
         DB binding = DataBindingUtil.inflate(inflater, itemId, parent, false);
@@ -59,8 +59,8 @@ public abstract class BaseDBRVAdapter<Data, DB extends ViewDataBinding> extends 
     public void onBindViewHolder(@NonNull BaseDBRVHolder holder, final int position) {
         DB binding = DataBindingUtil.getBinding(holder.itemView);
         final Data itemData = data.get(position);
-        onBindViewHolder(itemData, binding, position);
         binding.setVariable(variableId, itemData);
+        onBindViewHolder(itemData, binding, position);
         //迫使数据立即绑定
         binding.executePendingBindings();
         //设置点击事件
@@ -99,6 +99,26 @@ public abstract class BaseDBRVAdapter<Data, DB extends ViewDataBinding> extends 
      */
     public void setNewData(List<Data> data) {
         this.data.clear();
+        this.data.addAll(data);
+        notifyDataSetChanged();
+    }
+
+    /**
+     * 添加数据
+     *
+     * @param data
+     */
+    public void addData(Data data) {
+        this.data.add(data);
+        notifyDataSetChanged();
+    }
+
+    /**
+     * 添加数据
+     *
+     * @param data
+     */
+    public void addData(List<Data> data) {
         this.data.addAll(data);
         notifyDataSetChanged();
     }
