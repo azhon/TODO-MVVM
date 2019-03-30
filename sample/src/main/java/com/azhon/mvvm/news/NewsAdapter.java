@@ -32,7 +32,7 @@ public class NewsAdapter extends BaseDBRVAdapter<NewsBean.StoriesBean, ItemNesBi
      * @param imageView
      * @param url       图片地址
      */
-    @BindingAdapter({"app:imageUrl"})
+    @BindingAdapter({"imageUrl"})
     public static void loadImage(ImageView imageView, String url) {
         Glide.with(imageView.getContext()).load(url).into(imageView);
     }
