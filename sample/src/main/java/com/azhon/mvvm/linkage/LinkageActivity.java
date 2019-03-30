@@ -1,9 +1,7 @@
 package com.azhon.mvvm.linkage;
 
-import android.util.Log;
 import android.widget.SeekBar;
 
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.azhon.basic.base.BaseActivity;
@@ -16,7 +14,7 @@ import com.azhon.mvvm.databinding.ActivityLinkageBinding;
  * 包名       com.azhon.mvvm.linkage
  * 文件名:    LinkageActivity
  * 创建时间:  2019-03-29 on 20:18
- * 描述:     TODO
+ * 描述:     TODO DataBinding #setLifecycleOwner()使用示例
  *
  * @author 阿钟
  */
@@ -36,18 +34,14 @@ public class LinkageActivity extends BaseActivity<LinkageViewModel, ActivityLink
                 .beginTransaction()
                 .replace(R.id.fl_content, LinkageFragment.newInstance())
                 .commit();
-        viewModel.getProgress().observe(this, new Observer<Integer>() {
-            @Override
-            public void onChanged(Integer integer) {
-                dataBinding.skI.setProgress(integer);
-            }
-        });
         dataBinding.skI.setOnSeekBarChangeListener(this);
     }
 
     @Override
     protected void initData() {
-
+        dataBinding.setModel(viewModel);
+        //允许绑定观察ViewModel中的LiveData数据，当LiveData数据更新时，布局会自动更新数据
+        dataBinding.setLifecycleOwner(this);
     }
 
     @Override
@@ -62,6 +56,7 @@ public class LinkageActivity extends BaseActivity<LinkageViewModel, ActivityLink
 
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+        //更新viewModel中的数据
         viewModel.getProgress().setValue(progress);
     }
 

@@ -3,6 +3,9 @@
 
     <data>
 
+        <variable
+            name="model"
+            type="com.azhon.mvvm.linkage.LinkageViewModel" />
     </data>
 
     <LinearLayout
@@ -15,7 +18,8 @@
             android:id="@+id/sk_i_i"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp" />
+            android:layout_marginHorizontal="20dp"
+            android:progress="@{model.progress}" />
 
     </LinearLayout>
 </layout>

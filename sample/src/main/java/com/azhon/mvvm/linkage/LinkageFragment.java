@@ -1,10 +1,8 @@
 package com.azhon.mvvm.linkage;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.SeekBar;
 
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.azhon.basic.base.BaseFragment;
@@ -16,7 +14,7 @@ import com.azhon.mvvm.databinding.FragmentLinkageBinding;
  * 包名       com.azhon.mvvm.linkage
  * 文件名:    LinkageFragment
  * 创建时间:  2019-03-29 on 20:24
- * 描述:     TODO
+ * 描述:     TODO DataBinding #setLifecycleOwner()使用示例
  *
  * @author 阿钟
  */
@@ -38,18 +36,14 @@ public class LinkageFragment extends BaseFragment<LinkageViewModel, FragmentLink
 
     @Override
     protected void initView() {
-        viewModel.getProgress().observe(this, new Observer<Integer>() {
-            @Override
-            public void onChanged(Integer integer) {
-                dataBinding.skII.setProgress(integer);
-            }
-        });
         dataBinding.skII.setOnSeekBarChangeListener(this);
     }
 
     @Override
     protected void initData() {
-
+        dataBinding.setModel(viewModel);
+        //允许绑定观察ViewModel中的LiveData数据，当LiveData数据更新时，布局会自动更新数据
+        dataBinding.setLifecycleOwner(this);
     }
 
     @Override
