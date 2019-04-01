@@ -9,9 +9,6 @@
             name="model"
             type="com.azhon.mvvm.news.NewsActivity" />
 
-        <variable
-            name="bean"
-            type="com.azhon.mvvm.news.NewsBean" />
     </data>
 
     <LinearLayout

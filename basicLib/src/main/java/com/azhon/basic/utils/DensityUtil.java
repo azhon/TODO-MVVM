@@ -1,6 +1,7 @@
 package com.azhon.basic.utils;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.util.DisplayMetrics;
 
 /**
@@ -34,6 +35,34 @@ public class DensityUtil {
     public static int getHeight(Context context) {
         DisplayMetrics dm = context.getResources().getDisplayMetrics();
         return dm.heightPixels;
+    }
+
+    /**
+     * 获取状态栏的高度
+     *
+     * @param context 上下文
+     * @return px
+     */
+    public static int getStatusBarHeight(Context context) {
+        int statusBarHeight = 0;
+        int resourceId = context.getResources().getIdentifier("status_bar_height", "dimen", "android");
+        if (resourceId > 0) {
+            statusBarHeight = context.getResources().getDimensionPixelSize(resourceId);
+        }
+        return statusBarHeight;
+    }
+
+    /**
+     * 获取标题栏（ActionBar）的高度
+     *
+     * @param context 上下文
+     * @return px
+     */
+    public static int getActionBarHeight(Context context) {
+        TypedArray values = context.getTheme().obtainStyledAttributes(new int[]{android.R.attr.actionBarSize});
+        int actionBarHeight = values.getDimensionPixelSize(0, 0);
+        values.recycle();
+        return actionBarHeight;
     }
 
     /**
