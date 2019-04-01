@@ -21,7 +21,7 @@ public interface ApiService {
 
     String BASE_URL = "https://news-at.zhihu.com/api/4/";
 
-    String JUE_JIN_BASE_URL = "https://timeline-merger-ms.juejin.im/v1/";
+    String JUE_JIN_BASE_URL = "http://timeline-merger-ms.juejin.im/v1/";
 
     /**
      * 测试接口
