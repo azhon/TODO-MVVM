@@ -1,6 +1,21 @@
-## MVVM轻量快速开发框架
+### 目录
 
-<img src="https://github.com/azhon/TODO-MVVM/blob/master/img/img_2.png" width="300">  <img src="https://github.com/azhon/TODO-MVVM/blob/master/img/img_1.png" width="300">
+- 介绍
+
+- Demo下载体验
+
+- 项目编译
+
+- 使用步骤
+
+- 结语
+
+### 介绍：
+
+MVVM轻量快速开发框架：使用JetPack中的AndroidX + ViewModel + LiveData +
+DataBinding组件，同时使用RxJava2 + Retrofit2 + Glide等主流框架进行搭建
+
+<img src="https://img-blog.csdnimg.cn/2019040114344440.gif" width="300">  <img src="https://github.com/azhon/TODO-MVVM/blob/master/img/img_2.png" width="300">  <img src="https://github.com/azhon/TODO-MVVM/blob/master/img/img_1.png" width="300">
 
 ### Demo下载体验
 
@@ -8,7 +23,18 @@
 
 <img src="https://github.com/azhon/TODO-MVVM/blob/master/img/img_code.png" width="150" height="150">
 
-### 介绍：
+### 项目编译
 
-MVVM轻量快速开发框架：使用JetPack中的AndroidX + ViewModel + LiveData +
-DataBinding组件，同时使用RxJava2 + Retrofit2 + Glide等主流框架进行搭建
+ 因为本项目使用的都是较新的东西，所以建议使用`Android Studio 3.5`或更高版本进行编译
+
+### 使用步骤
+
+- 下载本项目，在你的项目中点击`File —> New -> Import Module...`然后选择`basicLib`；然后在你的项目中依赖`basicLib`
+
+- wait a moment ...
+
+## 结语
+
+- 欢迎各路大佬发起`PR`
+
+- 如果使用中有什么问题，欢迎提`Issues`
