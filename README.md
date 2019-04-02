@@ -1,21 +1,21 @@
 ### 目录
 
-- 介绍
+- [介绍](#介绍)
 
-- Demo下载体验
+- [Demo下载体验](#Demo下载体验)
 
-- 项目编译
+- [项目编译](#项目编译)
 
-- 使用步骤
+- [使用步骤](#使用步骤)
 
-- 结语
+- [结语](#结语)
 
 ### 介绍：
 
 MVVM轻量快速开发框架：使用JetPack中的AndroidX + ViewModel + LiveData +
 DataBinding组件，同时使用RxJava2 + Retrofit2 + Glide等主流框架进行搭建
 
-<img src="https://img-blog.csdnimg.cn/2019040114344440.gif" width="300">  <img src="https://github.com/azhon/TODO-MVVM/blob/master/img/img_2.png" width="300">  <img src="https://github.com/azhon/TODO-MVVM/blob/master/img/img_1.png" width="300">
+<img src="https://img-blog.csdnimg.cn/2019040114344440.gif" width="300">
 
 ### Demo下载体验
 
@@ -25,7 +25,7 @@ DataBinding组件，同时使用RxJava2 + Retrofit2 + Glide等主流框架进行
 
 ### 项目编译
 
- 因为本项目使用的都是较新的东西，所以建议使用`Android Studio 3.5`或更高版本进行编译
+ 因为本项目使用的都是较新的东西，所以建议使用`Android Studio 3.5`或更高版本进行编译
 
 ### 使用步骤
 
