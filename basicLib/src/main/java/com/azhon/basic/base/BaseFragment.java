@@ -46,7 +46,7 @@ public abstract class BaseFragment<VM extends BaseViewModel, DB extends ViewData
      */
     private void initObserve() {
         if (viewModel == null) return;
-        viewModel.getShowDialog().observe(this, new Observer<DialogBean>() {
+        viewModel.getShowDialog(this, new Observer<DialogBean>() {
             @Override
             public void onChanged(DialogBean bean) {
                 if (bean.isShow()) {
@@ -56,7 +56,7 @@ public abstract class BaseFragment<VM extends BaseViewModel, DB extends ViewData
                 }
             }
         });
-        viewModel.getError().observe(this, new Observer<Object>() {
+        viewModel.getError(this, new Observer<Object>() {
             @Override
             public void onChanged(Object obj) {
                 showError(obj);

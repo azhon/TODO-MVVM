@@ -1,6 +1,8 @@
 package com.azhon.basic.lifecycle;
 
+import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModel;
 
 import com.azhon.basic.bean.DialogBean;
@@ -43,12 +45,12 @@ public abstract class BaseViewModel extends ViewModel {
         compositeDisposable.add(disposable);
     }
 
-    public DialogLiveData<DialogBean> getShowDialog() {
-        return showDialog;
+    public void getShowDialog(LifecycleOwner owner, Observer<DialogBean> observer) {
+        showDialog.observe(owner, observer);
     }
 
-    public MutableLiveData<Object> getError() {
-        return error;
+    public void getError(LifecycleOwner owner, Observer<Object> observer) {
+        error.observe(owner, observer);
     }
 
     /**
