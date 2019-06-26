@@ -67,6 +67,18 @@ public class ActivityUtil {
     }
 
     /**
+     * 是否存在Activity
+     */
+    public boolean containsActivity(Class<?> cls) {
+        for (Activity activity : stack) {
+            if (activity.getClass().equals(cls)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
      * 结束所有Activity
      */
     public void finishAllActivity() {
