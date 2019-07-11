@@ -10,6 +10,8 @@
 
 - [结语](#结语)
 
+### 同时提供了一个没有dataBinding的版本，切换至`no-databinding`分支即可
+
 ### 介绍：
 
 MVVM轻量快速开发框架：使用JetPack中的AndroidX + ViewModel + LiveData +
