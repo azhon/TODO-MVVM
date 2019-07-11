@@ -3,11 +3,8 @@ package com.azhon.basic.base;
 import android.content.Context;
 import android.os.Bundle;
 
-import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-import androidx.databinding.ViewDataBinding;
 
 import com.azhon.basic.utils.ActivityUtil;
 import com.azhon.basic.view.LoadingDialog;
@@ -22,9 +19,8 @@ import com.azhon.basic.view.LoadingDialog;
  * @author 阿钟
  */
 
-public abstract class BaseNoModelActivity<DB extends ViewDataBinding> extends AppCompatActivity {
+public abstract class BaseNoModelActivity extends AppCompatActivity {
 
-    protected DB dataBinding;
     protected Context context;
     private LoadingDialog loadingDialog;
 
@@ -33,10 +29,8 @@ public abstract class BaseNoModelActivity<DB extends ViewDataBinding> extends Ap
         super.onCreate(savedInstanceState);
         context = this;
         ActivityUtil.getInstance().addActivity(this);
-        int layoutId = onCreate();
-        setContentView(layoutId);
+        setContentView(onCreate());
 
-        dataBinding = initDataBinding(layoutId);
         initView();
         initData();
     }
@@ -47,13 +41,6 @@ public abstract class BaseNoModelActivity<DB extends ViewDataBinding> extends Ap
      */
     protected abstract int onCreate();
 
-
-    /**
-     * 初始化DataBinding
-     */
-    protected DB initDataBinding(@LayoutRes int layoutId) {
-        return DataBindingUtil.setContentView(this, layoutId);
-    }
 
     /**
      * 初始化视图
@@ -88,9 +75,6 @@ public abstract class BaseNoModelActivity<DB extends ViewDataBinding> extends Ap
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (dataBinding != null) {
-            dataBinding.unbind();
-        }
         ActivityUtil.getInstance().removeActivity(this);
     }
 }

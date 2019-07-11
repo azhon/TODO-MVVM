@@ -6,14 +6,14 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.databinding.DataBindingUtil;
 
 import com.azhon.basic.R;
-import com.azhon.basic.databinding.DialogLoadingBinding;
 import com.azhon.basic.utils.DensityUtil;
 
 /**
@@ -28,15 +28,14 @@ import com.azhon.basic.utils.DensityUtil;
 
 public class LoadingDialog extends Dialog {
 
-    private DialogLoadingBinding binding;
-
+    private final TextView tvMsg;
 
     public LoadingDialog(@NonNull Context context) {
         super(context, R.style.LoadingDialog);
         setCanceledOnTouchOutside(false);
-        binding = DataBindingUtil.inflate(LayoutInflater.from(context),
-                R.layout.dialog_loading, null, false);
-        setContentView(binding.getRoot());
+        View view = LayoutInflater.from(context).inflate(R.layout.dialog_loading, null, false);
+        tvMsg = view.findViewById(R.id.tv_msg);
+        setContentView(view);
         Window window = getWindow();
         WindowManager.LayoutParams lp = window.getAttributes();
         lp.width = DensityUtil.dip2px(context, 150);
@@ -52,6 +51,6 @@ public class LoadingDialog extends Dialog {
         if (TextUtils.isEmpty(msg)) {
             return;
         }
-        binding.tvMsg.setText(msg);
+        tvMsg.setText(msg);
     }
 }

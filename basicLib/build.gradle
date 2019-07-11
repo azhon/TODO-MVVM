@@ -20,10 +20,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    //启用DataBinding
-    dataBinding {
-        enabled true
-    }
 
 }
 

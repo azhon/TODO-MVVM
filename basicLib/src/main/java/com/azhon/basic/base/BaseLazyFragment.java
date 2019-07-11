@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.databinding.ViewDataBinding;
 
 import com.azhon.basic.lifecycle.BaseViewModel;
 
@@ -21,8 +20,7 @@ import com.azhon.basic.lifecycle.BaseViewModel;
  * @author 阿钟
  */
 
-public abstract class BaseLazyFragment<VM extends BaseViewModel, DB extends ViewDataBinding>
-        extends BaseFragment<VM, DB> {
+public abstract class BaseLazyFragment<VM extends BaseViewModel> extends BaseFragment<VM> {
 
     /**
      * 懒加载

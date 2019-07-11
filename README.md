@@ -12,8 +12,7 @@
 
 ### 介绍：
 
-MVVM轻量快速开发框架：使用JetPack中的AndroidX + ViewModel + LiveData +
-DataBinding组件，同时使用RxJava2 + Retrofit2 + Glide等主流框架进行搭建
+MVVM轻量快速开发框架：使用JetPack中的AndroidX + ViewModel + LiveData，同时使用RxJava2 + Retrofit2 + Glide等主流框架进行搭建
 
 <img src="https://img-blog.csdnimg.cn/2019040114344440.gif" width="300">
 

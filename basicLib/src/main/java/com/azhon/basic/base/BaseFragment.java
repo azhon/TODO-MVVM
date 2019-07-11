@@ -1,9 +1,8 @@
 package com.azhon.basic.base;
 
-import android.view.LayoutInflater;
-import android.view.ViewGroup;
+import android.os.Bundle;
 
-import androidx.databinding.ViewDataBinding;
+import androidx.annotation.Nullable;
 import androidx.lifecycle.Observer;
 
 import com.azhon.basic.bean.DialogBean;
@@ -20,20 +19,15 @@ import com.azhon.basic.lifecycle.BaseViewModel;
  * @author 阿钟
  */
 
-public abstract class BaseFragment<VM extends BaseViewModel, DB extends ViewDataBinding>
-        extends BaseNoModelFragment<DB> {
+public abstract class BaseFragment<VM extends BaseViewModel> extends BaseNoModelFragment {
 
     protected VM viewModel;
 
     @Override
-    protected DB initDataBinding(LayoutInflater inflater, int layoutId, ViewGroup container) {
-        DB db = super.initDataBinding(inflater, layoutId, container);
-        /**
-         * 将这两个初始化函数插在{@link BaseFragment#initDataBinding}
-         */
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         viewModel = initViewModel();
         initObserve();
-        return db;
+        super.onActivityCreated(savedInstanceState);
     }
 
     /**

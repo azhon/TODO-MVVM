@@ -1,13 +1,14 @@
 package com.azhon.mvvm.linkage;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.SeekBar;
 
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.azhon.basic.base.BaseFragment;
 import com.azhon.mvvm.R;
-import com.azhon.mvvm.databinding.FragmentLinkageBinding;
 
 /**
  * 项目名:    TODO-MVVM
@@ -19,8 +20,9 @@ import com.azhon.mvvm.databinding.FragmentLinkageBinding;
  * @author 阿钟
  */
 
-public class LinkageFragment extends BaseFragment<LinkageViewModel, FragmentLinkageBinding>
-        implements SeekBar.OnSeekBarChangeListener {
+public class LinkageFragment extends BaseFragment<LinkageViewModel> implements SeekBar.OnSeekBarChangeListener {
+
+    private SeekBar skii;
 
     public static LinkageFragment newInstance() {
         Bundle args = new Bundle();
@@ -35,15 +37,19 @@ public class LinkageFragment extends BaseFragment<LinkageViewModel, FragmentLink
     }
 
     @Override
-    protected void initView() {
-        dataBinding.skII.setOnSeekBarChangeListener(this);
+    protected void initView(View view) {
+        skii = view.findViewById(R.id.sk_i_i);
+        skii.setOnSeekBarChangeListener(this);
     }
 
     @Override
     protected void initData() {
-        dataBinding.setModel(viewModel);
-        //允许绑定观察ViewModel中的LiveData数据，当LiveData数据更新时，布局会自动更新数据
-        dataBinding.setLifecycleOwner(this);
+        viewModel.getProgress().observe(this, new Observer<Integer>() {
+            @Override
+            public void onChanged(Integer integer) {
+                skii.setProgress(integer);
+            }
+        });
     }
 
     @Override

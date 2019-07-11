@@ -1,42 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <data>
-
-        <variable
-            name="model"
-            type="com.azhon.mvvm.news.NewsActivity" />
-
-    </data>
-
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical"
-        tools:context=".MainActivity">
+        android:layout_height="wrap_content"
+        android:text="@string/vm_hint"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/vm_hint"
-            android:textColor="@color/colorAccent"
-            android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_request_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="请求网络数据" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:onClick="@{model.requestData}"
-            android:text="请求网络数据" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_news"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-</layout>
+</LinearLayout>

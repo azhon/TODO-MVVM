@@ -4,7 +4,6 @@ import android.text.TextUtils;
 
 import com.azhon.basic.base.BaseNoModelActivity;
 import com.azhon.mvvm.R;
-import com.azhon.mvvm.databinding.ActivityDetailBinding;
 
 
 /**
@@ -17,7 +16,7 @@ import com.azhon.mvvm.databinding.ActivityDetailBinding;
  * @author 阿钟
  */
 
-public class DetailActivity extends BaseNoModelActivity<ActivityDetailBinding> {
+public class DetailActivity extends BaseNoModelActivity {
 
     @Override
     protected int onCreate() {

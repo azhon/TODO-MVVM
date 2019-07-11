@@ -9,9 +9,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.azhon.basic.base.BaseActivity;
 import com.azhon.mvvm.R;
-import com.azhon.mvvm.databinding.ActivityNewsBinding;
 
-public class NewsActivity extends BaseActivity<NewsViewModel, ActivityNewsBinding> {
+public class NewsActivity extends BaseActivity<NewsViewModel> {
 
     private NewsAdapter adapter;
 
@@ -27,7 +26,13 @@ public class NewsActivity extends BaseActivity<NewsViewModel, ActivityNewsBindin
 
     @Override
     protected void initView() {
-        RecyclerView rvNews = dataBinding.rvNews;
+        findViewById(R.id.btn_request_data).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                viewModel.requestData();
+            }
+        });
+        RecyclerView rvNews =findViewById(R.id.rv_news);
         LinearLayoutManager manager = new LinearLayoutManager(this);
         adapter = new NewsAdapter();
         rvNews.setLayoutManager(manager);
@@ -36,7 +41,6 @@ public class NewsActivity extends BaseActivity<NewsViewModel, ActivityNewsBindin
 
     @Override
     protected void initData() {
-        dataBinding.setModel(this);
         //数据请求成功通知
         viewModel.getNews().observe(this, new Observer<NewsBean>() {
             @Override
@@ -49,13 +53,6 @@ public class NewsActivity extends BaseActivity<NewsViewModel, ActivityNewsBindin
     @Override
     protected void showError(Object obj) {
 
-    }
-
-    /**
-     * 按钮点击事件
-     */
-    public void requestData(View view) {
-        viewModel.requestData();
     }
 
 }

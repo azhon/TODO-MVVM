@@ -2,11 +2,11 @@ package com.azhon.mvvm.linkage;
 
 import android.widget.SeekBar;
 
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.azhon.basic.base.BaseActivity;
 import com.azhon.mvvm.R;
-import com.azhon.mvvm.databinding.ActivityLinkageBinding;
 
 
 /**
@@ -19,8 +19,9 @@ import com.azhon.mvvm.databinding.ActivityLinkageBinding;
  * @author 阿钟
  */
 
-public class LinkageActivity extends BaseActivity<LinkageViewModel, ActivityLinkageBinding>
-        implements SeekBar.OnSeekBarChangeListener {
+public class LinkageActivity extends BaseActivity<LinkageViewModel> implements SeekBar.OnSeekBarChangeListener {
+
+    private SeekBar ski;
 
     @Override
     protected int onCreate() {
@@ -34,14 +35,18 @@ public class LinkageActivity extends BaseActivity<LinkageViewModel, ActivityLink
                 .beginTransaction()
                 .replace(R.id.fl_content, LinkageFragment.newInstance())
                 .commit();
-        dataBinding.skI.setOnSeekBarChangeListener(this);
+        ski = findViewById(R.id.sk_i);
+        ski.setOnSeekBarChangeListener(this);
     }
 
     @Override
     protected void initData() {
-        dataBinding.setModel(viewModel);
-        //允许绑定观察ViewModel中的LiveData数据，当LiveData数据更新时，布局会自动更新数据
-        dataBinding.setLifecycleOwner(this);
+        viewModel.getProgress().observe(this, new Observer<Integer>() {
+            @Override
+            public void onChanged(Integer integer) {
+                ski.setProgress(integer);
+            }
+        });
     }
 
     @Override

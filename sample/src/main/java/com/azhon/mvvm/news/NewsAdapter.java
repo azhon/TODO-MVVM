@@ -1,14 +1,19 @@
 package com.azhon.mvvm.news;
 
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
-import androidx.databinding.BindingAdapter;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
-import com.azhon.basic.adapter.BaseDBRVAdapter;
 import com.azhon.mvvm.R;
-import com.azhon.mvvm.BR;
-import com.azhon.mvvm.databinding.ItemNesBinding;
 import com.bumptech.glide.Glide;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 项目名:    TODO-MVVM
@@ -20,20 +25,51 @@ import com.bumptech.glide.Glide;
  * @author 阿钟
  */
 
-public class NewsAdapter extends BaseDBRVAdapter<NewsBean.StoriesBean, ItemNesBinding> {
+public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.VHolder> {
 
-    public NewsAdapter() {
-        super(R.layout.item_nes, BR.bean);
+    private List<NewsBean.StoriesBean> list = new ArrayList<>();
+
+    @NonNull
+    @Override
+    public VHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_nes, parent, false);
+        return new VHolder(view);
     }
 
-    /**
-     * 绑定Adapter的ImageView
-     *
-     * @param imageView
-     * @param url       图片地址
-     */
-    @BindingAdapter({"imageUrl"})
+    @Override
+    public void onBindViewHolder(@NonNull VHolder holder, int position) {
+        holder.text.setText(list.get(position).getTitle());
+        holder.text1.setText(list.get(position).getGa_prefix());
+        loadImage(holder.imageView, list.get(position).getImages().get(0));
+    }
+
+    @Override
+    public int getItemCount() {
+        return list.size();
+    }
+
+    public void setNewData(List<NewsBean.StoriesBean> stories) {
+        list.clear();
+        list.addAll(stories);
+        notifyDataSetChanged();
+
+    }
+
     public static void loadImage(ImageView imageView, String url) {
         Glide.with(imageView.getContext()).load(url).into(imageView);
+    }
+
+
+    public class VHolder extends RecyclerView.ViewHolder {
+        public TextView text;
+        public TextView text1;
+        public ImageView imageView;
+
+        public VHolder(View itemView) {
+            super(itemView);
+            text = itemView.findViewById(R.id.text);
+            text1 = itemView.findViewById(R.id.text1);
+            imageView = itemView.findViewById(R.id.image);
+        }
     }
 }

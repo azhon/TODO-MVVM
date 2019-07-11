@@ -6,11 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.databinding.DataBindingUtil;
-import androidx.databinding.ViewDataBinding;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
@@ -26,9 +23,8 @@ import com.azhon.basic.view.LoadingDialog;
  * @author 阿钟
  */
 
-public abstract class BaseNoModelFragment<DB extends ViewDataBinding> extends Fragment {
+public abstract class BaseNoModelFragment extends Fragment {
 
-    protected DB dataBinding;
     protected Context context;
     protected FragmentActivity activity;
     private LoadingDialog loadingDialog;
@@ -42,15 +38,15 @@ public abstract class BaseNoModelFragment<DB extends ViewDataBinding> extends Fr
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        dataBinding = initDataBinding(inflater, onCreate(), container);
-        return dataBinding.getRoot();
+        View view = inflater.inflate(onCreate(), container, false);
+        initView(view);
+        return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         activity = getActivity();
-        initView();
         initData();
     }
 
@@ -61,16 +57,9 @@ public abstract class BaseNoModelFragment<DB extends ViewDataBinding> extends Fr
 
 
     /**
-     * 初始化DataBinding
-     */
-    protected DB initDataBinding(LayoutInflater inflater, @LayoutRes int layoutId, ViewGroup container) {
-        return DataBindingUtil.inflate(inflater, layoutId, container, false);
-    }
-
-    /**
      * 初始化视图
      */
-    protected abstract void initView();
+    protected abstract void initView(View view);
 
     /**
      * 初始化数据
@@ -94,14 +83,6 @@ public abstract class BaseNoModelFragment<DB extends ViewDataBinding> extends Fr
     protected void dismissDialog() {
         if (loadingDialog != null && loadingDialog.isShowing()) {
             loadingDialog.dismiss();
-        }
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        if (dataBinding != null) {
-            dataBinding.unbind();
         }
     }
 }

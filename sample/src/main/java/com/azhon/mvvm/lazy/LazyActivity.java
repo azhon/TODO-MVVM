@@ -7,7 +7,6 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.azhon.basic.base.BaseNoModelActivity;
 import com.azhon.mvvm.R;
-import com.azhon.mvvm.databinding.ActivityLazyBinding;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -23,7 +22,7 @@ import java.util.List;
  * @author 阿钟
  */
 
-public class LazyActivity extends BaseNoModelActivity<ActivityLazyBinding> {
+public class LazyActivity extends BaseNoModelActivity {
 
     private List<Fragment> list = new ArrayList<>();
     private String[] title = {"Android", "iOS", "人工智能", "代码人生"};
@@ -36,8 +35,8 @@ public class LazyActivity extends BaseNoModelActivity<ActivityLazyBinding> {
     @Override
     protected void initView() {
         setTitle("Fragment懒加载使用示例");
-        ViewPager viewPager = dataBinding.viewPager;
-        TabLayout tabLayout = dataBinding.tabLayout;
+        ViewPager viewPager = findViewById(R.id.view_pager);
+        TabLayout tabLayout = findViewById(R.id.tab_layout);
 
         list.add(LazyFragment.newInstance("5562b419e4b00c57d9b94ae2"));
         list.add(LazyFragment.newInstance("5562b405e4b00c57d9b94a41"));

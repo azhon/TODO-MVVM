@@ -3,16 +3,15 @@ package com.azhon.mvvm.lazy;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.azhon.basic.adapter.OnItemClickListener;
 import com.azhon.basic.base.BaseLazyFragment;
 import com.azhon.mvvm.R;
-import com.azhon.mvvm.databinding.FragmentLazyBinding;
 import com.azhon.mvvm.detail.DetailActivity;
 
 /**
@@ -25,8 +24,7 @@ import com.azhon.mvvm.detail.DetailActivity;
  * @author 阿钟
  */
 
-public class LazyFragment extends BaseLazyFragment<LazyViewModel, FragmentLazyBinding>
-        implements OnItemClickListener<JueJinBean.DBean.EntrylistBean> {
+public class LazyFragment extends BaseLazyFragment<LazyViewModel> implements AndroidAdapter.OnItemClickListener {
 
     private static final String TAG = "LazyFragment";
 
@@ -48,8 +46,8 @@ public class LazyFragment extends BaseLazyFragment<LazyViewModel, FragmentLazyBi
     }
 
     @Override
-    protected void initView() {
-        RecyclerView rvNews = dataBinding.rvList;
+    protected void initView(View view) {
+        RecyclerView rvNews = view.findViewById(R.id.rv_list);
         LinearLayoutManager manager = new LinearLayoutManager(context);
         adapter = new AndroidAdapter();
         adapter.setOnItemListener(this);
@@ -90,11 +88,6 @@ public class LazyFragment extends BaseLazyFragment<LazyViewModel, FragmentLazyBi
         startActivity(new Intent(context, DetailActivity.class)
                 .putExtra("url", bean.getOriginalUrl())
                 .putExtra("title", bean.getTitle()));
-    }
-
-    @Override
-    public boolean onItemLongClick(JueJinBean.DBean.EntrylistBean bean, int position) {
-        return true;
     }
 
     @Override

@@ -1,13 +1,13 @@
 package com.azhon.mvvm.detail;
 
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import com.azhon.basic.base.BaseNoModelFragment;
 import com.azhon.mvvm.R;
-import com.azhon.mvvm.databinding.FragmentDetailBinding;
 
 
 /**
@@ -20,7 +20,9 @@ import com.azhon.mvvm.databinding.FragmentDetailBinding;
  * @author 阿钟
  */
 
-public class DetailFragment extends BaseNoModelFragment<FragmentDetailBinding> {
+public class DetailFragment extends BaseNoModelFragment {
+
+    private WebView webView;
 
     public static DetailFragment newInstance(String url) {
         Bundle args = new Bundle();
@@ -36,8 +38,8 @@ public class DetailFragment extends BaseNoModelFragment<FragmentDetailBinding> {
     }
 
     @Override
-    protected void initView() {
-        WebView webView = dataBinding.webView;
+    protected void initView(View view) {
+        webView = view.findViewById(R.id.web_view);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -50,6 +52,6 @@ public class DetailFragment extends BaseNoModelFragment<FragmentDetailBinding> {
     @Override
     protected void initData() {
         String url = getArguments().getString("url");
-        dataBinding.webView.loadUrl(url);
+        webView.loadUrl(url);
     }
 }

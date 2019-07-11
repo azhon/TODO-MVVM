@@ -1,67 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <data>
-
-        <variable
-            name="model"
-            type="com.azhon.mvvm.MainActivity" />
-    </data>
-
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical"
-        tools:context=".MainActivity">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/introduce"
+        android:textColor="#333333"
+        android:textSize="16sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:text="@string/introduce"
-            android:textColor="#333333"
-            android:textSize="16sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="一定要看代码你才能看出厉害之处"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:gravity="center"
-            android:text="一定要看代码你才能看出厉害之处"
-            android:textColor="@color/colorAccent"
-            android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView使用示例"
+        android:textAllCaps="false" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="@{(thisView)->model.item(thisView,0)}"
-            android:text="RecyclerView使用示例"
-            android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment使用示例"
+        android:textAllCaps="false" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="@{(thisView)->model.item(thisView,1)}"
-            android:text="Fragment使用示例"
-            android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_lazy_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment懒加载使用示例"
+        android:textAllCaps="false" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="@{(thisView)->model.item(thisView,2)}"
-            android:text="Fragment懒加载使用示例"
-            android:textAllCaps="false" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="@{(thisView)->model.item(thisView,3)}"
-            android:text="Activity/Fragment数据联动"
-            android:textAllCaps="false" />
-
-    </LinearLayout>
-</layout>
+    <Button
+        android:id="@+id/btn_linkage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity/Fragment数据联动"
+        android:textAllCaps="false" />
+</LinearLayout>

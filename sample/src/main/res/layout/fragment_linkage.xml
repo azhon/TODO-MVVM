@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
 
-    <data>
-
-        <variable
-            name="model"
-            type="com.azhon.mvvm.linkage.LinkageViewModel" />
-    </data>
-
-    <LinearLayout
+    <SeekBar
+        android:id="@+id/sk_i_i"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp" />
 
-        <SeekBar
-            android:id="@+id/sk_i_i"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:progress="@{model.progress}" />
-
-    </LinearLayout>
-</layout>
+</LinearLayout>

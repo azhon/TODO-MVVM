@@ -1,6 +1,8 @@
 package com.azhon.basic.base;
 
-import androidx.databinding.ViewDataBinding;
+import android.os.Bundle;
+
+import androidx.annotation.Nullable;
 import androidx.lifecycle.Observer;
 
 import com.azhon.basic.bean.DialogBean;
@@ -17,21 +19,17 @@ import com.azhon.basic.lifecycle.BaseViewModel;
  * @author 阿钟
  */
 
-public abstract class BaseActivity<VM extends BaseViewModel, DB extends ViewDataBinding>
-        extends BaseNoModelActivity<DB> {
+public abstract class BaseActivity<VM extends BaseViewModel> extends BaseNoModelActivity {
 
     protected VM viewModel;
 
     @Override
-    protected DB initDataBinding(int layoutId) {
-        DB db = super.initDataBinding(layoutId);
-        /**
-         * 将这两个初始化函数插在{@link BaseActivity#initDataBinding}
-         */
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         viewModel = initViewModel();
         initObserve();
-        return db;
+        super.onCreate(savedInstanceState);
     }
+
 
     /**
      * 初始化ViewModel
