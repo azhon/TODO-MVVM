@@ -83,9 +83,13 @@ public abstract class BaseNoModelFragment<DB extends ViewDataBinding> extends Fr
      * @param msg 提示信息
      */
     protected void showDialog(String msg) {
-        loadingDialog = new LoadingDialog(context);
-        loadingDialog.setLoadingMsg(msg);
-        loadingDialog.show();
+        if (loadingDialog != null && loadingDialog.isShowing()) {
+            loadingDialog.setLoadingMsg(msg);
+        } else {
+            loadingDialog = new LoadingDialog(context);
+            loadingDialog.setLoadingMsg(msg);
+            loadingDialog.show();
+        }
     }
 
     /**
@@ -94,6 +98,7 @@ public abstract class BaseNoModelFragment<DB extends ViewDataBinding> extends Fr
     protected void dismissDialog() {
         if (loadingDialog != null && loadingDialog.isShowing()) {
             loadingDialog.dismiss();
+            loadingDialog = null;
         }
     }
 
