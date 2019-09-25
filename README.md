@@ -34,4 +34,4 @@ MVVM轻量快速开发框架：使用JetPack中的AndroidX + ViewModel + LiveDat
 
 ## QQ交流群
 
-<img src="https://github.com/azhon/TODO-MVVM/blob/master/img/qq_group.png”>
+<img src="https://github.com/azhon/TODO-MVVM/blob/master/img/qq_group.png"/>
