@@ -8,7 +8,7 @@
 
 - [使用步骤](#使用步骤)
 
-- [结语](#结语)
+- [QQ交流群](#QQ交流群)
 
 ### 同时提供了一个没有dataBinding的版本，切换至`no-databinding`分支即可
 
@@ -35,8 +35,6 @@ DataBinding组件，同时使用RxJava2 + Retrofit2 + Glide等主流框架进行
 
 - wait a moment ...
 
-## 结语
+## QQ交流群
 
-- 欢迎各路大佬发起`PR`
-
-- 如果使用中有什么问题，欢迎提`Issues`
+<img src="https://github.com/azhon/TODO-MVVM/blob/master/img/qq_group.png"/>
