@@ -8,7 +8,7 @@
 
 - [使用步骤](#使用步骤)
 
-- [结语](#结语)
+- [QQ交流群](#QQ交流群)
 
 ### 介绍：
 
@@ -32,8 +32,6 @@ MVVM轻量快速开发框架：使用JetPack中的AndroidX + ViewModel + LiveDat
 
 - wait a moment ...
 
-## 结语
+## QQ交流群
 
-- 欢迎各路大佬发起`PR`
-
-- 如果使用中有什么问题，欢迎提`Issues`
+<img src="https://github.com/azhon/TODO-MVVM/blob/master/img/qq_group.png”>
