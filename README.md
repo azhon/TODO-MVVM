@@ -12,19 +12,21 @@
 
 ### 介绍：
 
-MVVM轻量快速开发框架：使用JetPack中的AndroidX + ViewModel + LiveData，同时使用RxJava2 + Retrofit2 + Glide等主流框架进行搭建
+MVVM轻量快速开发框架：使用JetPack中的AndroidX + ViewModel +
+LiveData，同时使用ViewPager2 + RxJava2 + Retrofit2 + 
+Glide等主流框架进行搭建
 
 <img src="https://img-blog.csdnimg.cn/2019040114344440.gif" width="300">
 
 ### Demo下载体验
 
-扫描下方二维码或者直接访问：[TODO-MVVM](https://www.pgyer.com/mvvm)
+点击下载：[TODO-MVVM]()
 
-<img src="https://github.com/azhon/TODO-MVVM/blob/master/img/img_code.png" width="150" height="150">
 
 ### 项目编译
 
- 因为本项目使用的都是较新的东西，所以建议使用`Android Studio 3.5`或更高版本进行编译
+ 因为本项目使用的都是较新的东西，所以建议使用`Android Studio
+ 3.6.1`或更高版本进行编译
 
 ### 使用步骤
 

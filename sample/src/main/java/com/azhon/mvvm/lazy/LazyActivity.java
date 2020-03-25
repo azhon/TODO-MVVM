@@ -1,13 +1,15 @@
 package com.azhon.mvvm.lazy;
 
-import androidx.annotation.Nullable;
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.viewpager.widget.ViewPager;
+import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.azhon.basic.base.BaseNoModelActivity;
 import com.azhon.mvvm.R;
 import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +37,7 @@ public class LazyActivity extends BaseNoModelActivity {
     @Override
     protected void initView() {
         setTitle("Fragment懒加载使用示例");
-        ViewPager viewPager = findViewById(R.id.view_pager);
+        ViewPager2 viewPager = findViewById(R.id.view_pager);
         TabLayout tabLayout = findViewById(R.id.tab_layout);
 
         list.add(LazyFragment.newInstance("5562b419e4b00c57d9b94ae2"));
@@ -50,10 +52,14 @@ public class LazyActivity extends BaseNoModelActivity {
         tabLayout.addTab(tabLayout.newTab().setText(title[2]), 2);
         tabLayout.addTab(tabLayout.newTab().setText(title[3]), 3);
 
-        MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter();
+        MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter(this);
         viewPager.setAdapter(adapter);
-        tabLayout.setupWithViewPager(viewPager);
-        tabLayout.setTabsFromPagerAdapter(adapter);
+        new TabLayoutMediator(tabLayout, viewPager, new TabLayoutMediator.TabConfigurationStrategy() {
+            @Override
+            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
+                tab.setText(title[position]);
+            }
+        }).attach();
 
     }
 
@@ -62,25 +68,20 @@ public class LazyActivity extends BaseNoModelActivity {
 
     }
 
-    private class MyFragmentPagerAdapter extends FragmentPagerAdapter {
-        public MyFragmentPagerAdapter() {
-            super(LazyActivity.this.getSupportFragmentManager());
+    public class MyFragmentPagerAdapter extends FragmentStateAdapter {
+
+        public MyFragmentPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
+            super(fragmentActivity);
         }
 
         @Override
-        public Fragment getItem(int position) {
+        public Fragment createFragment(int position) {
             return list.get(position);
         }
 
         @Override
-        public int getCount() {
+        public int getItemCount() {
             return list.size();
-        }
-
-        @Nullable
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return title[position];
         }
     }
 }

@@ -2,7 +2,6 @@ package com.azhon.mvvm.lazy;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import androidx.lifecycle.Observer;
@@ -78,10 +77,6 @@ public class LazyFragment extends BaseLazyFragment<LazyViewModel> implements And
         viewModel.loadData(category);
     }
 
-    @Override
-    protected void visibleToUser() {
-        Log.e(TAG, "与用户可见 " + category);
-    }
 
     @Override
     public void onItemClick(JueJinBean.DBean.EntrylistBean bean, int position) {
