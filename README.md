@@ -20,7 +20,7 @@ Glide等主流框架进行搭建
 
 ### Demo下载体验
 
-点击下载：[TODO-MVVM]()
+点击下载：[TODO-MVVM](https://github.com/azhon/TODO-MVVM/releases/tag/no-databinding)
 
 
 ### 项目编译
