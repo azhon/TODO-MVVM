@@ -81,11 +81,6 @@ public class LazyFragment extends BaseLazyFragment<LazyViewModel, FragmentLazyBi
     }
 
     @Override
-    protected void visibleToUser() {
-        Log.e(TAG, "与用户可见 " + category);
-    }
-
-    @Override
     public void onItemClick(JueJinBean.DBean.EntrylistBean bean, int position) {
         startActivity(new Intent(context, DetailActivity.class)
                 .putExtra("url", bean.getOriginalUrl())
