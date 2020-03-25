@@ -22,7 +22,7 @@ Glide等主流框架进行搭建
 
 ### Demo下载体验
 
-点击下载：[TODO-MVVM](https://github.com/azhon/TODO-MVVM/releases/download/mvvm.apk)
+点击下载：[TODO-MVVM](https://github.com/azhon/TODO-MVVM/releases/tag/databinding)
 
 
 ### 项目编译
