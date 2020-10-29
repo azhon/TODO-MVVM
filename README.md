@@ -36,6 +36,6 @@ Glide等主流框架进行搭建
 
 - wait a moment ...
 
-## QQ交流群
+## QQ交流群（828385813）
 
 <img src="https://github.com/azhon/TODO-MVVM/blob/master/img/qq_group.png"/>
