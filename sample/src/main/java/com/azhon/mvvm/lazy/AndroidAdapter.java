@@ -24,7 +24,7 @@ import java.util.List;
  */
 public class AndroidAdapter extends RecyclerView.Adapter<AndroidAdapter.VHolder> {
 
-    private List<JueJinBean.DBean.EntrylistBean> list = new ArrayList<>();
+    private List<JueJinBean.DataBean> list = new ArrayList<>();
     private OnItemClickListener listener;
 
     @NonNull
@@ -36,8 +36,8 @@ public class AndroidAdapter extends RecyclerView.Adapter<AndroidAdapter.VHolder>
 
     @Override
     public void onBindViewHolder(@NonNull VHolder holder, final int position) {
-        holder.title.setText(list.get(position).getTitle());
-        holder.content.setText(list.get(position).getContent());
+        holder.title.setText(list.get(position).getArticle_info().getTitle());
+        holder.content.setText(list.get(position).getArticle_info().getBrief_content());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +53,7 @@ public class AndroidAdapter extends RecyclerView.Adapter<AndroidAdapter.VHolder>
         return list.size();
     }
 
-    public void setNewData(List<JueJinBean.DBean.EntrylistBean> stories) {
+    public void setNewData(List<JueJinBean.DataBean> stories) {
         list.clear();
         list.addAll(stories);
         notifyDataSetChanged();
@@ -77,6 +77,6 @@ public class AndroidAdapter extends RecyclerView.Adapter<AndroidAdapter.VHolder>
     }
 
     public interface OnItemClickListener {
-        void onItemClick(JueJinBean.DBean.EntrylistBean bean, int position);
+        void onItemClick(JueJinBean.DataBean bean, int position);
     }
 }

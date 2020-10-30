@@ -67,7 +67,7 @@ public class LazyFragment extends BaseLazyFragment<LazyViewModel> implements And
         viewModel.getJueJin().observe(this, new Observer<JueJinBean>() {
             @Override
             public void onChanged(JueJinBean bean) {
-                adapter.setNewData(bean.getD().getEntrylist());
+                adapter.setNewData(bean.getData());
             }
         });
     }
@@ -79,10 +79,10 @@ public class LazyFragment extends BaseLazyFragment<LazyViewModel> implements And
 
 
     @Override
-    public void onItemClick(JueJinBean.DBean.EntrylistBean bean, int position) {
+    public void onItemClick(JueJinBean.DataBean bean, int position) {
         startActivity(new Intent(context, DetailActivity.class)
-                .putExtra("url", bean.getOriginalUrl())
-                .putExtra("title", bean.getTitle()));
+                .putExtra("url", "https://juejin.im/post/" + bean.getArticle_id())
+                .putExtra("title", bean.getArticle_info().getTitle()));
     }
 
     @Override

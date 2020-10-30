@@ -40,10 +40,10 @@ public class LazyActivity extends BaseNoModelActivity {
         ViewPager2 viewPager = findViewById(R.id.view_pager);
         TabLayout tabLayout = findViewById(R.id.tab_layout);
 
-        list.add(LazyFragment.newInstance("5562b419e4b00c57d9b94ae2"));
-        list.add(LazyFragment.newInstance("5562b405e4b00c57d9b94a41"));
-        list.add(LazyFragment.newInstance("57be7c18128fe1005fa902de"));
-        list.add(LazyFragment.newInstance("5c9c7cca1b117f3c60fee548"));
+        list.add(LazyFragment.newInstance("6809635626879549454"));
+        list.add(LazyFragment.newInstance("6809635626661445640"));
+        list.add(LazyFragment.newInstance("6809637773935378440"));
+        list.add(LazyFragment.newInstance("6809637776263217160"));
 
         //保存fragment的状态
         viewPager.setOffscreenPageLimit(list.size());
