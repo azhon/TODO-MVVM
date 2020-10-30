@@ -15,7 +15,7 @@ import com.azhon.mvvm.databinding.ItemJueJinBinding;
  * @author 阿钟
  */
 
-public class AndroidAdapter extends BaseDBRVAdapter<JueJinBean.DBean.EntrylistBean, ItemJueJinBinding> {
+public class AndroidAdapter extends BaseDBRVAdapter<JueJinBean.DataBean, ItemJueJinBinding> {
 
     public AndroidAdapter() {
         super(R.layout.item_jue_jin, BR.bean);

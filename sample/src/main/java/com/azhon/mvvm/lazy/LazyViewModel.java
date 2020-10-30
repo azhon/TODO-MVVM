@@ -5,10 +5,14 @@ import androidx.lifecycle.MutableLiveData;
 import com.azhon.basic.lifecycle.BaseViewModel;
 import com.azhon.mvvm.api.Api;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
+import okhttp3.RequestBody;
 
 
 /**
@@ -27,8 +31,17 @@ public class LazyViewModel extends BaseViewModel {
 
     public void loadData(String category) {
         showDialog.setValue(true, "懒加载中...");
+        JSONObject obj = new JSONObject();
+        try {
+            obj.put("sort_type", 200);
+            obj.put("cate_id", category);
+            obj.put("limit", 20);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        RequestBody body = RequestBody.create(okhttp3.MediaType.parse("application/json; charset=utf-8"), obj.toString());
         Disposable disposable = Api.getJueJinInstance()
-                .jueJin(category, "20", "android")
+                .jueJin(body)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<JueJinBean>() {

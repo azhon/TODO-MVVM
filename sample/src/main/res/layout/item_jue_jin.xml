@@ -6,7 +6,7 @@
 
         <variable
             name="bean"
-            type="com.azhon.mvvm.lazy.JueJinBean.DBean.EntrylistBean" />
+            type="com.azhon.mvvm.lazy.JueJinBean.DataBean" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -30,7 +30,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text='@{bean.title,default="说说我为什么看好Spring Cloud Alibaba"}'
+                android:text='@{bean.article_info.title,default="说说我为什么看好Spring Cloud Alibaba"}'
                 android:textColor="#333333"
                 android:textSize="16sp" />
 
@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="4"
-                android:text='@{bean.content,default="最近对《Spring Cloud Alibaba基础教程》系列的催更比较多，说一下最近的近况：因为打算Spring Boot 2.x一起更新。所以一直在改博客Spring Boot专题页和Git仓库的组织。由于前端技术太过蹩脚，花了不少时间。大家不用担心，这个系列不会太监，因为…"}'
+                android:text='@{bean.article_info.brief_content,default="最近对《Spring Cloud Alibaba基础教程》系列的催更比较多，说一下最近的近况：因为打算Spring Boot 2.x一起更新。所以一直在改博客Spring Boot专题页和Git仓库的组织。由于前端技术太过蹩脚，花了不少时间。大家不用担心，这个系列不会太监，因为…"}'
                 android:textSize="14sp" />
 
         </LinearLayout>

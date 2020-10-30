@@ -15,325 +15,254 @@ import java.util.List;
 public class JueJinBean {
 
     /**
-     * s : 1
-     * m : ok
-     * d : {"total":10,"entrylist":[{"collectionCount":5,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.5538270211392E9,"checkStatus":true,"objectId":"5c9d78a96fb9a070d0141255","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553826996,"ngxCached":true,"title":"后端","id":"5597a063e4b08a686ce57030"},{"ngxCachedTime":1553826980,"ngxCached":true,"title":"Java","id":"559a7207e4b08a686d25703e"}],"updatedAt":"2019-03-29T02:37:01.137Z","rankIndex":94.268749986838,"hot":false,"autoPass":true,"originalUrl":"https://juejin.im/post/5c9d78715188251e3e3c8a7f","verifyCreatedAt":"2019-03-29T01:45:13.966Z","createdAt":"2019-03-29T01:45:13.966Z","user":{"community":{"github":{"username":"dyc87112","avatarLarge":"https://avatars0.githubusercontent.com/u/3391170?v=4","uid":"3391170"}},"collectedEntriesCount":23,"company":"关注我，每日技术干货推送，每月福利免费领取！","followersCount":2786,"followeesCount":6,"role":"editor","postedPostsCount":41,"isAuthor":false,"postedEntriesCount":40,"totalCommentsCount":47,"ngxCachedTime":1553827021,"ngxCached":true,"viewedEntriesCount":120,"jobTitle":"","subscribedTagsCount":29,"totalCollectionsCount":781,"username":"程序猿DD_","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/21/1699f0e5d13e9789?w=568&h=568&f=jpeg&s=33909","objectId":"58e10d35570c350057a277bc"},"author":"","screenshot":"","original":true,"hotIndex":422.0601,"content":"最近对《Spring Cloud Alibaba基础教程》系列的催更比较多，说一下最近的近况：因为打算Spring Boot 2.x一起更新。所以一直在改博客Spring Boot专题页和Git仓库的组织。由于前端技术太过蹩脚，花了不少时间。大家不用担心，这个系列不会太监，因为\u2026","title":"说说我为什么看好Spring Cloud Alibaba","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":370,"summaryInfo":"最近对《Spring Cloud Alibaba基础教程》系列的催更比较多，说一下最近的近况：因为打算Spring Boot 2.x一起更新。所以一直在改博客Spring Boot专题页和Git仓库的组织。由于前端技术太过蹩脚，花了不少时间。大家不用担心，这个系列不会太监，因为我真心看好这个套件的...","isCollected":false},{"collectionCount":11,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.5538270171562E9,"checkStatus":true,"objectId":"5c9d57435188252d5c745326","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553827000,"ngxCached":true,"title":"Go","id":"555e9a80e4b00c57d9955de2"}],"updatedAt":"2019-03-29T02:36:57.155Z","rankIndex":28.460316899721,"hot":false,"autoPass":true,"originalUrl":"https://juejin.im/post/5c9d5631f265da60d82dde9c","verifyCreatedAt":"2019-03-28T23:22:43.559Z","createdAt":"2019-03-28T23:22:43.559Z","user":{"community":null,"collectedEntriesCount":88,"company":"公众号：Golang来啦","followersCount":191,"followeesCount":20,"role":"editor","postedPostsCount":19,"isAuthor":false,"postedEntriesCount":7,"totalCommentsCount":14,"ngxCachedTime":1553826950,"ngxCached":true,"viewedEntriesCount":1289,"jobTitle":"","subscribedTagsCount":67,"totalCollectionsCount":334,"username":"Seekload","avatarLarge":"https://user-gold-cdn.xitu.io/2018/11/20/1673082d8c30d80d?w=225&h=225&f=png&s=4504","objectId":"573730741532bc006548416a"},"author":"","screenshot":"https://user-gold-cdn.xitu.io/2019/3/29/169c69c932711a62?w=1000&h=666&f=jpeg&s=65444","original":true,"hotIndex":460.0793,"content":"在一些面向对象的编程语言中，例如 Java、PHP 等，接口定义了对象的行为，只指定了对象应该做什么。行为的具体实现取决于对象。 在 Go 语言中，接口是一组方法的集合，但不包含方法的实现、是抽象的，接口中也不能包含变量。当一个类型 T 提供了接口中所有方法的定义时，就说 T \u2026","title":"Go 语言接口详解（一）","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":348,"summaryInfo":"在一些面向对象的编程语言中，例如 Java、PHP 等，接口定义了对象的行为，只指定了对象应该做什么。行为的具体实现取决于对象。 在 Go 语言中，接口是一组方法的集合，但不包含方法的实现、是抽象的，接口中也不能包含变量。当一个类型 T 提供了接口中所有方法的定义时，就说 T 实现了接口。接口指定...","isCollected":false},{"collectionCount":3,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.5538270351365E9,"checkStatus":true,"objectId":"5c9cdde46fb9a070fc62516f","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553826952,"ngxCached":true,"title":"Spring","id":"5847c9a5ac502e006ce63fa1"}],"updatedAt":"2019-03-29T02:37:15.135Z","rankIndex":1.2119021773034,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c9cdcf06fb9a070cb24c4d1","verifyCreatedAt":"2019-03-28T14:58:10.827Z","createdAt":"2019-03-28T14:58:10.827Z","user":{"community":{"weibo":{"selfDescription":"实施搬过砖，银行打过杂，倒闭卖公司，投机又倒把。","uid":"1144349627","blogAddress":"http://weibo.com/akirapanda","username":"废柴大叔阿基拉","avatarLarge":"http://tva4.sinaimg.cn/crop.0.0.180.180.180/443563bbjw1e8qgp5bmzyj2050050aa8.jpg"}},"collectedEntriesCount":2,"company":"","followersCount":28,"followeesCount":32,"role":"guest","postedPostsCount":5,"isAuthor":false,"postedEntriesCount":0,"totalCommentsCount":5,"ngxCachedTime":1553827042,"ngxCached":true,"viewedEntriesCount":62,"jobTitle":"咨询工程师","subscribedTagsCount":2,"totalCollectionsCount":23,"username":"废柴大叔阿基拉","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/25/169b46cc8fe5df08?w=454&h=454&f=jpeg&s=19650","objectId":"5c98aef96fb9a071105de2f6"},"author":"","screenshot":"","original":true,"hotIndex":125.0634,"content":"我们在某一期其实已经对Authentication身份验证中的主要组件进行过介绍，并且通过几期的分享让大家大致了解了Web应用大致利用核心进行身份验证的流程和相关的扩展点。 这一期我们用一期的篇章把关注点放在Authentication身份验证核心最主要的几个服务Authent\u2026","title":"Spring Security小教程 Vol 5.核心组件AuthenticationManager专题","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":93,"summaryInfo":"我们在某一期其实已经对身份验证中的主要组件进行过介绍，并且通过几期的分享让大家大致了解了Web应用大致利用核心进行身份验证的流程和相关的扩展点。这一期我们用一期的篇章把关注点放在身份验证核心最主要的几个服务、和，三个顶层接口进行展开。通过Spring Security对这些接口服务的实现进行说明讲...","isCollected":false},{"collectionCount":17,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.553826871352E9,"checkStatus":true,"objectId":"5c9cd4546fb9a071071947bf","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553826980,"ngxCached":true,"title":"Java","id":"559a7207e4b08a686d25703e"}],"updatedAt":"2019-03-29T02:34:31.350Z","rankIndex":5.027724705766,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c9cb91d5188251cea0abbd7","verifyCreatedAt":"2019-03-28T14:57:56.273Z","createdAt":"2019-03-28T14:57:56.273Z","user":{"community":null,"collectedEntriesCount":13,"company":"","followersCount":10,"followeesCount":8,"role":"guest","postedPostsCount":7,"isAuthor":false,"postedEntriesCount":0,"totalCommentsCount":0,"ngxCachedTime":1553826993,"ngxCached":true,"viewedEntriesCount":38,"jobTitle":"java开发","subscribedTagsCount":7,"totalCollectionsCount":20,"username":"进击的java程序员k","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/26/169b90e6c3967879?w=500&h=375&f=jpeg&s=12988","objectId":"5ba0b3b36fb9a05cd53af3dd"},"author":"","screenshot":"","original":true,"hotIndex":516.2824,"content":"事务是MySQL等关系型数据库区别于NoSQL的重要方面，是保证数据一致性的重要手段。 MySQL博大精深，文章疏漏之处在所难免，欢迎批评指正。 事务（Transaction）是访问和更新数据库的程序执行单元；事务中可能包含一个或多个sql语句，这些语句要么都执行，要么都不执行\u2026","title":"深入学习MySQL事务：ACID特性的实现原理","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":344,"summaryInfo":"事务是MYSQL等关系型数据库区别于NOSQL的重要方面，是保证数据一致性的重要手段。 MYSQL博大精深，文章疏漏之处在所难免，欢迎批评指正。 事务（Transaction）是访问和更新数据库的程序执行单元；事务中可能包含一个或多个sql语句，这些语句要么都执行，要么都不执行。作为一个关系型数据...","isCollected":false},{"collectionCount":5,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.5538270353283E9,"checkStatus":true,"objectId":"5c9cdd2ce51d452a7b65ffe2","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553827000,"ngxCached":true,"title":"Go","id":"555e9a80e4b00c57d9955de2"}],"updatedAt":"2019-03-29T02:37:15.324Z","rankIndex":1.7590624215548,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c9cc6376fb9a0710b727cbd","verifyCreatedAt":"2019-03-28T14:57:45.878Z","createdAt":"2019-03-28T14:57:45.878Z","user":{"community":null,"collectedEntriesCount":23,"company":"","followersCount":45,"followeesCount":7,"role":"guest","postedPostsCount":24,"isAuthor":false,"postedEntriesCount":0,"totalCommentsCount":2,"ngxCachedTime":1553826988,"ngxCached":true,"viewedEntriesCount":516,"jobTitle":"后端开发","subscribedTagsCount":5,"totalCollectionsCount":82,"username":"张君鸿","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/24/169ad882a94e4781?w=819&h=819&f=jpeg&s=199492","objectId":"5c6665476fb9a049a81fd8e9"},"author":"","screenshot":"","original":true,"hotIndex":181.2487,"content":"应该说，无论使用哪一种编程语言开发应用程序，并发编程都是复杂的，而Go语言内置的并发支持，则让Go并发编程变得很简单。 CSP，即顺序通信进程，是Go语言中原生支持的并发模型，一般使用goroutine和channel来实现，CSP的编程思想是\u201c通过通信共享内存，而不是通过共享\u2026","title":"Golang并发之共享内存变量","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":129,"summaryInfo":"应该说，无论使用哪一种编程语言开发应用程序，并发编程都是复杂的，而Go语言内置的并发支持，则让Go并发编程变得很简单。 CSP，即顺序通信进程，是Go语言中原生支持的并发模型，一般使用goroutine和channel来实现，CSP的编程思想是\u201c通过通信共享内存，而不是通过共享内存来通信\u201d，因此使...","isCollected":false},{"collectionCount":4,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.553826714347E9,"checkStatus":true,"objectId":"5c9af354f265da60ce37b522","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553826985,"ngxCached":true,"title":"MyBatis","id":"584803e2128fe10058bede72"}],"updatedAt":"2019-03-29T02:31:54.345Z","rankIndex":1.5374390078432,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c98409fe51d4577506bb2ae","verifyCreatedAt":"2019-03-28T12:41:43.845Z","createdAt":"2019-03-28T12:41:43.845Z","user":{"community":null,"collectedEntriesCount":21,"company":"","followersCount":58,"followeesCount":21,"role":"guest","postedPostsCount":15,"isAuthor":false,"postedEntriesCount":0,"totalCommentsCount":2,"ngxCachedTime":1553827022,"ngxCached":true,"viewedEntriesCount":493,"jobTitle":"JAVA","subscribedTagsCount":4,"totalCollectionsCount":41,"username":"失控的阿甘","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/19/16994fb4b3ba028f?w=121&h=121&f=jpeg&s=11989","objectId":"5b3b4ce0e51d4519721b55a9"},"author":"","screenshot":"https://user-gold-cdn.xitu.io/2019/3/25/169b2bd958770fc3?w=703&h=301&f=png&s=15564","original":true,"hotIndex":211.2794,"content":"org.apache.ibatis.reflection.property.ObjectWrapper对象包装器接口，基于 MetaClass工具类，定义对指定对象的各种操作。类图和代码如下： org.apache.ibatis.reflection.wrapper.BaseW\u2026","title":"Mybatis技术内幕（2.3.6）：反射模块-Wrapper","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":169,"summaryInfo":"2.0 OBJECTWRAPPER 对象包装器接口 对象包装器接口，基于 MetaClass工具类，定义对指定对象的各种操作。类图和代码如下： 2.1 BASEWRAPPER 基础包装器 抽象类，实现ObjectWrapper接口，为子类BeanWrapper和MapWrapper提供公共的方法和...","isCollected":false},{"collectionCount":7,"isEvent":false,"commentsCount":3,"gfw":false,"buildTime":1.5538269895353E9,"checkStatus":true,"objectId":"5c9b1ecd518825529a0c78dd","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553827057,"ngxCached":true,"title":"Spring Boot","id":"58c8ac9244d90400682037f1"}],"updatedAt":"2019-03-29T02:36:29.534Z","rankIndex":2.6158260818856,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c9b1c6be51d456303722fd2","verifyCreatedAt":"2019-03-28T12:40:19.364Z","createdAt":"2019-03-28T12:40:19.364Z","user":{"community":{"wechat":{"avatarLarge":"http://thirdwx.qlogo.cn/mmopen/vi_32/c3VrdibDx1TjxcY4wQT33qYoralsuRcibDZXCmLe4U0rHhbWR1GfHIzBxEU1icMFktCic9rvwxcib15PEKwiaYNfQyTA/132"}},"collectedEntriesCount":46,"company":"Foresee","followersCount":4,"followeesCount":30,"role":"guest","postedPostsCount":2,"isAuthor":false,"postedEntriesCount":0,"totalCommentsCount":5,"ngxCachedTime":1553826989,"ngxCached":true,"viewedEntriesCount":866,"jobTitle":"Java 工程师","subscribedTagsCount":5,"totalCollectionsCount":16,"username":"eddy_zy","avatarLarge":"https://user-gold-cdn.xitu.io/2018/12/13/167a5eb000c951e7?w=1440&h=1080&f=jpeg&s=740363","objectId":"582992060ce46300560c3edd"},"author":"","screenshot":"https://user-gold-cdn.xitu.io/2019/3/27/169bdf0b012d97e5?w=1920&h=1080&f=jpeg&s=107107","original":true,"hotIndex":359.4601,"content":"Liquibase 是一个用于跟踪、管理和应用数据库变化的开源的数据库重构工具。它将所有数据库的变化（包括结构和数据）都保存在 changelog文件中，便于版本控制，它的目标是提供一种数据库类型无关的解决方案，通过执行 schema 类型的文件来达到迁移。 支持多种运行方式，\u2026","title":"Spring Boot 简单集成 Liquibase","lastCommentTime":"2019-03-29T09:45:14.978Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":272,"summaryInfo":"是一个用于跟踪、管理和应用数据库变化的开源的数据库重构工具。它将所有数据库的变化（包括结构和数据）都保存在 文件中，便于版本控制，它的目标是提供一种数据库类型无关的解决方案，通过执行 schema 类型的文件来达到迁移。 更多详情介绍，请查阅 Liquibase 官方文档 因为 Spring Bo...","isCollected":false},{"collectionCount":23,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.5538270145034E9,"checkStatus":true,"objectId":"5c9ca04ae51d4512330cb166","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553827053,"ngxCached":true,"title":"面试","id":"55979fe6e4b08a686ce562fe"}],"updatedAt":"2019-03-29T02:36:54.502Z","rankIndex":7.4999818925667,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c9c9f2ae51d457d644af1e6","verifyCreatedAt":"2019-03-28T12:36:25.595Z","createdAt":"2019-03-28T12:36:25.595Z","user":{"community":null,"collectedEntriesCount":38,"company":"","followersCount":13,"followeesCount":14,"role":"guest","postedPostsCount":8,"isAuthor":false,"postedEntriesCount":0,"totalCommentsCount":0,"ngxCachedTime":1553827014,"ngxCached":true,"viewedEntriesCount":946,"jobTitle":"Java开发工程师","subscribedTagsCount":18,"totalCollectionsCount":26,"username":"码上实战","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/5/1694e2092cac380e?w=400&h=400&f=png&s=5269","objectId":"5848fc202f301e005715ee96"},"author":"","screenshot":"","original":true,"hotIndex":1037.4276,"content":"字符串广泛应用 在Java 编程中，在 Java 中字符串属于对象，Java 提供了 String 类来创建和操作字符串。 效率：1.在早期的JVM实现版本中，被final修饰的方法会被转为内嵌调用以提升执行效率。而从Java SE5/6开始，就渐渐摈弃这种方式了。因此在现在的\u2026","title":"面试别再问我String了","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":805,"summaryInfo":"字符串广泛应用 在Java 编程中，在 Java 中字符串属于对象，Java 提供了 String 类来创建和操作字符串。 为了不浪费你的时间，请看下面的题目，若你一目了然，可以跳过本文了。 从上面的题中你会知道，String的创建方式有两种： 要理解String，那么要了解JVM内存中的栈(st...","isCollected":false},{"collectionCount":14,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.5538270360571E9,"checkStatus":true,"objectId":"5c9ca1cf5188251d7d026634","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553827065,"ngxCached":true,"title":"Redis","id":"555e9ab1e4b00c57d99560b5"}],"updatedAt":"2019-03-29T02:37:16.056Z","rankIndex":2.9094778714369,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c9ca08f5188252d5a14a31b","verifyCreatedAt":"2019-03-28T12:35:52.933Z","createdAt":"2019-03-28T12:35:52.933Z","user":{"community":null,"collectedEntriesCount":0,"company":"","followersCount":8,"followeesCount":6,"role":"guest","postedPostsCount":4,"isAuthor":false,"postedEntriesCount":0,"totalCommentsCount":0,"ngxCachedTime":1553827036,"ngxCached":true,"viewedEntriesCount":24,"jobTitle":"Java","subscribedTagsCount":1,"totalCollectionsCount":16,"username":"一角钱","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/14/1697cad68dc112ce?w=864&h=868&f=png&s=894732","objectId":"5c10d441e51d4518bd1ab37f"},"author":"","screenshot":"","original":true,"hotIndex":402.9847,"content":"我在路径/home下创建一个文件夹redis-cluster,在路径/home/redis-cluster下创建一个文件redis-cluster.tmpl，并把以下内容复制过去。（注：路径可自定义，我用的是/home/redis-cluster） 至此，集群已经创建好了。","title":"Docker Redis 5.0 集群（cluster）搭建","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":260,"summaryInfo":"在DOCKER库获取REDIS镜像（截至2019-03-27，最新版为5.0.4） 至此，docker上redis cluster所有工具准备完毕，我们在命令行上输入docker images，就可以查看到已经安装的镜像 #####（1）创建redis配置文件（redis-cluster.tmpl...","isCollected":false},{"collectionCount":37,"isEvent":false,"commentsCount":8,"gfw":false,"buildTime":1.5538270220079E9,"checkStatus":true,"objectId":"5c9c8d14f265da60f30d5d17","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553827000,"ngxCached":true,"title":"Go","id":"555e9a80e4b00c57d9955de2"}],"updatedAt":"2019-03-29T02:37:02.006Z","rankIndex":7.2350839560987,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c9c8c4fe51d450bc9547ba1","verifyCreatedAt":"2019-03-28T09:48:05.356Z","createdAt":"2019-03-28T09:48:05.356Z","user":{"community":null,"collectedEntriesCount":4,"company":"","followersCount":26,"followeesCount":35,"role":"guest","postedPostsCount":4,"isAuthor":false,"postedEntriesCount":3,"totalCommentsCount":10,"ngxCachedTime":1553826979,"ngxCached":true,"viewedEntriesCount":6,"jobTitle":"","subscribedTagsCount":14,"totalCollectionsCount":67,"username":"ZetaChow晓代码","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/28/169c3886ae94e0c2?w=510&h=510&f=png&s=122629","objectId":"5c21d984e51d4522ec5a00a6"},"author":"","screenshot":"","original":true,"hotIndex":1348.9356,"content":"Go 1.11和1.12实现了对包管理的初步支持，Go的新依赖管理系统使依赖版本信息明确且易于管理。 作为Go语言的推广者，常常被问到各种关于Go语言的基础特性问题。 其中，关于包管理方面的问题会让我非常尴尬，因为Go的包管理在1.11之前与Python、Node、Java比较\u2026","title":"拜拜了，GOPATH君！新版本Golang的包管理入门教程","lastCommentTime":"2019-03-29T00:05:18.099Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":936,"summaryInfo":"Go 1.11和1.12实现了对包管理的初步支持，Go的新依赖管理系统使依赖版本信息明确且易于管理。Using Go Modules - The Go Blog 作为Go语言的推广者，常常被问到各种关于Go语言的基础特性问题。其中，关于包管理方面的问题会让我非常尴尬，因为Go的包管理在1.11之前...","isCollected":false}]}
+     * err_no : 0
+     * err_msg : success
+     * data : [{"article_id":"6888679855659941895","article_info":{"article_id":"6888679855659941895","user_id":"2400989127382599","category_id":"6809635626661445640","tag_ids":[6809641090145058824],"visible_level":0,"link_url":"","cover_image":"https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/553cc013ac7b414ebe3c74b680485552~tplv-k3u1fbpfcp-watermark.image","is_gfw":0,"title":"Flutter开发和iOS开发的区别(优缺点)","brief_content":"","is_english":0,"is_original":1,"user_index":0,"original_type":0,"original_author":"","content":"","ctime":"1603896091","mtime":"1603897730","rtime":"1603897730","draft_id":"6888655091377963015","view_count":1305,"collect_count":0,"digg_count":9,"comment_count":21,"hot_index":93,"is_hot":0,"rank_index":0.43573363,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"2400989127382599","user_name":"jun_19","company":"","job_title":"移动端开发工程师","avatar_large":"https://sf6-ttcdn-tos.pstatp.com/img/user-avatar/71d34188d78942e81c8dd17310238bd5~120x256.image","level":1,"description":"Flutter开发  \niOS开发","followee_count":59,"follower_count":4,"post_article_count":1,"digg_article_count":1,"got_digg_count":9,"got_view_count":1305,"post_shortmsg_count":0,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":0,"power":20,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2547019,"tag_id":"6809641090145058824","tag_name":"Flutter","color":"","icon":"https://user-gold-cdn.xitu.io/1519790365175e2d3ba2174d5c8f3fdc4687a8bbf5768.jpg","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":6551,"concern_user_count":36261}],"user_interact":{"id":6888679855659941895,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6888915111336443918","article_info":{"article_id":"6888915111336443918","user_id":"1899557248829438","category_id":"6809635626661445640","tag_ids":[6809640399544516616],"visible_level":0,"link_url":"","cover_image":"","is_gfw":0,"title":"iOS开发之CryptoKit","brief_content":"","is_english":0,"is_original":1,"user_index":5.491718895020592,"original_type":0,"original_author":"","content":"","ctime":"1603950608","mtime":"1603960067","rtime":"1603960067","draft_id":"6888914748226666509","view_count":455,"collect_count":0,"digg_count":2,"comment_count":2,"hot_index":26,"is_hot":0,"rank_index":0.39905016,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"1899557248829438","user_name":"iOS一叶","company":"","job_title":"","avatar_large":"https://sf6-ttcdn-tos.pstatp.com/img/user-avatar/81a9705e3c80ee741c9c35a57c3f07f3~120x256.image","level":2,"description":"","followee_count":1,"follower_count":132,"post_article_count":53,"digg_article_count":102,"got_digg_count":272,"got_view_count":21602,"post_shortmsg_count":5,"digg_shortmsg_count":21,"isfollowed":false,"favorable_author":0,"power":492,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546520,"tag_id":"6809640399544516616","tag_name":"iOS","color":"#616161","icon":"https://user-gold-cdn.xitu.io/155962881259379c25251a455680e3249366e3a3ac373.jpg","back_ground":"","show_navi":1,"tag_alias":"","post_article_count":19954,"concern_user_count":172455}],"user_interact":{"id":6888915111336443918,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6887759096506744840","article_info":{"article_id":"6887759096506744840","user_id":"4265760847567016","category_id":"6809635626661445640","tag_ids":[6809640463633481741,6809640410084802573],"visible_level":0,"link_url":"","cover_image":"https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7462064adbc040ebbcd13d091e23147b~tplv-k3u1fbpfcp-watermark.image","is_gfw":0,"title":"网易云音乐 iOS 14 小组件实战手册","brief_content":"苹果在今年的 WWDC20 上发布了小组件（WidgetKit），支持在 iOS、iPadOS 主屏幕展示动态信息和个性化内容。加上 iOS 系统应用抽屉的加入，苹果对一向保守主屏幕大动干戈，导致用户也对小组件非常期待。但小组件的运行限制很多，如何在有限的机制上怎样做好用户体验\u2026","is_english":0,"is_original":1,"user_index":13.67893509799727,"original_type":0,"original_author":"","content":"","ctime":"1603681460","mtime":"1603693780","rtime":"1603693780","draft_id":"6887758666271834125","view_count":3225,"collect_count":0,"digg_count":66,"comment_count":10,"hot_index":235,"is_hot":0,"rank_index":0.28013242,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"4265760847567016","user_name":"网易云音乐大前端团队","company":"网易云音乐","job_title":"","avatar_large":"https://user-gold-cdn.xitu.io/2019/5/15/16ab9a1cccad1ef3?w=256&h=256&f=png&s=14726","level":5,"description":"","followee_count":0,"follower_count":10870,"post_article_count":45,"digg_article_count":30,"got_digg_count":7733,"got_view_count":288735,"post_shortmsg_count":9,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":1,"power":11460,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546567,"tag_id":"6809640463633481741","tag_name":"Swift","color":"#F44C29","icon":"https://lc-gold-cdn.xitu.io/eb7ab66be4c2898b5aa9.png","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":4721,"concern_user_count":65726},{"id":2546528,"tag_id":"6809640410084802573","tag_name":"Objective-C","color":"#616161","icon":"https://lc-gold-cdn.xitu.io/71d968ea2fde62410b19.png","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":2073,"concern_user_count":56148}],"user_interact":{"id":6887759096506744840,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6887741815529832456","article_info":{"article_id":"6887741815529832456","user_id":"1838039172387262","category_id":"6809635626661445640","tag_ids":[6809640399544516616,6809641167680962568],"visible_level":0,"link_url":"","cover_image":"https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e8e3c15c56b74fa1813915348526c3b0~tplv-k3u1fbpfcp-watermark.image","is_gfw":0,"title":"抖音品质建设 - iOS启动优化《原理篇》","brief_content":"启动是 App 给用户的第一印象，启动越慢用户流失的概率就越高，良好的启动速度是用户体验不可缺少的一环。启动优化涉及到的知识点非常多面也很广，一篇文章难以包含全部，所以拆分成两部分：原理和实践。 本文从基础知识出发，先回顾一些核心概念，为后续章节做铺垫；接下来介绍 IPA 构建\u2026","is_english":0,"is_original":1,"user_index":0,"original_type":0,"original_author":"","content":"","ctime":"1603677535","mtime":"1603679750","rtime":"1603679750","draft_id":"6887737050125041671","view_count":2354,"collect_count":0,"digg_count":60,"comment_count":0,"hot_index":177,"is_hot":0,"rank_index":0.18740256,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"1838039172387262","user_name":"字节跳动技术团队","company":"字节跳动","job_title":"","avatar_large":"https://user-gold-cdn.xitu.io/2018/7/16/164a1386a8b82dbd?w=720&h=720&f=png&s=41993","level":4,"description":"字节跳动的技术实践分享","followee_count":1,"follower_count":12782,"post_article_count":64,"digg_article_count":0,"got_digg_count":2776,"got_view_count":222843,"post_shortmsg_count":10,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":1,"power":5021,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546520,"tag_id":"6809640399544516616","tag_name":"iOS","color":"#616161","icon":"https://user-gold-cdn.xitu.io/155962881259379c25251a455680e3249366e3a3ac373.jpg","back_ground":"","show_navi":1,"tag_alias":"","post_article_count":19954,"concern_user_count":172455},{"id":2547076,"tag_id":"6809641167680962568","tag_name":"性能优化","color":"","icon":"https://user-gold-cdn.xitu.io/1552374613638f172b668f237482fee67f11b7ac8c181.jpg","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":1396,"concern_user_count":5577}],"user_interact":{"id":6887741815529832456,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6888611938004271118","article_info":{"article_id":"6888611938004271118","user_id":"2981531265280125","category_id":"6809635626661445640","tag_ids":[6809640410084802573],"visible_level":0,"link_url":"","cover_image":"","is_gfw":0,"title":"APP启动速度的优化---原理篇","brief_content":"本文是APP优化篇中的第一篇文章，因为写优化相关的文章需要准备的素材和需要研究的知识点比较多，所以最近文章更新的速度会比较慢了。 不知道在读文章的你，是否做过APP性能优化相关的工作。如果做过更或是在这方面有自己的一些见解和积累，欢迎在评论区留言一起讨论。如果没做过，也不要紧，\u2026","is_english":0,"is_original":1,"user_index":4.484445608761053,"original_type":0,"original_author":"","content":"","ctime":"1603880042","mtime":"1603897607","rtime":"1603897607","draft_id":"6888481832099119112","view_count":428,"collect_count":0,"digg_count":3,"comment_count":6,"hot_index":30,"is_hot":0,"rank_index":0.16133885,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"2981531265280125","user_name":"萌呆宝","company":"","job_title":"一枚iOS程序猿，最近在学flutter","avatar_large":"https://mirror-gold-cdn.xitu.io/168e09794645bfe3c71","level":2,"description":"","followee_count":9,"follower_count":65,"post_article_count":32,"digg_article_count":35,"got_digg_count":89,"got_view_count":11080,"post_shortmsg_count":1,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":0,"power":199,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546528,"tag_id":"6809640410084802573","tag_name":"Objective-C","color":"#616161","icon":"https://lc-gold-cdn.xitu.io/71d968ea2fde62410b19.png","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":2073,"concern_user_count":56148}],"user_interact":{"id":6888611938004271118,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6887161842406260744","article_info":{"article_id":"6887161842406260744","user_id":"588993965333309","category_id":"6809635626661445640","tag_ids":[6809641167680962568],"visible_level":0,"link_url":"","cover_image":"","is_gfw":0,"title":"WKWebview秒开实践分享及问题解决方案","brief_content":"","is_english":0,"is_original":1,"user_index":0,"original_type":0,"original_author":"","content":"","ctime":"1603542624","mtime":"1603615309","rtime":"1603596455","draft_id":"6880338806008971277","view_count":1773,"collect_count":0,"digg_count":69,"comment_count":20,"hot_index":177,"is_hot":0,"rank_index":0.13566171,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"588993965333309","user_name":"国孩","company":"","job_title":"软件开发工程师","avatar_large":"https://sf3-ttcdn-tos.pstatp.com/img/user-avatar/775c90b931d5349bf483eccb9e7e4ef8~120x256.image","level":2,"description":"马拉松,桌球，网球","followee_count":12,"follower_count":58,"post_article_count":9,"digg_article_count":9,"got_digg_count":153,"got_view_count":8074,"post_shortmsg_count":0,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":0,"power":233,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2547076,"tag_id":"6809641167680962568","tag_name":"性能优化","color":"","icon":"https://user-gold-cdn.xitu.io/1552374613638f172b668f237482fee67f11b7ac8c181.jpg","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":1396,"concern_user_count":5577}],"user_interact":{"id":6887161842406260744,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6888984257813807118","article_info":{"article_id":"6888984257813807118","user_id":"1116759544049981","category_id":"6809635626661445640","tag_ids":[6809640463633481741],"visible_level":0,"link_url":"","cover_image":"","is_gfw":0,"title":"Swift 融云推送AppData本地通知无法获取","brief_content":"遇到过一个很棘手的问题，融云推送一条消息后，客户端需要判断appData这个字段来进行不同的个性化跳转。然而远程推送，iOS客户端可以获取到AppData。可是本地推送无法获取到AppData，融云并没有给配置本地推送的数据。但需求是必须实现的，所以想到可以把融云那边的通知给拦\u2026","is_english":0,"is_original":1,"user_index":0,"original_type":0,"original_author":"","content":"","ctime":"1603966875","mtime":"1603967117","rtime":"1603967117","draft_id":"6888982003287326728","view_count":175,"collect_count":0,"digg_count":0,"comment_count":0,"hot_index":8,"is_hot":0,"rank_index":0.12001505,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"1116759544049981","user_name":"醉梦弦音","company":"","job_title":"iOS 开发","avatar_large":"https://sf3-ttcdn-tos.pstatp.com/img/mosaic-legacy/3795/3033762272~120x256.image","level":1,"description":"","followee_count":0,"follower_count":0,"post_article_count":4,"digg_article_count":0,"got_digg_count":0,"got_view_count":208,"post_shortmsg_count":0,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":0,"power":2,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546567,"tag_id":"6809640463633481741","tag_name":"Swift","color":"#F44C29","icon":"https://lc-gold-cdn.xitu.io/eb7ab66be4c2898b5aa9.png","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":4721,"concern_user_count":65726}],"user_interact":{"id":6888984257813807118,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6888254448582262791","article_info":{"article_id":"6888254448582262791","user_id":"3298190611456638","category_id":"6809635626661445640","tag_ids":[6809640399544516616],"visible_level":0,"link_url":"","cover_image":"","is_gfw":0,"title":"iOS 崩溃分析","brief_content":"在阅读完本书《iOS Crash Dump Analysis》后，我们对崩溃分析技巧进行一定的总结。 线上或者开发环境的崩溃报告都可以利用第三方工具进行崩溃报告收集。让我们的应用程序能够尽可能的处理发生的所有可能的信号和异常，一旦应用程序将无法实现，从而导致底层操作系统触发崩溃\u2026","is_english":0,"is_original":1,"user_index":0,"original_type":0,"original_author":"","content":"","ctime":"1603796753","mtime":"1603953892","rtime":"1603866895","draft_id":"6888252654779432968","view_count":660,"collect_count":0,"digg_count":2,"comment_count":0,"hot_index":34,"is_hot":0,"rank_index":0.11539186,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"3298190611456638","user_name":"little_xia","company":"iOS 成长指北","job_title":"程序猿","avatar_large":"https://sf6-ttcdn-tos.pstatp.com/img/user-avatar/f918f6ca45ec5bc458054d12f8ae9aef~120x256.image","level":2,"description":"记录自己的学习，期待以文字总结学到的东西并得到成长","followee_count":6,"follower_count":1342,"post_article_count":28,"digg_article_count":0,"got_digg_count":237,"got_view_count":56314,"post_shortmsg_count":0,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":0,"power":739,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546520,"tag_id":"6809640399544516616","tag_name":"iOS","color":"#616161","icon":"https://user-gold-cdn.xitu.io/155962881259379c25251a455680e3249366e3a3ac373.jpg","back_ground":"","show_navi":1,"tag_alias":"","post_article_count":19954,"concern_user_count":172455}],"user_interact":{"id":6888254448582262791,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6888708803114565639","article_info":{"article_id":"6888708803114565639","user_id":"1204720472962494","category_id":"6809635626661445640","tag_ids":[6809640410084802573],"visible_level":0,"link_url":"","cover_image":"https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/50b30bd9158c492a94e5f953c22e9c47~tplv-k3u1fbpfcp-watermark.image","is_gfw":0,"title":" Objective对象底层探究(一)","brief_content":"","is_english":0,"is_original":1,"user_index":0,"original_type":0,"original_author":"","content":"","ctime":"1603902553","mtime":"1603940626","rtime":"1603940626","draft_id":"6888702837888172046","view_count":253,"collect_count":0,"digg_count":1,"comment_count":0,"hot_index":13,"is_hot":0,"rank_index":0.1119739,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"1204720472962494","user_name":"一毛009","company":"不知名，努力去大厂～～","job_title":"iOS","avatar_large":"https://sf1-ttcdn-tos.pstatp.com/img/user-avatar/aad945db0668d26fa0dfe69fa69b4343~120x256.image","level":1,"description":"写写博客， 玩玩摩托车","followee_count":26,"follower_count":0,"post_article_count":1,"digg_article_count":2,"got_digg_count":1,"got_view_count":253,"post_shortmsg_count":0,"digg_shortmsg_count":1,"isfollowed":false,"favorable_author":0,"power":3,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546528,"tag_id":"6809640410084802573","tag_name":"Objective-C","color":"#616161","icon":"https://lc-gold-cdn.xitu.io/71d968ea2fde62410b19.png","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":2073,"concern_user_count":56148}],"user_interact":{"id":6888708803114565639,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6887831229673160718","article_info":{"article_id":"6887831229673160718","user_id":"1926000101569870","category_id":"6809635626661445640","tag_ids":[6809640463633481741,6809641090145058824],"visible_level":0,"link_url":"","cover_image":"https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a1574993dc4646fc8ae00fa9d96345f4~tplv-k3u1fbpfcp-watermark.image","is_gfw":0,"title":"老司机 iOS 周报 #133 | 2020-10-26","brief_content":"老司机 iOS 周报，只为你呈现有价值的信息。 你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。 热烈欢迎社区老朋友 Leo 加入周报编辑组！Leo \u2026","is_english":0,"is_original":1,"user_index":0,"original_type":0,"original_author":"","content":"","ctime":"1603698213","mtime":"1603900866","rtime":"1603698216","draft_id":"6887830493631873037","view_count":1840,"collect_count":0,"digg_count":2,"comment_count":1,"hot_index":94,"is_hot":0,"rank_index":0.10804415,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"1926000101569870","user_name":"老司机技术周报","company":"老司机技术周报","job_title":"公众号","avatar_large":"https://user-gold-cdn.xitu.io/2019/3/7/16956cee70a4bd79?w=1200&h=1200&f=png&s=140662","level":4,"description":"在传播技术内容的同时，创造更多的精品技术内容","followee_count":12,"follower_count":28273,"post_article_count":161,"digg_article_count":72,"got_digg_count":4578,"got_view_count":503185,"post_shortmsg_count":68,"digg_shortmsg_count":7,"isfollowed":false,"favorable_author":1,"power":9230,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546567,"tag_id":"6809640463633481741","tag_name":"Swift","color":"#F44C29","icon":"https://lc-gold-cdn.xitu.io/eb7ab66be4c2898b5aa9.png","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":4721,"concern_user_count":65726},{"id":2547019,"tag_id":"6809641090145058824","tag_name":"Flutter","color":"","icon":"https://user-gold-cdn.xitu.io/1519790365175e2d3ba2174d5c8f3fdc4687a8bbf5768.jpg","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":6551,"concern_user_count":36261}],"user_interact":{"id":6887831229673160718,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6888506924921257998","article_info":{"article_id":"6888506924921257998","user_id":"2955079655922125","category_id":"6809635626661445640","tag_ids":[6809640414102945805],"visible_level":0,"link_url":"","cover_image":"","is_gfw":0,"title":"\b如何知道一个锁到底被哪个线程占用？","brief_content":"在多线程环境下调试或定位问题时，有时我们会发现某重要线程被卡住在等待某个锁上，但具体是哪个线程或哪段代码拿了锁（特别是代码逻辑比较复杂、线程较多的情况下）又无法一下看出来。 这时我们就需要在调试器里把所有线程点一遍，看他们当前的调用栈，然后再对照源代码看各线程的调用栈上有没有哪\u2026","is_english":0,"is_original":1,"user_index":0,"original_type":0,"original_author":"","content":"","ctime":"1603855587","mtime":"1603856396","rtime":"1603856396","draft_id":"6888337720633262094","view_count":660,"collect_count":0,"digg_count":1,"comment_count":0,"hot_index":34,"is_hot":0,"rank_index":0.10486316,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"2955079655922125","user_name":"zhangjiezhi_","company":"","job_title":"码工","avatar_large":"https://sf1-ttcdn-tos.pstatp.com/img/user-avatar/b9f51440b34ab14b7a11d10256e841a2~120x256.image","level":2,"description":"无","followee_count":4,"follower_count":75,"post_article_count":17,"digg_article_count":16,"got_digg_count":103,"got_view_count":11549,"post_shortmsg_count":0,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":0,"power":218,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546531,"tag_id":"6809640414102945805","tag_name":"Debug","color":"#616161","icon":"https://lc-gold-cdn.xitu.io/0aa32577a60f7ec0242f.png","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":1049,"concern_user_count":43641}],"user_interact":{"id":6888506924921257998,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6887832861894770702","article_info":{"article_id":"6887832861894770702","user_id":"1433418892590136","category_id":"6809635626661445640","tag_ids":[6809640463633481741],"visible_level":0,"link_url":"","cover_image":"","is_gfw":0,"title":"[译] Swift | 内存安全","brief_content":"一般来说，Swift 会阻止代码中的不安全行为。例如，Swift 会保证变量在被使用前已经初始化，在释放某变量后其内存也会变得不可访问，以及检查数组索引是否存在越界错误。 Swift 还通过要求修改内存中位置的代码具有对该内存的独占访问权，来确保对同一内存区域的多重访问不会产生\u2026","is_english":0,"is_original":1,"user_index":6.278052588745499,"original_type":0,"original_author":"","content":"","ctime":"1603698566","mtime":"1603771534","rtime":"1603771534","draft_id":"6887831324023848974","view_count":639,"collect_count":0,"digg_count":10,"comment_count":1,"hot_index":42,"is_hot":0,"rank_index":0.08109395,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"1433418892590136","user_name":"Mimosa","company":"没考上研所以家里蹲","job_title":"iOS","avatar_large":"https://user-gold-cdn.xitu.io/2020/2/11/17032c10204235d3?w=598&h=598&f=png&s=183165","level":1,"description":"","followee_count":36,"follower_count":9,"post_article_count":5,"digg_article_count":30,"got_digg_count":45,"got_view_count":2403,"post_shortmsg_count":0,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":0,"power":69,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546567,"tag_id":"6809640463633481741","tag_name":"Swift","color":"#F44C29","icon":"https://lc-gold-cdn.xitu.io/eb7ab66be4c2898b5aa9.png","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":4721,"concern_user_count":65726}],"user_interact":{"id":6887832861894770702,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6888664223937904647","article_info":{"article_id":"6888664223937904647","user_id":"149189312129086","category_id":"6809635626661445640","tag_ids":[6809640533514780680],"visible_level":0,"link_url":"","cover_image":"https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f4efe70b036246dfb7c998297cbc6852~tplv-k3u1fbpfcp-watermark.image","is_gfw":0,"title":"iOS14的Modern cell configuration给我们带来了什么？","brief_content":"我的上一篇文章《UITableView和UICollectionView的新渲染方式DiffableDataSource》中提到了，在iOS13中推出了DiffableDataSource代替了使用了将近10年之久的那几个渲染单元格视图的代理方法。同样的，随着iOS14的发布，\u2026","is_english":0,"is_original":1,"user_index":0,"original_type":0,"original_author":"","content":"","ctime":"1603892255","mtime":"1603961033","rtime":"1603897705","draft_id":"6888656036245291015","view_count":297,"collect_count":0,"digg_count":3,"comment_count":0,"hot_index":17,"is_hot":0,"rank_index":0.07962689,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"149189312129086","user_name":"砖才小熊猫","company":"苏宁易购","job_title":"iOS开发","avatar_large":"https://sf1-ttcdn-tos.pstatp.com/img/user-avatar/7c346679ad59da2b1a880ea459d7ab43~120x256.image","level":1,"description":"","followee_count":3,"follower_count":3,"post_article_count":4,"digg_article_count":2,"got_digg_count":11,"got_view_count":1847,"post_shortmsg_count":0,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":0,"power":29,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546618,"tag_id":"6809640533514780680","tag_name":"UI Kit","color":"#D5C072","icon":"https://lc-gold-cdn.xitu.io/c957698d1ffa3676b380.png","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":287,"concern_user_count":16385}],"user_interact":{"id":6888664223937904647,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6885144933997494280","article_info":{"article_id":"6885144933997494280","user_id":"1838039172387262","category_id":"6809635626661445640","tag_ids":[6809641167680962568,6809640399544516616],"visible_level":0,"link_url":"","cover_image":"https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/54022a231ea947d2a3578d9c846ae75c~tplv-k3u1fbpfcp-watermark.image","is_gfw":0,"title":"iOS 性能优化实践：头条抖音如何实现 OOM 崩溃率下降50%+","brief_content":"OOM 其实是Out Of Memory的简称，指的是在 iOS 设备上当前应用因为内存占用过高而被操作系统强制终止，在用户侧的感知就是 App 一瞬间的闪退，与普通的 Crash 没有明显差异。但是当我们在调试阶段遇到这种崩溃的时候，从设备设置->隐私->分析与改进中是找不到\u2026","is_english":0,"is_original":1,"user_index":0,"original_type":0,"original_author":"","content":"","ctime":"1603072730","mtime":"1603611703","rtime":"1603072898","draft_id":"6884092782839857165","view_count":5081,"collect_count":0,"digg_count":77,"comment_count":9,"hot_index":340,"is_hot":0,"rank_index":0.07888925,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"1838039172387262","user_name":"字节跳动技术团队","company":"字节跳动","job_title":"","avatar_large":"https://user-gold-cdn.xitu.io/2018/7/16/164a1386a8b82dbd?w=720&h=720&f=png&s=41993","level":4,"description":"字节跳动的技术实践分享","followee_count":1,"follower_count":12782,"post_article_count":64,"digg_article_count":0,"got_digg_count":2776,"got_view_count":222843,"post_shortmsg_count":10,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":1,"power":5021,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2547076,"tag_id":"6809641167680962568","tag_name":"性能优化","color":"","icon":"https://user-gold-cdn.xitu.io/1552374613638f172b668f237482fee67f11b7ac8c181.jpg","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":1396,"concern_user_count":5577},{"id":2546520,"tag_id":"6809640399544516616","tag_name":"iOS","color":"#616161","icon":"https://user-gold-cdn.xitu.io/155962881259379c25251a455680e3249366e3a3ac373.jpg","back_ground":"","show_navi":1,"tag_alias":"","post_article_count":19954,"concern_user_count":172455}],"user_interact":{"id":6885144933997494280,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6887831253739896840","article_info":{"article_id":"6887831253739896840","user_id":"2172290704867501","category_id":"6809635626661445640","tag_ids":[6809641167680962568],"visible_level":0,"link_url":"","cover_image":"","is_gfw":0,"title":"iOS卡顿监控","brief_content":"主要是基于CADisplayLink以屏幕刷新频率同步绘图的特性，尝试根据这点去实现一个可以观察屏幕当前帧数的指示器。 基于CADisplayLink实现的 FPS 在生产场景中只有指导意义，不能代表真实的 FPS，因为基于CADisplayLink实现的 FPS 无法完全检测\u2026","is_english":0,"is_original":1,"user_index":0,"original_type":0,"original_author":"","content":"","ctime":"1603698228","mtime":"1603796538","rtime":"1603780629","draft_id":"6887821715410255885","view_count":639,"collect_count":0,"digg_count":9,"comment_count":0,"hot_index":40,"is_hot":0,"rank_index":0.0709545,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"2172290704867501","user_name":"心灵的远足","company":"","job_title":"iOS工程师","avatar_large":"https://leancloud-gold-cdn.xitu.io/810ab7e2d9aa301dec21.JPG","level":1,"description":"永远都不要对任何事情后悔，因为他们曾经就是你想要的","followee_count":32,"follower_count":10,"post_article_count":4,"digg_article_count":8,"got_digg_count":51,"got_view_count":2817,"post_shortmsg_count":0,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":0,"power":79,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2547076,"tag_id":"6809641167680962568","tag_name":"性能优化","color":"","icon":"https://user-gold-cdn.xitu.io/1552374613638f172b668f237482fee67f11b7ac8c181.jpg","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":1396,"concern_user_count":5577}],"user_interact":{"id":6887831253739896840,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6888342154091954183","article_info":{"article_id":"6888342154091954183","user_id":"588993965865198","category_id":"6809635626661445640","tag_ids":[6809640410084802573],"visible_level":0,"link_url":"","cover_image":"","is_gfw":0,"title":"OC基础知识点之-Method Swizzling黑魔法（方法交换）","brief_content":"每个类都有自己的方法列表，即methodList，methodList里有不同的方法即Method，每个方法中包含了方法的sel和IMP，方法交换就是将sel和imp原本的对应断开，并将sel和新的IMP生成对应关系。 method_getTypeEncoding：获取函数的编\u2026","is_english":0,"is_original":1,"user_index":0,"original_type":0,"original_author":"","content":"","ctime":"1603817690","mtime":"1603866303","rtime":"1603866303","draft_id":"6887580345038962701","view_count":289,"collect_count":0,"digg_count":4,"comment_count":0,"hot_index":18,"is_hot":0,"rank_index":0.06075111,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"588993965865198","user_name":"空白记忆","company":"","job_title":"iOS高级开发工程师","avatar_large":"https://sf6-ttcdn-tos.pstatp.com/img/user-avatar/e16a345b068fcf0a291c5e7544db32cd~120x256.image","level":2,"description":"喜欢旅游，看各处的山水秀丽；喜欢摄影，记录值得留念的瞬间；喜欢美食，品尝不同的人间美味","followee_count":6,"follower_count":30,"post_article_count":20,"digg_article_count":56,"got_digg_count":61,"got_view_count":5095,"post_shortmsg_count":1,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":0,"power":111,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546528,"tag_id":"6809640410084802573","tag_name":"Objective-C","color":"#616161","icon":"https://lc-gold-cdn.xitu.io/71d968ea2fde62410b19.png","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":2073,"concern_user_count":56148}],"user_interact":{"id":6888342154091954183,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6884833291740905480","article_info":{"article_id":"6884833291740905480","user_id":"2955079655922125","category_id":"6809635626661445640","tag_ids":[6809640583162757128],"visible_level":0,"link_url":"","cover_image":"","is_gfw":0,"title":"自研 iOS 热更新机制\u2014\u2014OCPack技术方案总结","brief_content":"I. 方案简介 OCPack是一种 iOS 平台上 App 动态化技术方案，用户可以使用 Objective-C 语言编写待动态化的功能逻辑（生成.m文件），然后通过OCPack提供的工具链生成 patch 文件（.bin格式)。客户端则内置了一个基于 Native 环境的的虚\u2026","is_english":0,"is_original":1,"user_index":0,"original_type":0,"original_author":"","content":"","ctime":"1603000443","mtime":"1603555572","rtime":"1603073773","draft_id":"6884578052165074951","view_count":3830,"collect_count":0,"digg_count":39,"comment_count":15,"hot_index":245,"is_hot":0,"rank_index":0.05692499,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"2955079655922125","user_name":"zhangjiezhi_","company":"","job_title":"码工","avatar_large":"https://sf1-ttcdn-tos.pstatp.com/img/user-avatar/b9f51440b34ab14b7a11d10256e841a2~120x256.image","level":2,"description":"无","followee_count":4,"follower_count":75,"post_article_count":17,"digg_article_count":16,"got_digg_count":103,"got_view_count":11549,"post_shortmsg_count":0,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":0,"power":218,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546653,"tag_id":"6809640583162757128","tag_name":"编译器","color":"#000000","icon":"https://lc-gold-cdn.xitu.io/4e6b1fae46570c191c18.png","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":1928,"concern_user_count":20489}],"user_interact":{"id":6884833291740905480,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6886700998107234312","article_info":{"article_id":"6886700998107234312","user_id":"2189882892225869","category_id":"6809635626661445640","tag_ids":[6809640463633481741],"visible_level":0,"link_url":"","cover_image":"https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/40b9dc5bf1054d4096dbebfbf911c39d~tplv-k3u1fbpfcp-watermark.image","is_gfw":0,"title":"一文带你读懂 Swift 社区最新开源的算法库","brief_content":"最近 Swift 社区动作频频，又是登陆 Windows，又是推出底层基础库。现在又推出了 Swift 算法库，现在让我们看看里面到底有什么内容，是否值得现在在生产中应用，面对内容丰富的 raywenderlich/swift-algorithm-club 是否有足够的竞争力呢\u2026","is_english":0,"is_original":1,"user_index":11.215616294012468,"original_type":0,"original_author":"","content":"","ctime":"1603435048","mtime":"1603512886","rtime":"1603512886","draft_id":"6886700049385357319","view_count":1353,"collect_count":0,"digg_count":14,"comment_count":2,"hot_index":83,"is_hot":0,"rank_index":0.05531892,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"2189882892225869","user_name":"镜画者","company":"","job_title":"","avatar_large":"https://mirror-gold-cdn.xitu.io/168e086fe61b5c7ca69","level":2,"description":"","followee_count":19,"follower_count":458,"post_article_count":6,"digg_article_count":0,"got_digg_count":206,"got_view_count":7042,"post_shortmsg_count":6,"digg_shortmsg_count":3,"isfollowed":false,"favorable_author":0,"power":501,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546567,"tag_id":"6809640463633481741","tag_name":"Swift","color":"#F44C29","icon":"https://lc-gold-cdn.xitu.io/eb7ab66be4c2898b5aa9.png","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":4721,"concern_user_count":65726}],"user_interact":{"id":6886700998107234312,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6887862144126484493","article_info":{"article_id":"6887862144126484493","user_id":"4089838984233005","category_id":"6809635626661445640","tag_ids":[6809640463633481741],"visible_level":0,"link_url":"","cover_image":"","is_gfw":0,"title":"Swift性能优化分析","brief_content":"自从2014年Apple发布Swift语言以来，历时六年多，Swift已经发布到5.3版本，在5.0版本已经ABI stability，5.2版本也已经module stability，不管是语言还是基础库都日趋稳定，目前国内外大厂也都积极拥抱Swift阵营。 绝大多数公司选择\u2026","is_english":0,"is_original":1,"user_index":1.49491483101579,"original_type":0,"original_author":"","content":"","ctime":"1603705397","mtime":"1603724498","rtime":"1603724498","draft_id":"6887861427055362055","view_count":642,"collect_count":0,"digg_count":8,"comment_count":0,"hot_index":40,"is_hot":0,"rank_index":0.05405842,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"4089838984233005","user_name":"louis_wang","company":"","job_title":"iOS","avatar_large":"https://mirror-gold-cdn.xitu.io/168e082f006b3837610","level":1,"description":"","followee_count":1,"follower_count":7,"post_article_count":8,"digg_article_count":4,"got_digg_count":14,"got_view_count":1253,"post_shortmsg_count":0,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":0,"power":26,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546567,"tag_id":"6809640463633481741","tag_name":"Swift","color":"#F44C29","icon":"https://lc-gold-cdn.xitu.io/eb7ab66be4c2898b5aa9.png","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":4721,"concern_user_count":65726}],"user_interact":{"id":6887862144126484493,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}},{"article_id":"6885240993463631880","article_info":{"article_id":"6885240993463631880","user_id":"1926000101569870","category_id":"6809635626661445640","tag_ids":[6809640463633481741,6809641090145058824],"visible_level":0,"link_url":"","cover_image":"https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f5ecd5b07d944caba9d5c57c610bced2~tplv-k3u1fbpfcp-watermark.image","is_gfw":0,"title":"老司机 iOS 周报 #132 | 2020-10-19","brief_content":"老司机 iOS 周报，只为你呈现有价值的信息。 你也可以为这个项目出一份力，如果发现有价值的信息、文章、工具等可以到 Issues 里提给我们，我们会尽快处理。记得写上推荐的理由哦。有建议和意见也欢迎到 Issues 提出。 我们开通了公众号，每期发布时公众号（LSJCodin\u2026","is_english":0,"is_original":1,"user_index":10.140018823377297,"original_type":0,"original_author":"","content":"","ctime":"1603095144","mtime":"1603095627","rtime":"1603095627","draft_id":"6885240281508249614","view_count":3774,"collect_count":0,"digg_count":9,"comment_count":0,"hot_index":197,"is_hot":0,"rank_index":0.0498335,"status":2,"verify_status":1,"audit_status":2,"mark_content":""},"author_user_info":{"user_id":"1926000101569870","user_name":"老司机技术周报","company":"老司机技术周报","job_title":"公众号","avatar_large":"https://user-gold-cdn.xitu.io/2019/3/7/16956cee70a4bd79?w=1200&h=1200&f=png&s=140662","level":4,"description":"在传播技术内容的同时，创造更多的精品技术内容","followee_count":12,"follower_count":28273,"post_article_count":161,"digg_article_count":72,"got_digg_count":4578,"got_view_count":503185,"post_shortmsg_count":68,"digg_shortmsg_count":7,"isfollowed":false,"favorable_author":1,"power":9230,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0},"category":{"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3},"tags":[{"id":2546567,"tag_id":"6809640463633481741","tag_name":"Swift","color":"#F44C29","icon":"https://lc-gold-cdn.xitu.io/eb7ab66be4c2898b5aa9.png","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":4721,"concern_user_count":65726},{"id":2547019,"tag_id":"6809641090145058824","tag_name":"Flutter","color":"","icon":"https://user-gold-cdn.xitu.io/1519790365175e2d3ba2174d5c8f3fdc4687a8bbf5768.jpg","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":6551,"concern_user_count":36261}],"user_interact":{"id":6885240993463631880,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}}]
+     * cursor : eyJ2IjoiNjg4ODY3OTg1NTY1OTk0MTg5NSIsImkiOjIwfQ==
+     * count : 6035
+     * has_more : true
      */
 
-    private int s;
-    private String m;
-    private DBean d;
+    private int err_no;
+    private String err_msg;
+    private String cursor;
+    private int count;
+    private boolean has_more;
+    private List<DataBean> data;
 
-    public int getS() {
-        return s;
+    public int getErr_no() {
+        return err_no;
     }
 
-    public void setS(int s) {
-        this.s = s;
+    public void setErr_no(int err_no) {
+        this.err_no = err_no;
     }
 
-    public String getM() {
-        return m;
+    public String getErr_msg() {
+        return err_msg;
     }
 
-    public void setM(String m) {
-        this.m = m;
+    public void setErr_msg(String err_msg) {
+        this.err_msg = err_msg;
     }
 
-    public DBean getD() {
-        return d;
+    public String getCursor() {
+        return cursor;
     }
 
-    public void setD(DBean d) {
-        this.d = d;
+    public void setCursor(String cursor) {
+        this.cursor = cursor;
     }
 
-    public static class DBean {
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public boolean isHas_more() {
+        return has_more;
+    }
+
+    public void setHas_more(boolean has_more) {
+        this.has_more = has_more;
+    }
+
+    public List<DataBean> getData() {
+        return data;
+    }
+
+    public void setData(List<DataBean> data) {
+        this.data = data;
+    }
+
+    public static class DataBean {
         /**
-         * total : 10
-         * entrylist : [{"collectionCount":5,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.5538270211392E9,"checkStatus":true,"objectId":"5c9d78a96fb9a070d0141255","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553826996,"ngxCached":true,"title":"后端","id":"5597a063e4b08a686ce57030"},{"ngxCachedTime":1553826980,"ngxCached":true,"title":"Java","id":"559a7207e4b08a686d25703e"}],"updatedAt":"2019-03-29T02:37:01.137Z","rankIndex":94.268749986838,"hot":false,"autoPass":true,"originalUrl":"https://juejin.im/post/5c9d78715188251e3e3c8a7f","verifyCreatedAt":"2019-03-29T01:45:13.966Z","createdAt":"2019-03-29T01:45:13.966Z","user":{"community":{"github":{"username":"dyc87112","avatarLarge":"https://avatars0.githubusercontent.com/u/3391170?v=4","uid":"3391170"}},"collectedEntriesCount":23,"company":"关注我，每日技术干货推送，每月福利免费领取！","followersCount":2786,"followeesCount":6,"role":"editor","postedPostsCount":41,"isAuthor":false,"postedEntriesCount":40,"totalCommentsCount":47,"ngxCachedTime":1553827021,"ngxCached":true,"viewedEntriesCount":120,"jobTitle":"","subscribedTagsCount":29,"totalCollectionsCount":781,"username":"程序猿DD_","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/21/1699f0e5d13e9789?w=568&h=568&f=jpeg&s=33909","objectId":"58e10d35570c350057a277bc"},"author":"","screenshot":"","original":true,"hotIndex":422.0601,"content":"最近对《Spring Cloud Alibaba基础教程》系列的催更比较多，说一下最近的近况：因为打算Spring Boot 2.x一起更新。所以一直在改博客Spring Boot专题页和Git仓库的组织。由于前端技术太过蹩脚，花了不少时间。大家不用担心，这个系列不会太监，因为\u2026","title":"说说我为什么看好Spring Cloud Alibaba","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":370,"summaryInfo":"最近对《Spring Cloud Alibaba基础教程》系列的催更比较多，说一下最近的近况：因为打算Spring Boot 2.x一起更新。所以一直在改博客Spring Boot专题页和Git仓库的组织。由于前端技术太过蹩脚，花了不少时间。大家不用担心，这个系列不会太监，因为我真心看好这个套件的...","isCollected":false},{"collectionCount":11,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.5538270171562E9,"checkStatus":true,"objectId":"5c9d57435188252d5c745326","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553827000,"ngxCached":true,"title":"Go","id":"555e9a80e4b00c57d9955de2"}],"updatedAt":"2019-03-29T02:36:57.155Z","rankIndex":28.460316899721,"hot":false,"autoPass":true,"originalUrl":"https://juejin.im/post/5c9d5631f265da60d82dde9c","verifyCreatedAt":"2019-03-28T23:22:43.559Z","createdAt":"2019-03-28T23:22:43.559Z","user":{"community":null,"collectedEntriesCount":88,"company":"公众号：Golang来啦","followersCount":191,"followeesCount":20,"role":"editor","postedPostsCount":19,"isAuthor":false,"postedEntriesCount":7,"totalCommentsCount":14,"ngxCachedTime":1553826950,"ngxCached":true,"viewedEntriesCount":1289,"jobTitle":"","subscribedTagsCount":67,"totalCollectionsCount":334,"username":"Seekload","avatarLarge":"https://user-gold-cdn.xitu.io/2018/11/20/1673082d8c30d80d?w=225&h=225&f=png&s=4504","objectId":"573730741532bc006548416a"},"author":"","screenshot":"https://user-gold-cdn.xitu.io/2019/3/29/169c69c932711a62?w=1000&h=666&f=jpeg&s=65444","original":true,"hotIndex":460.0793,"content":"在一些面向对象的编程语言中，例如 Java、PHP 等，接口定义了对象的行为，只指定了对象应该做什么。行为的具体实现取决于对象。 在 Go 语言中，接口是一组方法的集合，但不包含方法的实现、是抽象的，接口中也不能包含变量。当一个类型 T 提供了接口中所有方法的定义时，就说 T \u2026","title":"Go 语言接口详解（一）","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":348,"summaryInfo":"在一些面向对象的编程语言中，例如 Java、PHP 等，接口定义了对象的行为，只指定了对象应该做什么。行为的具体实现取决于对象。 在 Go 语言中，接口是一组方法的集合，但不包含方法的实现、是抽象的，接口中也不能包含变量。当一个类型 T 提供了接口中所有方法的定义时，就说 T 实现了接口。接口指定...","isCollected":false},{"collectionCount":3,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.5538270351365E9,"checkStatus":true,"objectId":"5c9cdde46fb9a070fc62516f","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553826952,"ngxCached":true,"title":"Spring","id":"5847c9a5ac502e006ce63fa1"}],"updatedAt":"2019-03-29T02:37:15.135Z","rankIndex":1.2119021773034,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c9cdcf06fb9a070cb24c4d1","verifyCreatedAt":"2019-03-28T14:58:10.827Z","createdAt":"2019-03-28T14:58:10.827Z","user":{"community":{"weibo":{"selfDescription":"实施搬过砖，银行打过杂，倒闭卖公司，投机又倒把。","uid":"1144349627","blogAddress":"http://weibo.com/akirapanda","username":"废柴大叔阿基拉","avatarLarge":"http://tva4.sinaimg.cn/crop.0.0.180.180.180/443563bbjw1e8qgp5bmzyj2050050aa8.jpg"}},"collectedEntriesCount":2,"company":"","followersCount":28,"followeesCount":32,"role":"guest","postedPostsCount":5,"isAuthor":false,"postedEntriesCount":0,"totalCommentsCount":5,"ngxCachedTime":1553827042,"ngxCached":true,"viewedEntriesCount":62,"jobTitle":"咨询工程师","subscribedTagsCount":2,"totalCollectionsCount":23,"username":"废柴大叔阿基拉","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/25/169b46cc8fe5df08?w=454&h=454&f=jpeg&s=19650","objectId":"5c98aef96fb9a071105de2f6"},"author":"","screenshot":"","original":true,"hotIndex":125.0634,"content":"我们在某一期其实已经对Authentication身份验证中的主要组件进行过介绍，并且通过几期的分享让大家大致了解了Web应用大致利用核心进行身份验证的流程和相关的扩展点。 这一期我们用一期的篇章把关注点放在Authentication身份验证核心最主要的几个服务Authent\u2026","title":"Spring Security小教程 Vol 5.核心组件AuthenticationManager专题","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":93,"summaryInfo":"我们在某一期其实已经对身份验证中的主要组件进行过介绍，并且通过几期的分享让大家大致了解了Web应用大致利用核心进行身份验证的流程和相关的扩展点。这一期我们用一期的篇章把关注点放在身份验证核心最主要的几个服务、和，三个顶层接口进行展开。通过Spring Security对这些接口服务的实现进行说明讲...","isCollected":false},{"collectionCount":17,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.553826871352E9,"checkStatus":true,"objectId":"5c9cd4546fb9a071071947bf","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553826980,"ngxCached":true,"title":"Java","id":"559a7207e4b08a686d25703e"}],"updatedAt":"2019-03-29T02:34:31.350Z","rankIndex":5.027724705766,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c9cb91d5188251cea0abbd7","verifyCreatedAt":"2019-03-28T14:57:56.273Z","createdAt":"2019-03-28T14:57:56.273Z","user":{"community":null,"collectedEntriesCount":13,"company":"","followersCount":10,"followeesCount":8,"role":"guest","postedPostsCount":7,"isAuthor":false,"postedEntriesCount":0,"totalCommentsCount":0,"ngxCachedTime":1553826993,"ngxCached":true,"viewedEntriesCount":38,"jobTitle":"java开发","subscribedTagsCount":7,"totalCollectionsCount":20,"username":"进击的java程序员k","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/26/169b90e6c3967879?w=500&h=375&f=jpeg&s=12988","objectId":"5ba0b3b36fb9a05cd53af3dd"},"author":"","screenshot":"","original":true,"hotIndex":516.2824,"content":"事务是MySQL等关系型数据库区别于NoSQL的重要方面，是保证数据一致性的重要手段。 MySQL博大精深，文章疏漏之处在所难免，欢迎批评指正。 事务（Transaction）是访问和更新数据库的程序执行单元；事务中可能包含一个或多个sql语句，这些语句要么都执行，要么都不执行\u2026","title":"深入学习MySQL事务：ACID特性的实现原理","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":344,"summaryInfo":"事务是MYSQL等关系型数据库区别于NOSQL的重要方面，是保证数据一致性的重要手段。 MYSQL博大精深，文章疏漏之处在所难免，欢迎批评指正。 事务（Transaction）是访问和更新数据库的程序执行单元；事务中可能包含一个或多个sql语句，这些语句要么都执行，要么都不执行。作为一个关系型数据...","isCollected":false},{"collectionCount":5,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.5538270353283E9,"checkStatus":true,"objectId":"5c9cdd2ce51d452a7b65ffe2","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553827000,"ngxCached":true,"title":"Go","id":"555e9a80e4b00c57d9955de2"}],"updatedAt":"2019-03-29T02:37:15.324Z","rankIndex":1.7590624215548,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c9cc6376fb9a0710b727cbd","verifyCreatedAt":"2019-03-28T14:57:45.878Z","createdAt":"2019-03-28T14:57:45.878Z","user":{"community":null,"collectedEntriesCount":23,"company":"","followersCount":45,"followeesCount":7,"role":"guest","postedPostsCount":24,"isAuthor":false,"postedEntriesCount":0,"totalCommentsCount":2,"ngxCachedTime":1553826988,"ngxCached":true,"viewedEntriesCount":516,"jobTitle":"后端开发","subscribedTagsCount":5,"totalCollectionsCount":82,"username":"张君鸿","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/24/169ad882a94e4781?w=819&h=819&f=jpeg&s=199492","objectId":"5c6665476fb9a049a81fd8e9"},"author":"","screenshot":"","original":true,"hotIndex":181.2487,"content":"应该说，无论使用哪一种编程语言开发应用程序，并发编程都是复杂的，而Go语言内置的并发支持，则让Go并发编程变得很简单。 CSP，即顺序通信进程，是Go语言中原生支持的并发模型，一般使用goroutine和channel来实现，CSP的编程思想是\u201c通过通信共享内存，而不是通过共享\u2026","title":"Golang并发之共享内存变量","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":129,"summaryInfo":"应该说，无论使用哪一种编程语言开发应用程序，并发编程都是复杂的，而Go语言内置的并发支持，则让Go并发编程变得很简单。 CSP，即顺序通信进程，是Go语言中原生支持的并发模型，一般使用goroutine和channel来实现，CSP的编程思想是\u201c通过通信共享内存，而不是通过共享内存来通信\u201d，因此使...","isCollected":false},{"collectionCount":4,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.553826714347E9,"checkStatus":true,"objectId":"5c9af354f265da60ce37b522","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553826985,"ngxCached":true,"title":"MyBatis","id":"584803e2128fe10058bede72"}],"updatedAt":"2019-03-29T02:31:54.345Z","rankIndex":1.5374390078432,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c98409fe51d4577506bb2ae","verifyCreatedAt":"2019-03-28T12:41:43.845Z","createdAt":"2019-03-28T12:41:43.845Z","user":{"community":null,"collectedEntriesCount":21,"company":"","followersCount":58,"followeesCount":21,"role":"guest","postedPostsCount":15,"isAuthor":false,"postedEntriesCount":0,"totalCommentsCount":2,"ngxCachedTime":1553827022,"ngxCached":true,"viewedEntriesCount":493,"jobTitle":"JAVA","subscribedTagsCount":4,"totalCollectionsCount":41,"username":"失控的阿甘","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/19/16994fb4b3ba028f?w=121&h=121&f=jpeg&s=11989","objectId":"5b3b4ce0e51d4519721b55a9"},"author":"","screenshot":"https://user-gold-cdn.xitu.io/2019/3/25/169b2bd958770fc3?w=703&h=301&f=png&s=15564","original":true,"hotIndex":211.2794,"content":"org.apache.ibatis.reflection.property.ObjectWrapper对象包装器接口，基于 MetaClass工具类，定义对指定对象的各种操作。类图和代码如下： org.apache.ibatis.reflection.wrapper.BaseW\u2026","title":"Mybatis技术内幕（2.3.6）：反射模块-Wrapper","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":169,"summaryInfo":"2.0 OBJECTWRAPPER 对象包装器接口 对象包装器接口，基于 MetaClass工具类，定义对指定对象的各种操作。类图和代码如下： 2.1 BASEWRAPPER 基础包装器 抽象类，实现ObjectWrapper接口，为子类BeanWrapper和MapWrapper提供公共的方法和...","isCollected":false},{"collectionCount":7,"isEvent":false,"commentsCount":3,"gfw":false,"buildTime":1.5538269895353E9,"checkStatus":true,"objectId":"5c9b1ecd518825529a0c78dd","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553827057,"ngxCached":true,"title":"Spring Boot","id":"58c8ac9244d90400682037f1"}],"updatedAt":"2019-03-29T02:36:29.534Z","rankIndex":2.6158260818856,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c9b1c6be51d456303722fd2","verifyCreatedAt":"2019-03-28T12:40:19.364Z","createdAt":"2019-03-28T12:40:19.364Z","user":{"community":{"wechat":{"avatarLarge":"http://thirdwx.qlogo.cn/mmopen/vi_32/c3VrdibDx1TjxcY4wQT33qYoralsuRcibDZXCmLe4U0rHhbWR1GfHIzBxEU1icMFktCic9rvwxcib15PEKwiaYNfQyTA/132"}},"collectedEntriesCount":46,"company":"Foresee","followersCount":4,"followeesCount":30,"role":"guest","postedPostsCount":2,"isAuthor":false,"postedEntriesCount":0,"totalCommentsCount":5,"ngxCachedTime":1553826989,"ngxCached":true,"viewedEntriesCount":866,"jobTitle":"Java 工程师","subscribedTagsCount":5,"totalCollectionsCount":16,"username":"eddy_zy","avatarLarge":"https://user-gold-cdn.xitu.io/2018/12/13/167a5eb000c951e7?w=1440&h=1080&f=jpeg&s=740363","objectId":"582992060ce46300560c3edd"},"author":"","screenshot":"https://user-gold-cdn.xitu.io/2019/3/27/169bdf0b012d97e5?w=1920&h=1080&f=jpeg&s=107107","original":true,"hotIndex":359.4601,"content":"Liquibase 是一个用于跟踪、管理和应用数据库变化的开源的数据库重构工具。它将所有数据库的变化（包括结构和数据）都保存在 changelog文件中，便于版本控制，它的目标是提供一种数据库类型无关的解决方案，通过执行 schema 类型的文件来达到迁移。 支持多种运行方式，\u2026","title":"Spring Boot 简单集成 Liquibase","lastCommentTime":"2019-03-29T09:45:14.978Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":272,"summaryInfo":"是一个用于跟踪、管理和应用数据库变化的开源的数据库重构工具。它将所有数据库的变化（包括结构和数据）都保存在 文件中，便于版本控制，它的目标是提供一种数据库类型无关的解决方案，通过执行 schema 类型的文件来达到迁移。 更多详情介绍，请查阅 Liquibase 官方文档 因为 Spring Bo...","isCollected":false},{"collectionCount":23,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.5538270145034E9,"checkStatus":true,"objectId":"5c9ca04ae51d4512330cb166","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553827053,"ngxCached":true,"title":"面试","id":"55979fe6e4b08a686ce562fe"}],"updatedAt":"2019-03-29T02:36:54.502Z","rankIndex":7.4999818925667,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c9c9f2ae51d457d644af1e6","verifyCreatedAt":"2019-03-28T12:36:25.595Z","createdAt":"2019-03-28T12:36:25.595Z","user":{"community":null,"collectedEntriesCount":38,"company":"","followersCount":13,"followeesCount":14,"role":"guest","postedPostsCount":8,"isAuthor":false,"postedEntriesCount":0,"totalCommentsCount":0,"ngxCachedTime":1553827014,"ngxCached":true,"viewedEntriesCount":946,"jobTitle":"Java开发工程师","subscribedTagsCount":18,"totalCollectionsCount":26,"username":"码上实战","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/5/1694e2092cac380e?w=400&h=400&f=png&s=5269","objectId":"5848fc202f301e005715ee96"},"author":"","screenshot":"","original":true,"hotIndex":1037.4276,"content":"字符串广泛应用 在Java 编程中，在 Java 中字符串属于对象，Java 提供了 String 类来创建和操作字符串。 效率：1.在早期的JVM实现版本中，被final修饰的方法会被转为内嵌调用以提升执行效率。而从Java SE5/6开始，就渐渐摈弃这种方式了。因此在现在的\u2026","title":"面试别再问我String了","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":805,"summaryInfo":"字符串广泛应用 在Java 编程中，在 Java 中字符串属于对象，Java 提供了 String 类来创建和操作字符串。 为了不浪费你的时间，请看下面的题目，若你一目了然，可以跳过本文了。 从上面的题中你会知道，String的创建方式有两种： 要理解String，那么要了解JVM内存中的栈(st...","isCollected":false},{"collectionCount":14,"isEvent":false,"commentsCount":0,"gfw":false,"buildTime":1.5538270360571E9,"checkStatus":true,"objectId":"5c9ca1cf5188251d7d026634","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553827065,"ngxCached":true,"title":"Redis","id":"555e9ab1e4b00c57d99560b5"}],"updatedAt":"2019-03-29T02:37:16.056Z","rankIndex":2.9094778714369,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c9ca08f5188252d5a14a31b","verifyCreatedAt":"2019-03-28T12:35:52.933Z","createdAt":"2019-03-28T12:35:52.933Z","user":{"community":null,"collectedEntriesCount":0,"company":"","followersCount":8,"followeesCount":6,"role":"guest","postedPostsCount":4,"isAuthor":false,"postedEntriesCount":0,"totalCommentsCount":0,"ngxCachedTime":1553827036,"ngxCached":true,"viewedEntriesCount":24,"jobTitle":"Java","subscribedTagsCount":1,"totalCollectionsCount":16,"username":"一角钱","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/14/1697cad68dc112ce?w=864&h=868&f=png&s=894732","objectId":"5c10d441e51d4518bd1ab37f"},"author":"","screenshot":"","original":true,"hotIndex":402.9847,"content":"我在路径/home下创建一个文件夹redis-cluster,在路径/home/redis-cluster下创建一个文件redis-cluster.tmpl，并把以下内容复制过去。（注：路径可自定义，我用的是/home/redis-cluster） 至此，集群已经创建好了。","title":"Docker Redis 5.0 集群（cluster）搭建","lastCommentTime":"1970-01-01T00:00:00.Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":260,"summaryInfo":"在DOCKER库获取REDIS镜像（截至2019-03-27，最新版为5.0.4） 至此，docker上redis cluster所有工具准备完毕，我们在命令行上输入docker images，就可以查看到已经安装的镜像 #####（1）创建redis配置文件（redis-cluster.tmpl...","isCollected":false},{"collectionCount":37,"isEvent":false,"commentsCount":8,"gfw":false,"buildTime":1.5538270220079E9,"checkStatus":true,"objectId":"5c9c8d14f265da60f30d5d17","entryView":"","subscribersCount":0,"ngxCachedTime":1553827069,"verifyStatus":true,"tags":[{"ngxCachedTime":1553827000,"ngxCached":true,"title":"Go","id":"555e9a80e4b00c57d9955de2"}],"updatedAt":"2019-03-29T02:37:02.006Z","rankIndex":7.2350839560987,"hot":false,"autoPass":false,"originalUrl":"https://juejin.im/post/5c9c8c4fe51d450bc9547ba1","verifyCreatedAt":"2019-03-28T09:48:05.356Z","createdAt":"2019-03-28T09:48:05.356Z","user":{"community":null,"collectedEntriesCount":4,"company":"","followersCount":26,"followeesCount":35,"role":"guest","postedPostsCount":4,"isAuthor":false,"postedEntriesCount":3,"totalCommentsCount":10,"ngxCachedTime":1553826979,"ngxCached":true,"viewedEntriesCount":6,"jobTitle":"","subscribedTagsCount":14,"totalCollectionsCount":67,"username":"ZetaChow晓代码","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/28/169c3886ae94e0c2?w=510&h=510&f=png&s=122629","objectId":"5c21d984e51d4522ec5a00a6"},"author":"","screenshot":"","original":true,"hotIndex":1348.9356,"content":"Go 1.11和1.12实现了对包管理的初步支持，Go的新依赖管理系统使依赖版本信息明确且易于管理。 作为Go语言的推广者，常常被问到各种关于Go语言的基础特性问题。 其中，关于包管理方面的问题会让我非常尴尬，因为Go的包管理在1.11之前与Python、Node、Java比较\u2026","title":"拜拜了，GOPATH君！新版本Golang的包管理入门教程","lastCommentTime":"2019-03-29T00:05:18.099Z","type":"post","english":false,"category":{"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952},"viewsCount":936,"summaryInfo":"Go 1.11和1.12实现了对包管理的初步支持，Go的新依赖管理系统使依赖版本信息明确且易于管理。Using Go Modules - The Go Blog 作为Go语言的推广者，常常被问到各种关于Go语言的基础特性问题。其中，关于包管理方面的问题会让我非常尴尬，因为Go的包管理在1.11之前...","isCollected":false}]
+         * article_id : 6888679855659941895
+         * article_info : {"article_id":"6888679855659941895","user_id":"2400989127382599","category_id":"6809635626661445640","tag_ids":[6809641090145058824],"visible_level":0,"link_url":"","cover_image":"https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/553cc013ac7b414ebe3c74b680485552~tplv-k3u1fbpfcp-watermark.image","is_gfw":0,"title":"Flutter开发和iOS开发的区别(优缺点)","brief_content":"","is_english":0,"is_original":1,"user_index":0,"original_type":0,"original_author":"","content":"","ctime":"1603896091","mtime":"1603897730","rtime":"1603897730","draft_id":"6888655091377963015","view_count":1305,"collect_count":0,"digg_count":9,"comment_count":21,"hot_index":93,"is_hot":0,"rank_index":0.43573363,"status":2,"verify_status":1,"audit_status":2,"mark_content":""}
+         * author_user_info : {"user_id":"2400989127382599","user_name":"jun_19","company":"","job_title":"移动端开发工程师","avatar_large":"https://sf6-ttcdn-tos.pstatp.com/img/user-avatar/71d34188d78942e81c8dd17310238bd5~120x256.image","level":1,"description":"Flutter开发  \niOS开发","followee_count":59,"follower_count":4,"post_article_count":1,"digg_article_count":1,"got_digg_count":9,"got_view_count":1305,"post_shortmsg_count":0,"digg_shortmsg_count":0,"isfollowed":false,"favorable_author":0,"power":20,"study_point":0,"university":null,"major":null,"student_status":0,"select_event_count":0,"select_online_course_count":0,"identity":0}
+         * category : {"category_id":"6809635626661445640","category_name":"iOS","category_url":"ios","rank":4,"ctime":1461266350,"mtime":1432503174,"show_type":3}
+         * tags : [{"id":2547019,"tag_id":"6809641090145058824","tag_name":"Flutter","color":"","icon":"https://user-gold-cdn.xitu.io/1519790365175e2d3ba2174d5c8f3fdc4687a8bbf5768.jpg","back_ground":"","show_navi":0,"tag_alias":"","post_article_count":6551,"concern_user_count":36261}]
+         * user_interact : {"id":6888679855659941895,"omitempty":2,"user_id":0,"is_digg":false,"is_follow":false,"is_collect":false}
          */
 
-        private int total;
-        private List<EntrylistBean> entrylist;
+        private String article_id;
+        private ArticleInfoBean article_info;
+        private AuthorUserInfoBean author_user_info;
+        private CategoryBean category;
+        private UserInteractBean user_interact;
+        private List<TagsBean> tags;
 
-        public int getTotal() {
-            return total;
+        public String getArticle_id() {
+            return article_id;
         }
 
-        public void setTotal(int total) {
-            this.total = total;
+        public void setArticle_id(String article_id) {
+            this.article_id = article_id;
         }
 
-        public List<EntrylistBean> getEntrylist() {
-            return entrylist;
+        public ArticleInfoBean getArticle_info() {
+            return article_info;
         }
 
-        public void setEntrylist(List<EntrylistBean> entrylist) {
-            this.entrylist = entrylist;
+        public void setArticle_info(ArticleInfoBean article_info) {
+            this.article_info = article_info;
         }
 
-        public static class EntrylistBean {
+        public AuthorUserInfoBean getAuthor_user_info() {
+            return author_user_info;
+        }
+
+        public void setAuthor_user_info(AuthorUserInfoBean author_user_info) {
+            this.author_user_info = author_user_info;
+        }
+
+        public CategoryBean getCategory() {
+            return category;
+        }
+
+        public void setCategory(CategoryBean category) {
+            this.category = category;
+        }
+
+        public UserInteractBean getUser_interact() {
+            return user_interact;
+        }
+
+        public void setUser_interact(UserInteractBean user_interact) {
+            this.user_interact = user_interact;
+        }
+
+        public List<TagsBean> getTags() {
+            return tags;
+        }
+
+        public void setTags(List<TagsBean> tags) {
+            this.tags = tags;
+        }
+
+        public static class ArticleInfoBean {
             /**
-             * collectionCount : 5
-             * isEvent : false
-             * commentsCount : 0
-             * gfw : false
-             * buildTime : 1.5538270211392E9
-             * checkStatus : true
-             * objectId : 5c9d78a96fb9a070d0141255
-             * entryView :
-             * subscribersCount : 0
-             * ngxCachedTime : 1553827069
-             * verifyStatus : true
-             * tags : [{"ngxCachedTime":1553826996,"ngxCached":true,"title":"后端","id":"5597a063e4b08a686ce57030"},{"ngxCachedTime":1553826980,"ngxCached":true,"title":"Java","id":"559a7207e4b08a686d25703e"}]
-             * updatedAt : 2019-03-29T02:37:01.137Z
-             * rankIndex : 94.268749986838
-             * hot : false
-             * autoPass : true
-             * originalUrl : https://juejin.im/post/5c9d78715188251e3e3c8a7f
-             * verifyCreatedAt : 2019-03-29T01:45:13.966Z
-             * createdAt : 2019-03-29T01:45:13.966Z
-             * user : {"community":{"github":{"username":"dyc87112","avatarLarge":"https://avatars0.githubusercontent.com/u/3391170?v=4","uid":"3391170"}},"collectedEntriesCount":23,"company":"关注我，每日技术干货推送，每月福利免费领取！","followersCount":2786,"followeesCount":6,"role":"editor","postedPostsCount":41,"isAuthor":false,"postedEntriesCount":40,"totalCommentsCount":47,"ngxCachedTime":1553827021,"ngxCached":true,"viewedEntriesCount":120,"jobTitle":"","subscribedTagsCount":29,"totalCollectionsCount":781,"username":"程序猿DD_","avatarLarge":"https://user-gold-cdn.xitu.io/2019/3/21/1699f0e5d13e9789?w=568&h=568&f=jpeg&s=33909","objectId":"58e10d35570c350057a277bc"}
-             * author :
-             * screenshot :
-             * original : true
-             * hotIndex : 422.0601
-             * content : 最近对《Spring Cloud Alibaba基础教程》系列的催更比较多，说一下最近的近况：因为打算Spring Boot 2.x一起更新。所以一直在改博客Spring Boot专题页和Git仓库的组织。由于前端技术太过蹩脚，花了不少时间。大家不用担心，这个系列不会太监，因为…
-             * title : 说说我为什么看好Spring Cloud Alibaba
-             * lastCommentTime : 1970-01-01T00:00:00.Z
-             * type : post
-             * english : false
-             * category : {"ngxCached":true,"title":"backend","id":"5562b419e4b00c57d9b94ae2","name":"后端","ngxCachedTime":1553826952}
-             * viewsCount : 370
-             * summaryInfo : 最近对《Spring Cloud Alibaba基础教程》系列的催更比较多，说一下最近的近况：因为打算Spring Boot 2.x一起更新。所以一直在改博客Spring Boot专题页和Git仓库的组织。由于前端技术太过蹩脚，花了不少时间。大家不用担心，这个系列不会太监，因为我真心看好这个套件的...
-             * isCollected : false
+             * article_id : 6888679855659941895
+             * user_id : 2400989127382599
+             * category_id : 6809635626661445640
+             * tag_ids : [6809641090145058824]
+             * visible_level : 0
+             * link_url :
+             * cover_image : https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/553cc013ac7b414ebe3c74b680485552~tplv-k3u1fbpfcp-watermark.image
+             * is_gfw : 0
+             * title : Flutter开发和iOS开发的区别(优缺点)
+             * brief_content :
+             * is_english : 0
+             * is_original : 1
+             * user_index : 0
+             * original_type : 0
+             * original_author :
+             * content :
+             * ctime : 1603896091
+             * mtime : 1603897730
+             * rtime : 1603897730
+             * draft_id : 6888655091377963015
+             * view_count : 1305
+             * collect_count : 0
+             * digg_count : 9
+             * comment_count : 21
+             * hot_index : 93
+             * is_hot : 0
+             * rank_index : 0.43573363
+             * status : 2
+             * verify_status : 1
+             * audit_status : 2
+             * mark_content :
              */
 
-            private int collectionCount;
-            private boolean isEvent;
-            private int commentsCount;
-            private boolean gfw;
-            private double buildTime;
-            private boolean checkStatus;
-            private String objectId;
-            private String entryView;
-            private int subscribersCount;
-            private int ngxCachedTime;
-            private boolean verifyStatus;
-            private String updatedAt;
-            private double rankIndex;
-            private boolean hot;
-            private boolean autoPass;
-            private String originalUrl;
-            private String verifyCreatedAt;
-            private String createdAt;
-            private UserBean user;
-            private String author;
-            private String screenshot;
-            private boolean original;
-            private double hotIndex;
-            private String content;
+            private String article_id;
+            private String user_id;
+            private String category_id;
+            private int visible_level;
+            private String link_url;
+            private String cover_image;
+            private int is_gfw;
             private String title;
-            private String lastCommentTime;
-            private String type;
-            private boolean english;
-            private CategoryBean category;
-            private int viewsCount;
-            private String summaryInfo;
-            private boolean isCollected;
-            private List<TagsBean> tags;
+            private String brief_content;
+            private int is_english;
+            private int is_original;
+            private int original_type;
+            private String original_author;
+            private String content;
+            private String ctime;
+            private String mtime;
+            private String rtime;
+            private String draft_id;
+            private int view_count;
+            private int collect_count;
+            private int digg_count;
+            private int comment_count;
+            private int hot_index;
+            private int is_hot;
+            private double rank_index;
+            private int status;
+            private int verify_status;
+            private int audit_status;
+            private String mark_content;
+            private List<Long> tag_ids;
 
-            public int getCollectionCount() {
-                return collectionCount;
+            public String getArticle_id() {
+                return article_id;
             }
 
-            public void setCollectionCount(int collectionCount) {
-                this.collectionCount = collectionCount;
+            public void setArticle_id(String article_id) {
+                this.article_id = article_id;
             }
 
-            public boolean isIsEvent() {
-                return isEvent;
+            public String getUser_id() {
+                return user_id;
             }
 
-            public void setIsEvent(boolean isEvent) {
-                this.isEvent = isEvent;
+            public void setUser_id(String user_id) {
+                this.user_id = user_id;
             }
 
-            public int getCommentsCount() {
-                return commentsCount;
+            public String getCategory_id() {
+                return category_id;
             }
 
-            public void setCommentsCount(int commentsCount) {
-                this.commentsCount = commentsCount;
+            public void setCategory_id(String category_id) {
+                this.category_id = category_id;
             }
 
-            public boolean isGfw() {
-                return gfw;
+            public int getVisible_level() {
+                return visible_level;
             }
 
-            public void setGfw(boolean gfw) {
-                this.gfw = gfw;
+            public void setVisible_level(int visible_level) {
+                this.visible_level = visible_level;
             }
 
-            public double getBuildTime() {
-                return buildTime;
+            public String getLink_url() {
+                return link_url;
             }
 
-            public void setBuildTime(double buildTime) {
-                this.buildTime = buildTime;
+            public void setLink_url(String link_url) {
+                this.link_url = link_url;
             }
 
-            public boolean isCheckStatus() {
-                return checkStatus;
+            public String getCover_image() {
+                return cover_image;
             }
 
-            public void setCheckStatus(boolean checkStatus) {
-                this.checkStatus = checkStatus;
+            public void setCover_image(String cover_image) {
+                this.cover_image = cover_image;
             }
 
-            public String getObjectId() {
-                return objectId;
+            public int getIs_gfw() {
+                return is_gfw;
             }
 
-            public void setObjectId(String objectId) {
-                this.objectId = objectId;
-            }
-
-            public String getEntryView() {
-                return entryView;
-            }
-
-            public void setEntryView(String entryView) {
-                this.entryView = entryView;
-            }
-
-            public int getSubscribersCount() {
-                return subscribersCount;
-            }
-
-            public void setSubscribersCount(int subscribersCount) {
-                this.subscribersCount = subscribersCount;
-            }
-
-            public int getNgxCachedTime() {
-                return ngxCachedTime;
-            }
-
-            public void setNgxCachedTime(int ngxCachedTime) {
-                this.ngxCachedTime = ngxCachedTime;
-            }
-
-            public boolean isVerifyStatus() {
-                return verifyStatus;
-            }
-
-            public void setVerifyStatus(boolean verifyStatus) {
-                this.verifyStatus = verifyStatus;
-            }
-
-            public String getUpdatedAt() {
-                return updatedAt;
-            }
-
-            public void setUpdatedAt(String updatedAt) {
-                this.updatedAt = updatedAt;
-            }
-
-            public double getRankIndex() {
-                return rankIndex;
-            }
-
-            public void setRankIndex(double rankIndex) {
-                this.rankIndex = rankIndex;
-            }
-
-            public boolean isHot() {
-                return hot;
-            }
-
-            public void setHot(boolean hot) {
-                this.hot = hot;
-            }
-
-            public boolean isAutoPass() {
-                return autoPass;
-            }
-
-            public void setAutoPass(boolean autoPass) {
-                this.autoPass = autoPass;
-            }
-
-            public String getOriginalUrl() {
-                return originalUrl;
-            }
-
-            public void setOriginalUrl(String originalUrl) {
-                this.originalUrl = originalUrl;
-            }
-
-            public String getVerifyCreatedAt() {
-                return verifyCreatedAt;
-            }
-
-            public void setVerifyCreatedAt(String verifyCreatedAt) {
-                this.verifyCreatedAt = verifyCreatedAt;
-            }
-
-            public String getCreatedAt() {
-                return createdAt;
-            }
-
-            public void setCreatedAt(String createdAt) {
-                this.createdAt = createdAt;
-            }
-
-            public UserBean getUser() {
-                return user;
-            }
-
-            public void setUser(UserBean user) {
-                this.user = user;
-            }
-
-            public String getAuthor() {
-                return author;
-            }
-
-            public void setAuthor(String author) {
-                this.author = author;
-            }
-
-            public String getScreenshot() {
-                return screenshot;
-            }
-
-            public void setScreenshot(String screenshot) {
-                this.screenshot = screenshot;
-            }
-
-            public boolean isOriginal() {
-                return original;
-            }
-
-            public void setOriginal(boolean original) {
-                this.original = original;
-            }
-
-            public double getHotIndex() {
-                return hotIndex;
-            }
-
-            public void setHotIndex(double hotIndex) {
-                this.hotIndex = hotIndex;
-            }
-
-            public String getContent() {
-                return content;
-            }
-
-            public void setContent(String content) {
-                this.content = content;
+            public void setIs_gfw(int is_gfw) {
+                this.is_gfw = is_gfw;
             }
 
             public String getTitle() {
@@ -344,418 +273,686 @@ public class JueJinBean {
                 this.title = title;
             }
 
-            public String getLastCommentTime() {
-                return lastCommentTime;
+            public String getBrief_content() {
+                return brief_content;
             }
 
-            public void setLastCommentTime(String lastCommentTime) {
-                this.lastCommentTime = lastCommentTime;
+            public void setBrief_content(String brief_content) {
+                this.brief_content = brief_content;
             }
 
-            public String getType() {
-                return type;
+            public int getIs_english() {
+                return is_english;
             }
 
-            public void setType(String type) {
-                this.type = type;
+            public void setIs_english(int is_english) {
+                this.is_english = is_english;
             }
 
-            public boolean isEnglish() {
-                return english;
+            public int getIs_original() {
+                return is_original;
             }
 
-            public void setEnglish(boolean english) {
-                this.english = english;
+            public void setIs_original(int is_original) {
+                this.is_original = is_original;
             }
 
-            public CategoryBean getCategory() {
-                return category;
+
+            public int getOriginal_type() {
+                return original_type;
             }
 
-            public void setCategory(CategoryBean category) {
-                this.category = category;
+            public void setOriginal_type(int original_type) {
+                this.original_type = original_type;
             }
 
-            public int getViewsCount() {
-                return viewsCount;
+            public String getOriginal_author() {
+                return original_author;
             }
 
-            public void setViewsCount(int viewsCount) {
-                this.viewsCount = viewsCount;
+            public void setOriginal_author(String original_author) {
+                this.original_author = original_author;
             }
 
-            public String getSummaryInfo() {
-                return summaryInfo;
+            public String getContent() {
+                return content;
             }
 
-            public void setSummaryInfo(String summaryInfo) {
-                this.summaryInfo = summaryInfo;
+            public void setContent(String content) {
+                this.content = content;
             }
 
-            public boolean isIsCollected() {
-                return isCollected;
+            public String getCtime() {
+                return ctime;
             }
 
-            public void setIsCollected(boolean isCollected) {
-                this.isCollected = isCollected;
+            public void setCtime(String ctime) {
+                this.ctime = ctime;
             }
 
-            public List<TagsBean> getTags() {
-                return tags;
+            public String getMtime() {
+                return mtime;
             }
 
-            public void setTags(List<TagsBean> tags) {
-                this.tags = tags;
+            public void setMtime(String mtime) {
+                this.mtime = mtime;
             }
 
-            public static class UserBean {
-                /**
-                 * community : {"github":{"username":"dyc87112","avatarLarge":"https://avatars0.githubusercontent.com/u/3391170?v=4","uid":"3391170"}}
-                 * collectedEntriesCount : 23
-                 * company : 关注我，每日技术干货推送，每月福利免费领取！
-                 * followersCount : 2786
-                 * followeesCount : 6
-                 * role : editor
-                 * postedPostsCount : 41
-                 * isAuthor : false
-                 * postedEntriesCount : 40
-                 * totalCommentsCount : 47
-                 * ngxCachedTime : 1553827021
-                 * ngxCached : true
-                 * viewedEntriesCount : 120
-                 * jobTitle :
-                 * subscribedTagsCount : 29
-                 * totalCollectionsCount : 781
-                 * username : 程序猿DD_
-                 * avatarLarge : https://user-gold-cdn.xitu.io/2019/3/21/1699f0e5d13e9789?w=568&h=568&f=jpeg&s=33909
-                 * objectId : 58e10d35570c350057a277bc
-                 */
-
-                private CommunityBean community;
-                private int collectedEntriesCount;
-                private String company;
-                private int followersCount;
-                private int followeesCount;
-                private String role;
-                private int postedPostsCount;
-                private boolean isAuthor;
-                private int postedEntriesCount;
-                private int totalCommentsCount;
-                private int ngxCachedTime;
-                private boolean ngxCached;
-                private int viewedEntriesCount;
-                private String jobTitle;
-                private int subscribedTagsCount;
-                private int totalCollectionsCount;
-                private String username;
-                private String avatarLarge;
-                private String objectId;
-
-                public CommunityBean getCommunity() {
-                    return community;
-                }
-
-                public void setCommunity(CommunityBean community) {
-                    this.community = community;
-                }
-
-                public int getCollectedEntriesCount() {
-                    return collectedEntriesCount;
-                }
-
-                public void setCollectedEntriesCount(int collectedEntriesCount) {
-                    this.collectedEntriesCount = collectedEntriesCount;
-                }
-
-                public String getCompany() {
-                    return company;
-                }
-
-                public void setCompany(String company) {
-                    this.company = company;
-                }
-
-                public int getFollowersCount() {
-                    return followersCount;
-                }
-
-                public void setFollowersCount(int followersCount) {
-                    this.followersCount = followersCount;
-                }
-
-                public int getFolloweesCount() {
-                    return followeesCount;
-                }
-
-                public void setFolloweesCount(int followeesCount) {
-                    this.followeesCount = followeesCount;
-                }
-
-                public String getRole() {
-                    return role;
-                }
-
-                public void setRole(String role) {
-                    this.role = role;
-                }
-
-                public int getPostedPostsCount() {
-                    return postedPostsCount;
-                }
-
-                public void setPostedPostsCount(int postedPostsCount) {
-                    this.postedPostsCount = postedPostsCount;
-                }
-
-                public boolean isIsAuthor() {
-                    return isAuthor;
-                }
-
-                public void setIsAuthor(boolean isAuthor) {
-                    this.isAuthor = isAuthor;
-                }
-
-                public int getPostedEntriesCount() {
-                    return postedEntriesCount;
-                }
-
-                public void setPostedEntriesCount(int postedEntriesCount) {
-                    this.postedEntriesCount = postedEntriesCount;
-                }
-
-                public int getTotalCommentsCount() {
-                    return totalCommentsCount;
-                }
-
-                public void setTotalCommentsCount(int totalCommentsCount) {
-                    this.totalCommentsCount = totalCommentsCount;
-                }
-
-                public int getNgxCachedTime() {
-                    return ngxCachedTime;
-                }
-
-                public void setNgxCachedTime(int ngxCachedTime) {
-                    this.ngxCachedTime = ngxCachedTime;
-                }
-
-                public boolean isNgxCached() {
-                    return ngxCached;
-                }
-
-                public void setNgxCached(boolean ngxCached) {
-                    this.ngxCached = ngxCached;
-                }
-
-                public int getViewedEntriesCount() {
-                    return viewedEntriesCount;
-                }
-
-                public void setViewedEntriesCount(int viewedEntriesCount) {
-                    this.viewedEntriesCount = viewedEntriesCount;
-                }
-
-                public String getJobTitle() {
-                    return jobTitle;
-                }
-
-                public void setJobTitle(String jobTitle) {
-                    this.jobTitle = jobTitle;
-                }
-
-                public int getSubscribedTagsCount() {
-                    return subscribedTagsCount;
-                }
-
-                public void setSubscribedTagsCount(int subscribedTagsCount) {
-                    this.subscribedTagsCount = subscribedTagsCount;
-                }
-
-                public int getTotalCollectionsCount() {
-                    return totalCollectionsCount;
-                }
-
-                public void setTotalCollectionsCount(int totalCollectionsCount) {
-                    this.totalCollectionsCount = totalCollectionsCount;
-                }
-
-                public String getUsername() {
-                    return username;
-                }
-
-                public void setUsername(String username) {
-                    this.username = username;
-                }
-
-                public String getAvatarLarge() {
-                    return avatarLarge;
-                }
-
-                public void setAvatarLarge(String avatarLarge) {
-                    this.avatarLarge = avatarLarge;
-                }
-
-                public String getObjectId() {
-                    return objectId;
-                }
-
-                public void setObjectId(String objectId) {
-                    this.objectId = objectId;
-                }
-
-                public static class CommunityBean {
-                    /**
-                     * github : {"username":"dyc87112","avatarLarge":"https://avatars0.githubusercontent.com/u/3391170?v=4","uid":"3391170"}
-                     */
-
-                    private GithubBean github;
-
-                    public GithubBean getGithub() {
-                        return github;
-                    }
-
-                    public void setGithub(GithubBean github) {
-                        this.github = github;
-                    }
-
-                    public static class GithubBean {
-                        /**
-                         * username : dyc87112
-                         * avatarLarge : https://avatars0.githubusercontent.com/u/3391170?v=4
-                         * uid : 3391170
-                         */
-
-                        private String username;
-                        private String avatarLarge;
-                        private String uid;
-
-                        public String getUsername() {
-                            return username;
-                        }
-
-                        public void setUsername(String username) {
-                            this.username = username;
-                        }
-
-                        public String getAvatarLarge() {
-                            return avatarLarge;
-                        }
-
-                        public void setAvatarLarge(String avatarLarge) {
-                            this.avatarLarge = avatarLarge;
-                        }
-
-                        public String getUid() {
-                            return uid;
-                        }
-
-                        public void setUid(String uid) {
-                            this.uid = uid;
-                        }
-                    }
-                }
+            public String getRtime() {
+                return rtime;
             }
 
-            public static class CategoryBean {
-                /**
-                 * ngxCached : true
-                 * title : backend
-                 * id : 5562b419e4b00c57d9b94ae2
-                 * name : 后端
-                 * ngxCachedTime : 1553826952
-                 */
-
-                private boolean ngxCached;
-                private String title;
-                private String id;
-                private String name;
-                private int ngxCachedTime;
-
-                public boolean isNgxCached() {
-                    return ngxCached;
-                }
-
-                public void setNgxCached(boolean ngxCached) {
-                    this.ngxCached = ngxCached;
-                }
-
-                public String getTitle() {
-                    return title;
-                }
-
-                public void setTitle(String title) {
-                    this.title = title;
-                }
-
-                public String getId() {
-                    return id;
-                }
-
-                public void setId(String id) {
-                    this.id = id;
-                }
-
-                public String getName() {
-                    return name;
-                }
-
-                public void setName(String name) {
-                    this.name = name;
-                }
-
-                public int getNgxCachedTime() {
-                    return ngxCachedTime;
-                }
-
-                public void setNgxCachedTime(int ngxCachedTime) {
-                    this.ngxCachedTime = ngxCachedTime;
-                }
+            public void setRtime(String rtime) {
+                this.rtime = rtime;
             }
 
-            public static class TagsBean {
-                /**
-                 * ngxCachedTime : 1553826996
-                 * ngxCached : true
-                 * title : 后端
-                 * id : 5597a063e4b08a686ce57030
-                 */
+            public String getDraft_id() {
+                return draft_id;
+            }
 
-                private int ngxCachedTime;
-                private boolean ngxCached;
-                private String title;
-                private String id;
+            public void setDraft_id(String draft_id) {
+                this.draft_id = draft_id;
+            }
 
-                public int getNgxCachedTime() {
-                    return ngxCachedTime;
-                }
+            public int getView_count() {
+                return view_count;
+            }
 
-                public void setNgxCachedTime(int ngxCachedTime) {
-                    this.ngxCachedTime = ngxCachedTime;
-                }
+            public void setView_count(int view_count) {
+                this.view_count = view_count;
+            }
 
-                public boolean isNgxCached() {
-                    return ngxCached;
-                }
+            public int getCollect_count() {
+                return collect_count;
+            }
 
-                public void setNgxCached(boolean ngxCached) {
-                    this.ngxCached = ngxCached;
-                }
+            public void setCollect_count(int collect_count) {
+                this.collect_count = collect_count;
+            }
 
-                public String getTitle() {
-                    return title;
-                }
+            public int getDigg_count() {
+                return digg_count;
+            }
 
-                public void setTitle(String title) {
-                    this.title = title;
-                }
+            public void setDigg_count(int digg_count) {
+                this.digg_count = digg_count;
+            }
 
-                public String getId() {
-                    return id;
-                }
+            public int getComment_count() {
+                return comment_count;
+            }
 
-                public void setId(String id) {
-                    this.id = id;
-                }
+            public void setComment_count(int comment_count) {
+                this.comment_count = comment_count;
+            }
+
+            public int getHot_index() {
+                return hot_index;
+            }
+
+            public void setHot_index(int hot_index) {
+                this.hot_index = hot_index;
+            }
+
+            public int getIs_hot() {
+                return is_hot;
+            }
+
+            public void setIs_hot(int is_hot) {
+                this.is_hot = is_hot;
+            }
+
+            public double getRank_index() {
+                return rank_index;
+            }
+
+            public void setRank_index(double rank_index) {
+                this.rank_index = rank_index;
+            }
+
+            public int getStatus() {
+                return status;
+            }
+
+            public void setStatus(int status) {
+                this.status = status;
+            }
+
+            public int getVerify_status() {
+                return verify_status;
+            }
+
+            public void setVerify_status(int verify_status) {
+                this.verify_status = verify_status;
+            }
+
+            public int getAudit_status() {
+                return audit_status;
+            }
+
+            public void setAudit_status(int audit_status) {
+                this.audit_status = audit_status;
+            }
+
+            public String getMark_content() {
+                return mark_content;
+            }
+
+            public void setMark_content(String mark_content) {
+                this.mark_content = mark_content;
+            }
+
+            public List<Long> getTag_ids() {
+                return tag_ids;
+            }
+
+            public void setTag_ids(List<Long> tag_ids) {
+                this.tag_ids = tag_ids;
+            }
+        }
+
+        public static class AuthorUserInfoBean {
+            /**
+             * user_id : 2400989127382599
+             * user_name : jun_19
+             * company :
+             * job_title : 移动端开发工程师
+             * avatar_large : https://sf6-ttcdn-tos.pstatp.com/img/user-avatar/71d34188d78942e81c8dd17310238bd5~120x256.image
+             * level : 1
+             * description : Flutter开发
+             iOS开发
+             * followee_count : 59
+             * follower_count : 4
+             * post_article_count : 1
+             * digg_article_count : 1
+             * got_digg_count : 9
+             * got_view_count : 1305
+             * post_shortmsg_count : 0
+             * digg_shortmsg_count : 0
+             * isfollowed : false
+             * favorable_author : 0
+             * power : 20
+             * study_point : 0
+             * university : null
+             * major : null
+             * student_status : 0
+             * select_event_count : 0
+             * select_online_course_count : 0
+             * identity : 0
+             */
+
+            private String user_id;
+            private String user_name;
+            private String company;
+            private String job_title;
+            private String avatar_large;
+            private int level;
+            private String description;
+            private int followee_count;
+            private int follower_count;
+            private int post_article_count;
+            private int digg_article_count;
+            private int got_digg_count;
+            private int got_view_count;
+            private int post_shortmsg_count;
+            private int digg_shortmsg_count;
+            private boolean isfollowed;
+            private int favorable_author;
+            private int power;
+            private int study_point;
+            private Object university;
+            private Object major;
+            private int student_status;
+            private int select_event_count;
+            private int select_online_course_count;
+            private int identity;
+
+            public String getUser_id() {
+                return user_id;
+            }
+
+            public void setUser_id(String user_id) {
+                this.user_id = user_id;
+            }
+
+            public String getUser_name() {
+                return user_name;
+            }
+
+            public void setUser_name(String user_name) {
+                this.user_name = user_name;
+            }
+
+            public String getCompany() {
+                return company;
+            }
+
+            public void setCompany(String company) {
+                this.company = company;
+            }
+
+            public String getJob_title() {
+                return job_title;
+            }
+
+            public void setJob_title(String job_title) {
+                this.job_title = job_title;
+            }
+
+            public String getAvatar_large() {
+                return avatar_large;
+            }
+
+            public void setAvatar_large(String avatar_large) {
+                this.avatar_large = avatar_large;
+            }
+
+            public int getLevel() {
+                return level;
+            }
+
+            public void setLevel(int level) {
+                this.level = level;
+            }
+
+            public String getDescription() {
+                return description;
+            }
+
+            public void setDescription(String description) {
+                this.description = description;
+            }
+
+            public int getFollowee_count() {
+                return followee_count;
+            }
+
+            public void setFollowee_count(int followee_count) {
+                this.followee_count = followee_count;
+            }
+
+            public int getFollower_count() {
+                return follower_count;
+            }
+
+            public void setFollower_count(int follower_count) {
+                this.follower_count = follower_count;
+            }
+
+            public int getPost_article_count() {
+                return post_article_count;
+            }
+
+            public void setPost_article_count(int post_article_count) {
+                this.post_article_count = post_article_count;
+            }
+
+            public int getDigg_article_count() {
+                return digg_article_count;
+            }
+
+            public void setDigg_article_count(int digg_article_count) {
+                this.digg_article_count = digg_article_count;
+            }
+
+            public int getGot_digg_count() {
+                return got_digg_count;
+            }
+
+            public void setGot_digg_count(int got_digg_count) {
+                this.got_digg_count = got_digg_count;
+            }
+
+            public int getGot_view_count() {
+                return got_view_count;
+            }
+
+            public void setGot_view_count(int got_view_count) {
+                this.got_view_count = got_view_count;
+            }
+
+            public int getPost_shortmsg_count() {
+                return post_shortmsg_count;
+            }
+
+            public void setPost_shortmsg_count(int post_shortmsg_count) {
+                this.post_shortmsg_count = post_shortmsg_count;
+            }
+
+            public int getDigg_shortmsg_count() {
+                return digg_shortmsg_count;
+            }
+
+            public void setDigg_shortmsg_count(int digg_shortmsg_count) {
+                this.digg_shortmsg_count = digg_shortmsg_count;
+            }
+
+            public boolean isIsfollowed() {
+                return isfollowed;
+            }
+
+            public void setIsfollowed(boolean isfollowed) {
+                this.isfollowed = isfollowed;
+            }
+
+            public int getFavorable_author() {
+                return favorable_author;
+            }
+
+            public void setFavorable_author(int favorable_author) {
+                this.favorable_author = favorable_author;
+            }
+
+            public int getPower() {
+                return power;
+            }
+
+            public void setPower(int power) {
+                this.power = power;
+            }
+
+            public int getStudy_point() {
+                return study_point;
+            }
+
+            public void setStudy_point(int study_point) {
+                this.study_point = study_point;
+            }
+
+            public Object getUniversity() {
+                return university;
+            }
+
+            public void setUniversity(Object university) {
+                this.university = university;
+            }
+
+            public Object getMajor() {
+                return major;
+            }
+
+            public void setMajor(Object major) {
+                this.major = major;
+            }
+
+            public int getStudent_status() {
+                return student_status;
+            }
+
+            public void setStudent_status(int student_status) {
+                this.student_status = student_status;
+            }
+
+            public int getSelect_event_count() {
+                return select_event_count;
+            }
+
+            public void setSelect_event_count(int select_event_count) {
+                this.select_event_count = select_event_count;
+            }
+
+            public int getSelect_online_course_count() {
+                return select_online_course_count;
+            }
+
+            public void setSelect_online_course_count(int select_online_course_count) {
+                this.select_online_course_count = select_online_course_count;
+            }
+
+            public int getIdentity() {
+                return identity;
+            }
+
+            public void setIdentity(int identity) {
+                this.identity = identity;
+            }
+        }
+
+        public static class CategoryBean {
+            /**
+             * category_id : 6809635626661445640
+             * category_name : iOS
+             * category_url : ios
+             * rank : 4
+             * ctime : 1461266350
+             * mtime : 1432503174
+             * show_type : 3
+             */
+
+            private String category_id;
+            private String category_name;
+            private String category_url;
+            private int rank;
+            private int ctime;
+            private int mtime;
+            private int show_type;
+
+            public String getCategory_id() {
+                return category_id;
+            }
+
+            public void setCategory_id(String category_id) {
+                this.category_id = category_id;
+            }
+
+            public String getCategory_name() {
+                return category_name;
+            }
+
+            public void setCategory_name(String category_name) {
+                this.category_name = category_name;
+            }
+
+            public String getCategory_url() {
+                return category_url;
+            }
+
+            public void setCategory_url(String category_url) {
+                this.category_url = category_url;
+            }
+
+            public int getRank() {
+                return rank;
+            }
+
+            public void setRank(int rank) {
+                this.rank = rank;
+            }
+
+            public int getCtime() {
+                return ctime;
+            }
+
+            public void setCtime(int ctime) {
+                this.ctime = ctime;
+            }
+
+            public int getMtime() {
+                return mtime;
+            }
+
+            public void setMtime(int mtime) {
+                this.mtime = mtime;
+            }
+
+            public int getShow_type() {
+                return show_type;
+            }
+
+            public void setShow_type(int show_type) {
+                this.show_type = show_type;
+            }
+        }
+
+        public static class UserInteractBean {
+            /**
+             * id : 6888679855659941895
+             * omitempty : 2
+             * user_id : 0
+             * is_digg : false
+             * is_follow : false
+             * is_collect : false
+             */
+
+            private long id;
+            private int omitempty;
+            private int user_id;
+            private boolean is_digg;
+            private boolean is_follow;
+            private boolean is_collect;
+
+            public long getId() {
+                return id;
+            }
+
+            public void setId(long id) {
+                this.id = id;
+            }
+
+            public int getOmitempty() {
+                return omitempty;
+            }
+
+            public void setOmitempty(int omitempty) {
+                this.omitempty = omitempty;
+            }
+
+            public int getUser_id() {
+                return user_id;
+            }
+
+            public void setUser_id(int user_id) {
+                this.user_id = user_id;
+            }
+
+            public boolean isIs_digg() {
+                return is_digg;
+            }
+
+            public void setIs_digg(boolean is_digg) {
+                this.is_digg = is_digg;
+            }
+
+            public boolean isIs_follow() {
+                return is_follow;
+            }
+
+            public void setIs_follow(boolean is_follow) {
+                this.is_follow = is_follow;
+            }
+
+            public boolean isIs_collect() {
+                return is_collect;
+            }
+
+            public void setIs_collect(boolean is_collect) {
+                this.is_collect = is_collect;
+            }
+        }
+
+        public static class TagsBean {
+            /**
+             * id : 2547019
+             * tag_id : 6809641090145058824
+             * tag_name : Flutter
+             * color :
+             * icon : https://user-gold-cdn.xitu.io/1519790365175e2d3ba2174d5c8f3fdc4687a8bbf5768.jpg
+             * back_ground :
+             * show_navi : 0
+             * tag_alias :
+             * post_article_count : 6551
+             * concern_user_count : 36261
+             */
+
+            private int id;
+            private String tag_id;
+            private String tag_name;
+            private String color;
+            private String icon;
+            private String back_ground;
+            private int show_navi;
+            private String tag_alias;
+            private int post_article_count;
+            private int concern_user_count;
+
+            public int getId() {
+                return id;
+            }
+
+            public void setId(int id) {
+                this.id = id;
+            }
+
+            public String getTag_id() {
+                return tag_id;
+            }
+
+            public void setTag_id(String tag_id) {
+                this.tag_id = tag_id;
+            }
+
+            public String getTag_name() {
+                return tag_name;
+            }
+
+            public void setTag_name(String tag_name) {
+                this.tag_name = tag_name;
+            }
+
+            public String getColor() {
+                return color;
+            }
+
+            public void setColor(String color) {
+                this.color = color;
+            }
+
+            public String getIcon() {
+                return icon;
+            }
+
+            public void setIcon(String icon) {
+                this.icon = icon;
+            }
+
+            public String getBack_ground() {
+                return back_ground;
+            }
+
+            public void setBack_ground(String back_ground) {
+                this.back_ground = back_ground;
+            }
+
+            public int getShow_navi() {
+                return show_navi;
+            }
+
+            public void setShow_navi(int show_navi) {
+                this.show_navi = show_navi;
+            }
+
+            public String getTag_alias() {
+                return tag_alias;
+            }
+
+            public void setTag_alias(String tag_alias) {
+                this.tag_alias = tag_alias;
+            }
+
+            public int getPost_article_count() {
+                return post_article_count;
+            }
+
+            public void setPost_article_count(int post_article_count) {
+                this.post_article_count = post_article_count;
+            }
+
+            public int getConcern_user_count() {
+                return concern_user_count;
+            }
+
+            public void setConcern_user_count(int concern_user_count) {
+                this.concern_user_count = concern_user_count;
             }
         }
     }

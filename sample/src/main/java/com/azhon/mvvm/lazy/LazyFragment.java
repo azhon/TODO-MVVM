@@ -2,7 +2,6 @@ package com.azhon.mvvm.lazy;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -26,7 +25,7 @@ import com.azhon.mvvm.detail.DetailActivity;
  */
 
 public class LazyFragment extends BaseLazyFragment<LazyViewModel, FragmentLazyBinding>
-        implements OnItemClickListener<JueJinBean.DBean.EntrylistBean> {
+        implements OnItemClickListener<JueJinBean.DataBean> {
 
     private static final String TAG = "LazyFragment";
 
@@ -70,7 +69,7 @@ public class LazyFragment extends BaseLazyFragment<LazyViewModel, FragmentLazyBi
         viewModel.getJueJin().observe(this, new Observer<JueJinBean>() {
             @Override
             public void onChanged(JueJinBean bean) {
-                adapter.setNewData(bean.getD().getEntrylist());
+                adapter.setNewData(bean.getData());
             }
         });
     }
@@ -81,14 +80,14 @@ public class LazyFragment extends BaseLazyFragment<LazyViewModel, FragmentLazyBi
     }
 
     @Override
-    public void onItemClick(JueJinBean.DBean.EntrylistBean bean, int position) {
+    public void onItemClick(JueJinBean.DataBean bean, int position) {
         startActivity(new Intent(context, DetailActivity.class)
-                .putExtra("url", bean.getOriginalUrl())
-                .putExtra("title", bean.getTitle()));
+                .putExtra("url", "https://juejin.im/post/" + bean.getArticle_id())
+                .putExtra("title", bean.getArticle_info().getTitle()));
     }
 
     @Override
-    public boolean onItemLongClick(JueJinBean.DBean.EntrylistBean bean, int position) {
+    public boolean onItemLongClick(JueJinBean.DataBean bean, int position) {
         return true;
     }
 
