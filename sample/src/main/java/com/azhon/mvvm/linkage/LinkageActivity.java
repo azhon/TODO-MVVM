@@ -3,7 +3,6 @@ package com.azhon.mvvm.linkage;
 import android.widget.SeekBar;
 
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 
 import com.azhon.basic.base.BaseActivity;
 import com.azhon.mvvm.R;
@@ -47,11 +46,6 @@ public class LinkageActivity extends BaseActivity<LinkageViewModel> implements S
                 ski.setProgress(integer);
             }
         });
-    }
-
-    @Override
-    protected LinkageViewModel initViewModel() {
-        return ViewModelProviders.of(this).get(LinkageViewModel.class);
     }
 
     @Override

@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -52,12 +51,6 @@ public class LazyFragment extends BaseLazyFragment<LazyViewModel> implements And
         adapter.setOnItemListener(this);
         rvNews.setLayoutManager(manager);
         rvNews.setAdapter(adapter);
-    }
-
-
-    @Override
-    protected LazyViewModel initViewModel() {
-        return ViewModelProviders.of(this).get(LazyViewModel.class);
     }
 
 

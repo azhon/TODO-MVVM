@@ -53,7 +53,7 @@ public class LinkageFragment extends BaseFragment<LinkageViewModel> implements S
     }
 
     @Override
-    protected LinkageViewModel initViewModel() {
+    protected LinkageViewModel createViewModel() {
         return ViewModelProviders.of(getActivity()).get(LinkageViewModel.class);
     }
 

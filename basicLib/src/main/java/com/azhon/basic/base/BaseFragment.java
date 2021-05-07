@@ -4,9 +4,13 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 
 import com.azhon.basic.bean.DialogBean;
 import com.azhon.basic.lifecycle.BaseViewModel;
+
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 
 
 /**
@@ -25,7 +29,7 @@ public abstract class BaseFragment<VM extends BaseViewModel> extends BaseNoModel
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        viewModel = initViewModel();
+        viewModel = createViewModel();
         initObserve();
         super.onActivityCreated(savedInstanceState);
     }
@@ -33,7 +37,14 @@ public abstract class BaseFragment<VM extends BaseViewModel> extends BaseNoModel
     /**
      * 初始化ViewModel
      */
-    protected abstract VM initViewModel();
+    protected VM createViewModel() {
+        Type type = getClass().getGenericSuperclass();
+        if (!(type instanceof ParameterizedType)) {
+            return null;
+        }
+        Type[] arguments = ((ParameterizedType) type).getActualTypeArguments();
+        return ViewModelProviders.of(this).get((Class<VM>) arguments[0]);
+    }
 
     /**
      * 监听当前ViewModel中 showDialog和error的值
