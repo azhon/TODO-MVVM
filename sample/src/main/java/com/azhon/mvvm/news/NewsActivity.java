@@ -1,47 +1,35 @@
 package com.azhon.mvvm.news;
 
+import android.os.Bundle;
 import android.view.View;
 
-import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.azhon.basic.base.BaseActivity;
-import com.azhon.mvvm.R;
+import com.azhon.mvvm.databinding.ActivityNewsBinding;
 
-public class NewsActivity extends BaseActivity<NewsViewModel> {
+public class NewsActivity extends BaseActivity<NewsViewModel, ActivityNewsBinding> {
 
     private NewsAdapter adapter;
 
     @Override
-    protected int onCreate() {
-        return R.layout.activity_news;
+    protected void onCreate(View view, Bundle savedInstanceState) {
+        initToolBar("RecyclerView使用示例", true);
     }
 
     @Override
     protected void initView() {
-        findViewById(R.id.btn_request_data).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                viewModel.requestData();
-            }
-        });
-        RecyclerView rvNews = findViewById(R.id.rv_news);
+        binding.btnRequestData.setOnClickListener(v -> viewModel.requestData());
         LinearLayoutManager manager = new LinearLayoutManager(this);
         adapter = new NewsAdapter();
-        rvNews.setLayoutManager(manager);
-        rvNews.setAdapter(adapter);
+        binding.rvNews.setLayoutManager(manager);
+        binding.rvNews.setAdapter(adapter);
     }
 
     @Override
     protected void initData() {
         //数据请求成功通知
-        viewModel.getNews().observe(this, new Observer<NewsBean>() {
-            @Override
-            public void onChanged(NewsBean newsBean) {
-                adapter.setNewData(newsBean.getStories());
-            }
-        });
+        viewModel.getNews().observe(this, newsBean -> adapter.setNewData(newsBean.getStories()));
     }
 
     @Override

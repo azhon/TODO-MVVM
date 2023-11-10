@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginHorizontal="16dp"
-    android:layout_marginTop="20dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
         android:text="@string/vm_hint"
         android:textColor="@color/colorAccent"
         android:textSize="16sp" />
@@ -20,12 +22,14 @@
         android:id="@+id/btn_request_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
         android:layout_marginTop="10dp"
         android:text="请求网络数据" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_news"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp" />
 
 </LinearLayout>

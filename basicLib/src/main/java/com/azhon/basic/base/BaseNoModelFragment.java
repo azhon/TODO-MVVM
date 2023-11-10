@@ -2,35 +2,43 @@ package com.azhon.basic.base;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
+import androidx.viewbinding.ViewBinding;
 
+import com.azhon.basic.R;
+import com.azhon.basic.utils.GenericsUtil;
 import com.azhon.basic.view.LoadingDialog;
 
-/**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.basic.base
- * 文件名:    BaseNoModelFragment
- * 创建时间:  2019-03-28 on 17:06
- * 描述:     TODO 不需要ViewModel的页面基类
- *
- * @author 阿钟
- */
+import java.lang.reflect.Method;
+import java.lang.reflect.Type;
 
-public abstract class BaseNoModelFragment extends Fragment {
+
+/**
+ * createDate: 2023/11/8 on 17:44
+ * desc: 不需要ViewModel的页面基类
+ *
+ * @author azhon
+ */
+public abstract class BaseNoModelFragment<VB extends ViewBinding> extends Fragment {
+    private static final String TAG = "BaseNoModelFragment";
 
     protected Context context;
     protected FragmentActivity activity;
     private LoadingDialog loadingDialog;
 
+    protected VB binding;
+
     @Override
-    public void onAttach(Context context) {
+    public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         this.context = context;
     }
@@ -38,23 +46,18 @@ public abstract class BaseNoModelFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(onCreate(), container, false);
-        initView(view);
-        return view;
+        binding = createBinding();
+        return binding.getRoot();
     }
+
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
         activity = getActivity();
+        initView(view);
         initData();
     }
-
-    /**
-     * 初始化要加载的布局资源ID
-     */
-    protected abstract int onCreate();
-
 
     /**
      * 初始化视图
@@ -65,6 +68,27 @@ public abstract class BaseNoModelFragment extends Fragment {
      * 初始化数据
      */
     protected abstract void initData();
+
+    /**
+     * 创建视图
+     */
+    private VB createBinding() {
+        try {
+            Type type = GenericsUtil.get(getClass(), "databinding");
+            Class<VB> cls = (Class<VB>) type;
+            Method inflate = cls.getMethod("inflate", LayoutInflater.class);
+            return (VB) inflate.invoke(null, getLayoutInflater());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Log.e(TAG, "Please set VB(ViewBinding).");
+        return null;
+    }
+
+    protected void initToolBar(String title) {
+        TextView tvTitle = binding.getRoot().findViewById(R.id.tv_title);
+        tvTitle.setText(title);
+    }
 
     /**
      * 显示用户等待框
@@ -89,5 +113,11 @@ public abstract class BaseNoModelFragment extends Fragment {
             loadingDialog.dismiss();
             loadingDialog = null;
         }
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 }

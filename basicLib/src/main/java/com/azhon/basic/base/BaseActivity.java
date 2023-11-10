@@ -1,29 +1,25 @@
 package com.azhon.basic.base;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.viewbinding.ViewBinding;
 
-import com.azhon.basic.bean.DialogBean;
 import com.azhon.basic.lifecycle.BaseViewModel;
+import com.azhon.basic.utils.GenericsUtil;
 
-import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
 /**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.basic.base
- * 文件名:    BaseActivity
- * 创建时间:  2019-03-27 on 10:46
- * 描述:     TODO ViewModel、ViewDataBinding都需要的基类
+ * createDate: 2023/11/8 on 17:44
+ * desc: ViewModel、ViewDataBinding都需要的基类
  *
- * @author 阿钟
+ * @author azhon
  */
 
-public abstract class BaseActivity<VM extends BaseViewModel> extends BaseNoModelActivity {
-
+public abstract class BaseActivity<VM extends BaseViewModel, VB extends ViewBinding> extends BaseNoModelActivity<VB> {
     protected VM viewModel;
 
     @Override
@@ -38,12 +34,8 @@ public abstract class BaseActivity<VM extends BaseViewModel> extends BaseNoModel
      * 初始化ViewModel
      */
     protected VM createViewModel() {
-        Type type = getClass().getGenericSuperclass();
-        if (!(type instanceof ParameterizedType)) {
-            return null;
-        }
-        Type[] arguments = ((ParameterizedType) type).getActualTypeArguments();
-        return ViewModelProviders.of(this).get((Class<VM>) arguments[0]);
+        Type type = GenericsUtil.get(getClass(), "");
+        return new ViewModelProvider(this).get((Class<VM>) type);
     }
 
     /**
@@ -51,26 +43,20 @@ public abstract class BaseActivity<VM extends BaseViewModel> extends BaseNoModel
      */
     private void initObserve() {
         if (viewModel == null) return;
-        viewModel.getShowDialog(this, new Observer<DialogBean>() {
-            @Override
-            public void onChanged(DialogBean bean) {
-                if (bean.isShow()) {
-                    showDialog(bean.getMsg());
-                } else {
-                    dismissDialog();
-                }
+        viewModel.getShowDialog(this, bean -> {
+            if (bean.isShow()) {
+                showDialog(bean.getMsg());
+            } else {
+                dismissDialog();
             }
         });
-        viewModel.getError(this, new Observer<Object>() {
-            @Override
-            public void onChanged(Object obj) {
-                showError(obj);
-            }
-        });
+        viewModel.getError(this, this::showError);
     }
 
     /**
      * ViewModel层发生了错误
      */
-    protected abstract void showError(Object obj);
+    protected void showError(Object obj) {
+        Toast.makeText(context, obj.toString(), Toast.LENGTH_SHORT).show();
+    }
 }

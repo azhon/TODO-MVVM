@@ -4,9 +4,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * 创建者:    阿钟
- * 创建时间:  2017/6/20 on 15:12
- * 描述:     TODO 时间格式化
+ * createDate: 2023/11/8 on 17:44
+ * desc: 时间格式化
+ *
+ * @author azhon
  */
 public class TimeUtil {
 

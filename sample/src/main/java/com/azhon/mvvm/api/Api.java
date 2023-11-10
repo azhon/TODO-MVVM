@@ -5,13 +5,10 @@ import com.azhon.basic.retrofit.BaseApi;
 import okhttp3.OkHttpClient;
 
 /**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.mvvm.api
- * 文件名:    Api
- * 创建时间:  2019-03-27 on 14:56
- * 描述:     TODO 使用Retrofit基础服务
+ * createDate: 2019/03/27 on 14:13
+ * desc: 使用Retrofit基础服务
  *
- * @author 阿钟
+ * @author azhon
  */
 
 public class Api extends BaseApi {
@@ -20,10 +17,10 @@ public class Api extends BaseApi {
      * 静态内部类单例
      */
     private static class ApiHolder {
-        private static Api api = new Api();
+        private static final Api api = new Api();
         private final static ApiService apiService = api.initRetrofit(ApiService.BASE_URL)
                 .create(ApiService.class);
-        private final static ApiService JueJinApiService = api.initRetrofit(ApiService.JUE_JIN_BASE_URL)
+        private final static ApiService apiWanAndroidService = api.initRetrofit(ApiService.WAN_ANDROID)
                 .create(ApiService.class);
     }
 
@@ -31,8 +28,8 @@ public class Api extends BaseApi {
         return ApiHolder.apiService;
     }
 
-    public static ApiService getJueJinInstance() {
-        return ApiHolder.JueJinApiService;
+    public static ApiService getWanAndroidService() {
+        return ApiHolder.apiWanAndroidService;
     }
 
     /**

@@ -1,51 +1,37 @@
 package com.azhon.mvvm.linkage;
 
+import android.os.Bundle;
+import android.view.View;
 import android.widget.SeekBar;
-
-import androidx.lifecycle.Observer;
 
 import com.azhon.basic.base.BaseActivity;
 import com.azhon.mvvm.R;
-
+import com.azhon.mvvm.databinding.ActivityLinkageBinding;
 
 /**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.mvvm.linkage
- * 文件名:    LinkageActivity
- * 创建时间:  2019-03-29 on 20:18
- * 描述:     TODO DataBinding #setLifecycleOwner()使用示例
+ * createDate: 2019/03/27 on 14:155
+ * desc: DataBinding #setLifecycleOwner()使用示例
  *
- * @author 阿钟
+ * @author azhon
  */
+public class LinkageActivity extends BaseActivity<LinkageViewModel, ActivityLinkageBinding> implements SeekBar.OnSeekBarChangeListener {
 
-public class LinkageActivity extends BaseActivity<LinkageViewModel> implements SeekBar.OnSeekBarChangeListener {
-
-    private SeekBar ski;
 
     @Override
-    protected int onCreate() {
-        return R.layout.activity_linkage;
+    protected void onCreate(View view, Bundle savedInstanceState) {
+
     }
 
     @Override
     protected void initView() {
-        setTitle("Activity/Fragment数据联动");
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.fl_content, LinkageFragment.newInstance())
-                .commit();
-        ski = findViewById(R.id.sk_i);
-        ski.setOnSeekBarChangeListener(this);
+        initToolBar("Activity/Fragment数据联动", true);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fl_content, LinkageFragment.newInstance()).commit();
+        binding.skI.setOnSeekBarChangeListener(this);
     }
 
     @Override
     protected void initData() {
-        viewModel.getProgress().observe(this, new Observer<Integer>() {
-            @Override
-            public void onChanged(Integer integer) {
-                ski.setProgress(integer);
-            }
-        });
+        viewModel.getProgress().observe(this, integer -> binding.skI.setProgress(integer));
     }
 
     @Override

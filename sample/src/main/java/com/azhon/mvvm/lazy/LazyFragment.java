@@ -4,29 +4,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.azhon.basic.base.BaseLazyFragment;
-import com.azhon.mvvm.R;
+import com.azhon.mvvm.databinding.FragmentLazyBinding;
 import com.azhon.mvvm.detail.DetailActivity;
 
 /**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.mvvm.lazy
- * 文件名:    LazyFragment
- * 创建时间:  2019-03-28 on 18:01
- * 描述:     TODO 懒加载使用示例
+ * createDate: 2019/03/27 on 14:155
+ * desc: 懒加载使用示例
  *
- * @author 阿钟
+ * @author azhon
  */
-
-public class LazyFragment extends BaseLazyFragment<LazyViewModel> implements AndroidAdapter.OnItemClickListener {
+public class LazyFragment extends BaseLazyFragment<LazyViewModel, FragmentLazyBinding> implements WanAndroidAdapter.OnItemClickListener {
 
     private static final String TAG = "LazyFragment";
 
-    private AndroidAdapter adapter;
+    private WanAndroidAdapter adapter;
     private String category;
 
     public static LazyFragment newInstance(String category) {
@@ -39,30 +33,19 @@ public class LazyFragment extends BaseLazyFragment<LazyViewModel> implements And
 
 
     @Override
-    protected int onCreate() {
-        return R.layout.fragment_lazy;
-    }
-
-    @Override
     protected void initView(View view) {
-        RecyclerView rvNews = view.findViewById(R.id.rv_list);
         LinearLayoutManager manager = new LinearLayoutManager(context);
-        adapter = new AndroidAdapter();
+        adapter = new WanAndroidAdapter();
         adapter.setOnItemListener(this);
-        rvNews.setLayoutManager(manager);
-        rvNews.setAdapter(adapter);
+        binding.rvList.setLayoutManager(manager);
+        binding.rvList.setAdapter(adapter);
     }
 
 
     @Override
     protected void initData() {
         category = getArguments().getString("category");
-        viewModel.getJueJin().observe(this, new Observer<JueJinBean>() {
-            @Override
-            public void onChanged(JueJinBean bean) {
-                adapter.setNewData(bean.getData());
-            }
-        });
+        viewModel.getWanAndroid().observe(this, bean -> adapter.setNewData(bean));
     }
 
     @Override
@@ -72,10 +55,10 @@ public class LazyFragment extends BaseLazyFragment<LazyViewModel> implements And
 
 
     @Override
-    public void onItemClick(JueJinBean.DataBean bean, int position) {
+    public void onItemClick(CategoryBean.DataBean.DatasBean bean, int position) {
         startActivity(new Intent(context, DetailActivity.class)
-                .putExtra("url", "https://juejin.im/post/" + bean.getArticle_id())
-                .putExtra("title", bean.getArticle_info().getTitle()));
+                .putExtra("url", bean.getLink())
+                .putExtra("title", bean.getTitle()));
     }
 
     @Override

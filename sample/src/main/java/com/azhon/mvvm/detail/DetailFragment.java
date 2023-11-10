@@ -8,19 +8,16 @@ import android.webkit.WebViewClient;
 
 import com.azhon.basic.base.BaseNoModelFragment;
 import com.azhon.mvvm.R;
-
+import com.azhon.mvvm.databinding.FragmentDetailBinding;
 
 /**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.mvvm.detail
- * 文件名:    DetailFragment
- * 创建时间:  2019-03-28 on 17:27
- * 描述:     TODO
+ * createDate: 2019/03/27 on 14:155
+ * desc:
  *
- * @author 阿钟
+ * @author azhon
  */
 
-public class DetailFragment extends BaseNoModelFragment {
+public class DetailFragment extends BaseNoModelFragment<FragmentDetailBinding> {
 
     private WebView webView;
 
@@ -30,11 +27,6 @@ public class DetailFragment extends BaseNoModelFragment {
         DetailFragment fragment = new DetailFragment();
         fragment.setArguments(args);
         return fragment;
-    }
-
-    @Override
-    protected int onCreate() {
-        return R.layout.fragment_detail;
     }
 
     @Override

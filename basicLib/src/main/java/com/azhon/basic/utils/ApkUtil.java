@@ -7,18 +7,16 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 
-import androidx.core.content.FileProvider;
-
 import java.io.File;
 
-/**
- * 文件名:    ApkUtil
- * 创建时间:  2018/5/4 on 15:49
- * 描述:     TODO
- *
- * @author 阿钟
- */
+import androidx.core.content.FileProvider;
 
+/**
+ * createDate: 2023/11/8 on 17:44
+ * desc:
+ *
+ * @author azhon
+ */
 public class ApkUtil {
     /**
      * 安装一个apk
@@ -51,7 +49,11 @@ public class ApkUtil {
         try {
             PackageManager packageManager = context.getPackageManager();
             PackageInfo packageInfo = packageManager.getPackageInfo(context.getPackageName(), 0);
-            return packageInfo.getLongVersionCode();
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                return packageInfo.getLongVersionCode();
+            } else {
+                return packageInfo.versionCode;
+            }
         } catch (Exception e) {
             e.printStackTrace();
             return 1;

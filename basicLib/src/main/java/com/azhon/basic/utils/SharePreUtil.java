@@ -9,12 +9,11 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 
 /**
- * 文件名:    SharePreUtil
- * 创建者:    阿钟
- * 创建时间:  2016/12/12 on 11:58
- * 描述:     SharedPreferences存取工具类
+ * createDate: 2023/11/8 on 17:44
+ * desc: SharedPreferences存取工具类
+ *
+ * @author azhon
  */
-
 public class SharePreUtil {
     /**
      * 配置文件，文件名
@@ -126,8 +125,7 @@ public class SharePreUtil {
      */
     public static String lookSharePre(Context context) {
         try {
-            FileInputStream stream = new FileInputStream(new File("/data/data/" +
-                    context.getPackageName() + "/shared_prefs", SHARE_NAME + ".xml"));
+            FileInputStream stream = new FileInputStream(new File("/data/data/" + context.getPackageName() + "/shared_prefs", SHARE_NAME + ".xml"));
             BufferedReader bff = new BufferedReader(new InputStreamReader(stream));
             String line;
             StringBuilder sb = new StringBuilder();

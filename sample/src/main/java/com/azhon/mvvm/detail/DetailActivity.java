@@ -1,26 +1,25 @@
 package com.azhon.mvvm.detail;
 
+import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.View;
 
 import com.azhon.basic.base.BaseNoModelActivity;
 import com.azhon.mvvm.R;
+import com.azhon.mvvm.databinding.ActivityDetailBinding;
 
 
 /**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.mvvm.detail
- * 文件名:    DetailActivity
- * 创建时间:  2019-03-28 on 17:24
- * 描述:     TODO
+ * createDate: 2019/03/27 on 14:155
+ * desc: 声明接口
  *
- * @author 阿钟
+ * @author azhon
  */
-
-public class DetailActivity extends BaseNoModelActivity {
+public class DetailActivity extends BaseNoModelActivity<ActivityDetailBinding> {
 
     @Override
-    protected int onCreate() {
-        return R.layout.activity_detail;
+    protected void onCreate(View view, Bundle savedInstanceState) {
+
     }
 
     @Override
@@ -29,10 +28,9 @@ public class DetailActivity extends BaseNoModelActivity {
         String title = getIntent().getStringExtra("title");
         if (TextUtils.isEmpty(url)) {
             url = "http://www.baidu.com";
-            setTitle("Fragment使用示例");
-        } else {
-            setTitle(title);
+            title = "Fragment使用示例";
         }
+        initToolBar(title, true);
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.fl_content, DetailFragment.newInstance(url))

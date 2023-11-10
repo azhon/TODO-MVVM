@@ -5,14 +5,11 @@ import android.content.res.TypedArray;
 import android.util.DisplayMetrics;
 
 /**
- * 文件名:    DensityUtil
- * 创建时间:  2018/3/18 on 13:32
- * 描述:     TODO
+ * createDate: 2023/11/8 on 17:44
+ * desc:
  *
- * @author 阿钟
+ * @author azhon
  */
-
-
 public class DensityUtil {
 
     /**

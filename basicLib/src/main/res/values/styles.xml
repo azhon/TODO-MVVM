@@ -18,4 +18,7 @@
         <item name="android:backgroundDimEnabled">false</item>
     </style>
 
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
 </resources>

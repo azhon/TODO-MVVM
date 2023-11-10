@@ -1,15 +1,11 @@
 package com.azhon.basic.bean;
 
 /**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.basic.bean
- * 文件名:    DialogBean
- * 创建时间:  2019-03-27 on 20:54
- * 描述:     TODO 封装的对话框实体类
+ * createDate: 2023/11/8 on 17:44
+ * desc: 封装的对话框实体类
  *
- * @author 阿钟
+ * @author azhon
  */
-
 public final class DialogBean {
 
     private boolean isShow;

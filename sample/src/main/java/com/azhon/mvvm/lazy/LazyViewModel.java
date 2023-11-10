@@ -5,66 +5,41 @@ import androidx.lifecycle.MutableLiveData;
 import com.azhon.basic.lifecycle.BaseViewModel;
 import com.azhon.mvvm.api.Api;
 
-import org.json.JSONException;
-import org.json.JSONObject;
+import java.util.List;
 
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.functions.Consumer;
-import io.reactivex.schedulers.Schedulers;
-import okhttp3.RequestBody;
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
+import io.reactivex.rxjava3.disposables.Disposable;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 
 
 /**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.mvvm.lazy
- * 文件名:    LazyViewModel
- * 创建时间:  2019-03-28 on 22:48
- * 描述:     TODO
+ * createDate: 2019/03/27 on 14:155
+ * desc:
  *
- * @author 阿钟
+ * @author azhon
  */
-
 public class LazyViewModel extends BaseViewModel {
 
-    private MutableLiveData<JueJinBean> jueJin = new MutableLiveData<>();
+    private final MutableLiveData<List<CategoryBean.DataBean.DatasBean>> wanAndroid = new MutableLiveData<>();
 
     public void loadData(String category) {
         showDialog.setValue(true, "懒加载中...");
-        JSONObject obj = new JSONObject();
-        try {
-            obj.put("sort_type", 200);
-            obj.put("cate_id", category);
-            obj.put("limit", 20);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        RequestBody body = RequestBody.create(okhttp3.MediaType.parse("application/json; charset=utf-8"), obj.toString());
-        Disposable disposable = Api.getJueJinInstance()
-                .jueJin(body)
+        Disposable disposable = Api.getWanAndroidService()
+                .category(1, category)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<JueJinBean>() {
-                    @Override
-                    public void accept(JueJinBean bean) throws Exception {
-                        jueJin.setValue(bean);
-                        showDialog.setValue(false);
-                    }
-                }, new Consumer<Throwable>() {
-                    @Override
-                    public void accept(Throwable throwable) throws Exception {
-                        showDialog.setValue(false);
-                        /*
-                         * 发生了错误，通知UI层
-                         */
-                        error.setValue("发生错误了");
-                    }
+                .subscribe(bean -> {
+                    wanAndroid.setValue(bean.getData().getDatas());
+                    showDialog.setValue(false);
+                }, throwable -> {
+                    showDialog.setValue(false);
+                    //发生了错误，通知UI层
+                    error.setValue("发生错误了");
                 });
         addDisposable(disposable);
-
     }
 
-    public MutableLiveData<JueJinBean> getJueJin() {
-        return jueJin;
+    public MutableLiveData<List<CategoryBean.DataBean.DatasBean>> getWanAndroid() {
+        return wanAndroid;
     }
 }

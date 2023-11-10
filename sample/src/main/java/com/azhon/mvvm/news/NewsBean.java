@@ -3,15 +3,11 @@ package com.azhon.mvvm.news;
 import java.util.List;
 
 /**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.mvvm.main
- * 文件名:    NewsBean
- * 创建时间:  2019-03-27 on 15:44
- * 描述:     TODO
+ * createDate: 2019/03/27 on 14:155
+ * desc:
  *
- * @author 阿钟
+ * @author azhon
  */
-
 public class NewsBean {
 
     /**

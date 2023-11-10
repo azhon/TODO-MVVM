@@ -1,18 +1,17 @@
 package com.azhon.basic.base;
 
+import androidx.viewbinding.ViewBinding;
+
 import com.azhon.basic.lifecycle.BaseViewModel;
 
-/**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.basic.base
- * 文件名:    BaseLazyFragment
- * 创建时间:  2019-03-28 on 18:01
- * 描述:     TODO 懒加载Fragment基类，适用于一个页面多个Tab页面
- *
- * @author 阿钟
- */
 
-public abstract class BaseLazyFragment<VM extends BaseViewModel> extends BaseFragment<VM> {
+/**
+ * createDate: 2023/11/8 on 17:44
+ * desc: 懒加载Fragment基类，适用于一个页面多个Tab页面
+ *
+ * @author azhon
+ */
+public abstract class BaseLazyFragment<VM extends BaseViewModel, VB extends ViewBinding> extends BaseFragment<VM, VB> {
 
     private boolean visibleToUser;
 

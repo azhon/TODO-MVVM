@@ -16,18 +16,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.mvvm.main
- * 文件名:    NewsAdapter
- * 创建时间:  2019-03-27 on 16:34
- * 描述:     TODO
+ * createDate: 2019/03/27 on 14:155
+ * desc:
  *
- * @author 阿钟
+ * @author azhon
  */
-
 public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.VHolder> {
 
-    private List<NewsBean.StoriesBean> list = new ArrayList<>();
+    private final List<NewsBean.StoriesBean> list = new ArrayList<>();
 
     @NonNull
     @Override
@@ -60,7 +56,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.VHolder> {
     }
 
 
-    public class VHolder extends RecyclerView.ViewHolder {
+    public static class VHolder extends RecyclerView.ViewHolder {
         public TextView text;
         public TextView text1;
         public ImageView imageView;

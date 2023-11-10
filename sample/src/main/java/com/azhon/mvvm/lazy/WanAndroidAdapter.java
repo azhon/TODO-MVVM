@@ -14,36 +14,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.mvvm.lazy
- * 文件名:    AndroidAdapter
- * 创建时间:  2019-03-29 on 10:44
- * 描述:     TODO
+ * createDate: 2019/03/27 on 14:155
+ * desc:
  *
- * @author 阿钟
+ * @author azhon
  */
-public class AndroidAdapter extends RecyclerView.Adapter<AndroidAdapter.VHolder> {
+public class WanAndroidAdapter extends RecyclerView.Adapter<WanAndroidAdapter.VHolder> {
 
-    private List<JueJinBean.DataBean> list = new ArrayList<>();
+    private final List<CategoryBean.DataBean.DatasBean> list = new ArrayList<>();
     private OnItemClickListener listener;
 
     @NonNull
     @Override
     public VHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_jue_jin, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_wan_android, parent, false);
         return new VHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull VHolder holder, final int position) {
-        holder.title.setText(list.get(position).getArticle_info().getTitle());
-        holder.content.setText(list.get(position).getArticle_info().getBrief_content());
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (listener != null) {
-                    listener.onItemClick(list.get(position), position);
-                }
+    public void onBindViewHolder(@NonNull VHolder holder, int position) {
+        holder.title.setText(list.get(position).getTitle());
+        holder.content.setText(list.get(position).getDesc());
+        holder.itemView.setOnClickListener(v -> {
+            if (listener != null) {
+                listener.onItemClick(list.get(position), position);
             }
         });
     }
@@ -53,7 +47,7 @@ public class AndroidAdapter extends RecyclerView.Adapter<AndroidAdapter.VHolder>
         return list.size();
     }
 
-    public void setNewData(List<JueJinBean.DataBean> stories) {
+    public void setNewData(List<CategoryBean.DataBean.DatasBean> stories) {
         list.clear();
         list.addAll(stories);
         notifyDataSetChanged();
@@ -65,7 +59,7 @@ public class AndroidAdapter extends RecyclerView.Adapter<AndroidAdapter.VHolder>
     }
 
 
-    public class VHolder extends RecyclerView.ViewHolder {
+    public static class VHolder extends RecyclerView.ViewHolder {
         public TextView title;
         public TextView content;
 
@@ -77,6 +71,6 @@ public class AndroidAdapter extends RecyclerView.Adapter<AndroidAdapter.VHolder>
     }
 
     public interface OnItemClickListener {
-        void onItemClick(JueJinBean.DataBean bean, int position);
+        void onItemClick(CategoryBean.DataBean.DatasBean bean, int position);
     }
 }

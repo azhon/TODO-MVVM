@@ -5,15 +5,11 @@ import android.app.Activity;
 import java.util.Stack;
 
 /**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.basic.utils
- * 文件名:    ActivityUtil
- * 创建时间:  2019-03-29 on 17:13
- * 描述:     TODO 管理所有Activity的实例
+ * createDate: 2023/11/8 on 17:44
+ * desc: 管理所有Activity的实例
  *
- * @author 阿钟
+ * @author azhon
  */
-
 public class ActivityUtil {
 
     private static Stack<Activity> stack;

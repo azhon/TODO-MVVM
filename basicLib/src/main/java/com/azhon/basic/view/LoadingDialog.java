@@ -17,15 +17,11 @@ import com.azhon.basic.R;
 import com.azhon.basic.utils.DensityUtil;
 
 /**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.basic.view
- * 文件名:    LoadingDialog
- * 创建时间:  2019-03-29 on 11:30
- * 描述:     TODO 等待对话框
+ * createDate: 2023/11/8 on 17:44
+ * desc: 等待对话框
  *
- * @author 阿钟
+ * @author azhon
  */
-
 public class LoadingDialog extends Dialog {
 
     private final TextView tvMsg;
@@ -38,8 +34,8 @@ public class LoadingDialog extends Dialog {
         setContentView(view);
         Window window = getWindow();
         WindowManager.LayoutParams lp = window.getAttributes();
-        lp.width = DensityUtil.dip2px(context, 150);
-        lp.height = DensityUtil.dip2px(context, 110);
+        lp.width = DensityUtil.dip2px(context, 120);
+        lp.height = DensityUtil.dip2px(context, 120);
         lp.gravity = Gravity.CENTER;
         window.setAttributes(lp);
     }

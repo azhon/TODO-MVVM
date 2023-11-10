@@ -1,25 +1,20 @@
 package com.azhon.basic.lifecycle;
 
+import com.azhon.basic.bean.DialogBean;
+
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModel;
-
-import com.azhon.basic.bean.DialogBean;
-
-import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.disposables.Disposable;
+import io.reactivex.rxjava3.disposables.CompositeDisposable;
+import io.reactivex.rxjava3.disposables.Disposable;
 
 /**
- * 项目名:    TODO-MVVM
- * 包名       com.azhon.basic.lifecycle
- * 文件名:    BaseViewModel
- * 创建时间:  2019-03-27 on 10:44
- * 描述:     TODO ViewModel基类，管理rxJava发出的请求，ViewModel销毁同时也取消请求
+ * createDate: 2023/11/8 on 17:44
+ * desc: ViewModel基类，管理rxJava发出的请求，ViewModel销毁同时也取消请求
  *
- * @author 阿钟
+ * @author azhon
  */
-
 public abstract class BaseViewModel extends ViewModel {
 
     /**
@@ -29,7 +24,7 @@ public abstract class BaseViewModel extends ViewModel {
     /**
      * 用来通知 Activity／Fragment 是否显示等待Dialog
      */
-    protected DialogLiveData<DialogBean> showDialog = new DialogLiveData<>();
+    protected DialogLiveData showDialog = new DialogLiveData();
     /**
      * 当ViewModel层出现错误需要通知到Activity／Fragment
      */

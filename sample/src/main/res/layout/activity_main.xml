@@ -3,14 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginHorizontal="16dp"
-    android:layout_marginTop="20dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:text="@string/introduce"
         android:textColor="#333333"
@@ -29,6 +31,7 @@
         android:id="@+id/btn_rv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
         android:text="RecyclerView使用示例"
         android:textAllCaps="false" />
 
@@ -36,6 +39,7 @@
         android:id="@+id/btn_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
         android:text="Fragment使用示例"
         android:textAllCaps="false" />
 
@@ -43,6 +47,7 @@
         android:id="@+id/btn_lazy_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
         android:text="Fragment懒加载使用示例"
         android:textAllCaps="false" />
 
@@ -50,6 +55,7 @@
         android:id="@+id/btn_linkage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
         android:text="Activity/Fragment数据联动"
         android:textAllCaps="false" />
 </LinearLayout>
