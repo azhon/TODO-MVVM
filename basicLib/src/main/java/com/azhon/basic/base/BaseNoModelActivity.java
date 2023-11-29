@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -118,6 +119,10 @@ public abstract class BaseNoModelActivity<VB extends ViewBinding> extends AppCom
             loadingDialog.dismiss();
             loadingDialog = null;
         }
+    }
+
+    protected void showError(Object obj) {
+        Toast.makeText(context, obj.toString(), Toast.LENGTH_SHORT).show();
     }
 
     @Override

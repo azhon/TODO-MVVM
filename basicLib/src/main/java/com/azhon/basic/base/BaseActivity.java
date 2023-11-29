@@ -1,7 +1,6 @@
 package com.azhon.basic.base;
 
 import android.os.Bundle;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.lifecycle.ViewModelProvider;
@@ -51,12 +50,5 @@ public abstract class BaseActivity<VM extends BaseViewModel, VB extends ViewBind
             }
         });
         viewModel.getError(this, this::showError);
-    }
-
-    /**
-     * ViewModel层发生了错误
-     */
-    protected void showError(Object obj) {
-        Toast.makeText(context, obj.toString(), Toast.LENGTH_SHORT).show();
     }
 }

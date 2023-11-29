@@ -1,11 +1,12 @@
 package com.azhon.basic.lifecycle;
 
-import com.azhon.basic.bean.DialogBean;
-
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModel;
+
+import com.azhon.basic.bean.DialogBean;
+
 import io.reactivex.rxjava3.disposables.CompositeDisposable;
 import io.reactivex.rxjava3.disposables.Disposable;
 

@@ -2,7 +2,6 @@ package com.azhon.basic.base;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -56,11 +55,4 @@ public abstract class BaseFragment<VM extends BaseViewModel, VB extends ViewBind
         viewModel.getError(this, this::showError);
     }
 
-
-    /**
-     * ViewModel层发生了错误
-     */
-    protected void showError(Object obj) {
-        Toast.makeText(context, obj.toString(), Toast.LENGTH_SHORT).show();
-    }
 }
